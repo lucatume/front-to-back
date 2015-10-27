@@ -1,0 +1,38 @@
+What's this to do?
+
+- the plugin eschews the use of a theme and should be pointed to a templates folder with a setting
+- the plugin packs cmb2
+- the plugin was inspired by Perch in its functions
+- when the user creates a page in WP admin then a new file is created in the templates folder (e.g. `page-slug.php`)
+- this is a plain php file that's in fact a copy of the `master.php` file
+- the plugin will require the user to add a master page in the templates folder to work
+- when the user reloads a page edit screen the corresponding template file will be read
+- if the corresponding template file is missing a new copy will be made of the `master.php` file
+- when the whole php template file has been read then the plugin will check for `ftb-*` tags (e.g. `<ftb-content ...`)
+- each ftb content should specify
+    - an id that will map to a post meta key
+    - a type that will map to one of cmb2 field types
+    - a title that will be the title of the cmb2 field
+    - more optionals (to be decided)
+- the flow when encountering an `ftb-` tag is as follows:
+    - check the field has the minimum required fields else throw
+    - the meta, type and title information will be added to the list of meta fields to show on that specific post edit screen
+    - the way this happens is by reading that information from the template file and storing it in the database to then associate the meta to the post using cmb2 calls
+    - Defaults should be provided for each field
+- after the whole template has been parsed a first version of it is rendered using the information in the defaulted meta fields
+    - replace each `<ftb-` tag with the corresponding meta value like this:
+        - `<p><ftp id='author-name' type='text' title='Author name'></p>` will become
+        - `<p>Some text<p>`
+- when all of the replacements have been made the page rendered php and an hashed version of it are stored in the database
+- the admin page edit screen will show up with the meta fields added
+- when the user changes any meta for the page in the backed the page php is re-built and stored in the database
+- visitors will be served the page php stored in the database
+- the plugin should allow for inheritance ~ using a well crafted master page?
+
+Todo:
++ the plugin packs cmb2
++ the plugin adds a setting to specify the templates folder location relative to the wp `ABSPATH`
++ the plugin checks and requires a `master.php` file in said folder
+- the plugin creates a new `page-slug.php` file when a page is created in WP admin
+- if `page-slug.php` file is missing then the plugin re-creates it as a copy of `master.php`
+- the plugin reads the meta fields backward
