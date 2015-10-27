@@ -33,6 +33,6 @@ Todo:
 + the plugin packs cmb2
 + the plugin adds a setting to specify the templates folder location relative to the wp `ABSPATH`
 + the plugin checks and requires a `master.php` file in said folder
-- the plugin creates a new `page-slug.php` file when a page is created in WP admin
++ the plugin creates a new `page-slug.php` file when a page is created in WP admin
 - if `page-slug.php` file is missing then the plugin re-creates it as a copy of `master.php`
 - the plugin reads the meta fields backward
