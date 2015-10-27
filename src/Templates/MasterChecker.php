@@ -15,24 +15,21 @@ class MasterChecker {
 		$this->fs = $fs ? $fs : new Filesystem();
 	}
 
-	public function check( $templates_folder ) {
-		$folder = trailingslashit( $templates_folder );
-		$this->fs->initialize_wp_filesystem( $folder );
-
-		return $this->fs->exists( $folder . ftb()->get( 'templates/master-template-name' ) );
-	}
-
 	public function hooks() {
 		add_action( 'admin_notices', array( $this, 'the_admin_notice' ) );
 	}
 
+	public function the_admin_notice() {
+		echo $this->get_admin_notice();
+	}
+
 	public function get_admin_notice() {
 		if ( $this->saving_templates_folder_option() ) {
-			return;
+			return false;
 		}
 		$templates_folder = trailingslashit( ftb_get_option( 'templates_folder', ftb()->get( 'templates/default-folder' ) ) );
 		if ( $this->check( $templates_folder ) ) {
-			return;
+			return false;
 		}
 		$class   = 'error';
 		$message = $this->get_notice_message( $templates_folder );
@@ -40,8 +37,19 @@ class MasterChecker {
 		return "<div class='{$class}'><p>{$message}</p></div>";
 	}
 
-	public function the_admin_notice() {
-		echo $this->get_admin_notice();
+	/**
+	 * @return bool
+	 */
+	protected function saving_templates_folder_option() {
+		return ! empty( $_POST['object_id'] ) && $_POST['object_id'] === 'ftb_options' && ! empty( $_POST['templates_folder'] ) && $_POST['templates_folder'] !== ftb_get_option( 'templates_folder' );
+	}
+
+	public function check( $templates_folder ) {
+		$folder = trailingslashit( $templates_folder );
+		$this->fs->initialize_wp_filesystem( $folder );
+
+		/** @noinspection PhpUndefinedMethodInspection */
+		return $this->fs->exists( $folder . ftb()->get( 'templates/master-template-name' ) );
 	}
 
 	/**
@@ -54,12 +62,5 @@ class MasterChecker {
 		$message = __( "The master template is missing from the templates folder.\nCreate the file <code>{$templates_folder}{$name}</code> or specify the right folder." );
 
 		return $message;
-	}
-
-	/**
-	 * @return bool
-	 */
-	protected function saving_templates_folder_option() {
-		return ! empty( $_POST['object_id'] ) && $_POST['object_id'] === 'ftb_options' && ! empty( $_POST['templates_folder'] ) && $_POST['templates_folder'] !== ftb_get_option( 'templates_folder' );
 	}
 }

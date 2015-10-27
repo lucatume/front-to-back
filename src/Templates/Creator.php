@@ -20,10 +20,13 @@ class Creator {
 	public function hooks() {
 		add_action( 'save_post_page', array(
 			$this, 'create_template'
-		), 10, 3 );
+		), 10, 2 );
 	}
 
-	public function create_template( $id, \WP_Post $post, $upddate ) {
+	public function create_template(
+		/** @noinspection PhpUnusedParameterInspection */
+			$id, \WP_Post $post
+	) {
 		$bail_stati = $this->get_bail_stati();
 		if ( in_array( $post->post_status, $bail_stati ) ) {
 			return false;
