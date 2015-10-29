@@ -46,6 +46,7 @@ modules:
             title: 'WP Tests'
             phpBinary: php
             language: ''
+            configFile: tests/tests-config.php
             plugins:
                 - front-to-back/front-to-back.php
             activatePlugins:

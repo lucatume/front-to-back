@@ -20,24 +20,17 @@ class OptionsPage {
 
 	public function hooks() {
 		add_action( 'admin_init', array(
-			$this, 'register_setting'
+			$this,
+			'register_setting'
 		) );
 		add_action( 'admin_menu', array(
-			$this, 'add_options_page'
+			$this,
+			'add_options_page'
 		) );
 		add_action( 'cmb2_admin_init', array(
-			$this, 'add_options_page_metabox'
+			$this,
+			'add_options_page_metabox'
 		) );
-		add_filter( "cmb2_override_option_save_{$this->key}", array( $this, 'require_credentials' ), 10, 2 );
-	}
-
-	public function require_credentials( $override, $options ) {
-		if ( ! empty( $options['templates_folder'] ) ) {
-			$filesystem = new Filesystem( $options['templates_folder'] );
-			$filesystem->initialize_wp_filesystem();
-		}
-
-		return $override;
 	}
 
 	public function register_setting() {
@@ -46,12 +39,14 @@ class OptionsPage {
 
 	public function add_options_page() {
 		$this->options_page = add_menu_page( $this->title, $this->title, 'manage_options', $this->key, array(
-			$this, 'admin_page_display'
+			$this,
+			'admin_page_display'
 		) );
 
 		// Include CMB CSS in the head to avoid FOUC
 		add_action( "admin_print_styles-{$this->options_page}", array(
-			'CMB2_hookup', 'enqueue_cmb_css'
+			'CMB2_hookup',
+			'enqueue_cmb_css'
 		) );
 	}
 
@@ -78,13 +73,18 @@ class OptionsPage {
 
 		// hook in our save notices
 		add_action( "cmb2_save_options-page_fields_{$this->metabox_id}", array(
-			$this, 'settings_notices'
+			$this,
+			'settings_notices'
 		), 10, 2 );
 
 		$cmb = new_cmb2_box( array(
-			'id' => $this->metabox_id, 'hookup' => false, 'cmb_styles' => false, 'show_on' => array(
+			'id'         => $this->metabox_id,
+			'hookup'     => false,
+			'cmb_styles' => false,
+			'show_on'    => array(
 				// These are important, don't remove
-				'key' => 'options-page', 'value' => array( $this->key, )
+				'key'   => 'options-page',
+				'value' => array( $this->key, )
 			),
 		) );
 
@@ -93,9 +93,13 @@ class OptionsPage {
 		$cmb->add_field( array(
 			'name'            => __( 'Templates folder', 'ftb' ),
 			'desc'            => sprintf( __( 'The absolute path path to the templates folder.', 'ftb' ), ABSPATH ),
-			'id'              => 'templates_folder', 'type' => 'text',
+			'id'              => 'templates_folder',
+			'type'            => 'text',
 			'default'         => ftb()->get( 'templates/default-folder' ),
-			'sanitization_cb' => array( $this, 'sanitize_templates_path' )
+			'sanitization_cb' => array(
+				$this,
+				'sanitize_templates_path'
+			)
 		) );
 	}
 
@@ -130,7 +134,10 @@ class OptionsPage {
 	public function __get( $field ) {
 		// Allowed fields to retrieve
 		if ( in_array( $field, array(
-			'key', 'metabox_id', 'title', 'options_page'
+			'key',
+			'metabox_id',
+			'title',
+			'options_page'
 		), true ) ) {
 			return $this->{$field};
 		}

@@ -22,7 +22,9 @@ class CreatorTest extends \WP_UnitTestCase {
 	public function postStatiNotToCreateOn() {
 		return [
 			[
-				'auto-draft', 'pending', 'draft'
+				'auto-draft',
+				'pending',
+				'draft'
 			]
 		];
 	}
@@ -59,4 +61,46 @@ class CreatorTest extends \WP_UnitTestCase {
 		$this->assertTrue( $sut->create_template( $post->ID, $post, false ) );
 	}
 
+	/**
+	 * @test
+	 * it should rename the template if the post name changes
+	 */
+	public function it_should_rename_the_template_if_the_post_name_changes() {
+		$post_before      = $this->factory->post->create_and_get();
+		$post_name_before = $post_before->post_name;
+		$post_name_after = 'new-post-name';
+
+		$fs = $this->getMock( '\tad\FrontToBack\Templates\Filesystem' );
+		$fs->expects( $this->once() )->method( 'duplicate_master_template' )->with( $post_name_before );
+		$fs->expects( $this->once() )->method( 'move_template' )->with( $post_name_before, $post_name_after );
+		$sut     = new Creator( $fs );
+		$created = $sut->create_template( $post_before->ID, $post_before );
+
+		$this->assertTrue( $created );
+
+		$post_after            = clone $post_before;
+		$post_after->post_name = $post_name_after;
+
+		$sut->move_template( $post_before->ID, $post_after, $post_before );
+	}
+
+	/**
+	 * @test
+	 * it should not move the template if the post name did not change
+	 */
+	public function it_should_not_move_the_template_if_the_post_name_did_not_change() {
+		$post_before      = $this->factory->post->create_and_get();
+		$post_name_before = $post_before->post_name;
+
+		$fs = $this->getMock( '\tad\FrontToBack\Templates\Filesystem' );
+		$fs->expects( $this->once() )->method( 'duplicate_master_template' )->with( $post_name_before );
+		$fs->expects( $this->never() )->method( 'move_template' );
+		$sut     = new Creator( $fs );
+
+		$created = $sut->create_template( $post_before->ID, $post_before );
+
+		$this->assertTrue( $created );
+
+		$sut->move_template( $post_before->ID, $post_before, $post_before );
+	}
 }

@@ -29,15 +29,15 @@ $plugin->set( 'options-page', function () {
 	return new OptionsPage();
 } );
 
-$plugin->set( 'master-template-checker', function () {
-	return new MasterChecker();
-} );
-
 $plugin->set( 'templates-filesystem', function () {
 	$templates_folder = ftb_get_option( 'templates_folder' );
 	$templates_folder = $templates_folder ?: ftb()->get( 'templates/default-folder' );
 
 	return new Filesystem( $templates_folder );
+} );
+
+$plugin->set( 'master-template-checker', function () {
+	return new MasterChecker( ftb()->get( 'templates-filesystem' ) );
 } );
 
 $plugin->set( 'templates-creator', function () {
