@@ -51,7 +51,8 @@ class Filesystem {
 			$this->wpfs = $wp_filesystem;
 
 			if ( ! get_transient( $transient ) ) {
-				set_transient( $transient, $credentials );
+				// 30days
+				set_transient( $transient, $credentials, 2592000);
 			}
 		}
 
