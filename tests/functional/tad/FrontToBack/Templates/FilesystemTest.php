@@ -121,7 +121,7 @@ class FilesystemTest extends \WP_UnitTestCase {
 	 * @test
 	 * it should request credentials for current url
 	 */
-	public function it_should_d_request_credentials_for_current_url() {
+	public function it_should_request_credentials_for_current_url() {
 		$request_filesystem_credentials = Test::replace( 'request_filesystem_credentials', true );
 		Test::replace( 'site_url', 'http://example.com' );
 		$_SERVER['REQUEST_URI'] = 'foo?some=var';
@@ -130,7 +130,13 @@ class FilesystemTest extends \WP_UnitTestCase {
 		$sut = new Filesystem( __DIR__ );
 
 		$request_filesystem_credentials->wasCalledOnce();
-		$request_filesystem_credentials->wasCalledWithOnce( [ $url, '', false, __DIR__ . '/', null ] );
+		$request_filesystem_credentials->wasCalledWithOnce( [
+			$url,
+			'',
+			false,
+			__DIR__ . '/',
+			null
+		] );
 	}
 
 	/**
@@ -147,8 +153,94 @@ class FilesystemTest extends \WP_UnitTestCase {
 		$sut = new Filesystem( __DIR__ );
 
 		$request_filesystem_credentials->wasCalledTimes( 2 );
-		$request_filesystem_credentials->wasCalledWithOnce( [ $url, '', false, __DIR__ . '/', null ] );
-		$request_filesystem_credentials->wasCalledWithOnce( [ $url, '', true, __DIR__ . '/', null ] );
+		$request_filesystem_credentials->wasCalledWithOnce( [
+			$url,
+			'',
+			false,
+			__DIR__ . '/',
+			null
+		] );
+		$request_filesystem_credentials->wasCalledWithOnce( [
+			$url,
+			'',
+			true,
+			__DIR__ . '/',
+			null
+		] );
+	}
+
+	/**
+	 * @test
+	 * it should store valid filesystem credentials in a transient
+	 */
+	public function it_should_store_valid_filesystem_credentials_in_a_transient() {
+		$creds = array(
+			'user'     => 'foo',
+			'password' => 'baz'
+		);
+		Test::replace( 'request_filesystem_credentials', $creds );
+		Test::replace( 'WP_Filesystem', true );
+		$get_transient = Test::replace( 'get_transient' );
+		$set_transient = Test::replace( 'set_transient' );
+
+		$sut = new Filesystem();
+
+		$set_transient->wasCalledWithOnce( [
+			$sut->get_credentials_transient_key(),
+			$creds
+		] );
+	}
+
+	/**
+	 * @test
+	 * it should use stored credentials to get filesytem access
+	 */
+	public function it_should_use_stored_credentials_to_get_filesytem_access() {
+		$creds                          = array(
+			'user'     => 'foo',
+			'password' => 'baz'
+		);
+		$request_filesystem_credentials = Test::replace( 'request_filesystem_credentials' );
+		Test::replace( 'get_transient', $creds );
+		$WP_Filesystem = Test::replace( 'WP_Filesystem', true );
+
+		$sut = new Filesystem();
+
+		$request_filesystem_credentials->wasNotCalled();
+		$WP_Filesystem->wasCalledwithOnce( [ $creds ] );
+	}
+
+	/**
+	 * @test
+	 * it should delete stored credentials if invalid
+	 */
+	public function it_should_delete_stored_credentials_if_invalid() {
+		Test::replace( 'get_transient', 'foo' );
+		$delete_transient = Test::replace( 'delete_transient' );
+		$WP_Filesystem    = Test::replace( 'WP_Filesystem', false );
+
+		$sut = new Filesystem();
+
+		$delete_transient->wasCalledWithOnce( [ $sut->get_credentials_transient_key() ] );
+	}
+
+	/**
+	 * @test
+	 * it should not update valid credentials if already stored
+	 */
+	public function it_should_not_update_valid_credentials_if_already_stored() {
+		$creds = array(
+			'user'     => 'foo',
+			'password' => 'baz'
+		);
+
+		Test::replace( 'get_transient', $creds );
+		$set_transient = Test::replace( 'set_transient' );
+		$WP_Filesystem = Test::replace( 'WP_Filesystem', true );
+
+		$sut = new Filesystem();
+
+		$set_transient->wasNotCalled();
 	}
 
 //	/**

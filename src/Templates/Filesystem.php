@@ -13,7 +13,7 @@ class Filesystem {
 	/**
 	 * @var string The absolute path to the templates folder.
 	 */
-	private   $templates_root_folder;
+	private $templates_root_folder;
 
 	/**
 	 * @var string The absolute path to the master template file.
@@ -28,21 +28,31 @@ class Filesystem {
 
 	public function initialize_wp_filesystem( $templates_root_folder = null, $url = null ) {
 		if ( empty( $this->wpfs ) ) {
-			$templates_root_folder = $templates_root_folder ? $templates_root_folder : $this->templates_root_folder;
-			$url                   = $url ?: trailingslashit( site_url() ) . $_SERVER['REQUEST_URI'];
-			if ( false === ( $creds = request_filesystem_credentials( $url, '', false, $templates_root_folder, null ) ) ) {
-				return false;
+			$transient   = $this->get_credentials_transient_key();
+			$credentials = get_transient( $transient );
+
+			if ( empty( $credentials ) ) {
+				$templates_root_folder = $templates_root_folder ? $templates_root_folder : $this->templates_root_folder;
+				$url                   = $url ?: trailingslashit( site_url() ) . $_SERVER['REQUEST_URI'];
+				$credentials           = request_filesystem_credentials( $url, '', false, $templates_root_folder, null );
+				if ( false === $credentials ) {
+					return false;
+				}
 			}
 
-			if ( ! WP_Filesystem( $creds ) ) {
+			if ( ! WP_Filesystem( $credentials ) ) {
+				delete_transient( $transient );
 				request_filesystem_credentials( $url, '', true, $templates_root_folder, null );
 
 				return false;
 			}
+
 			global $wp_filesystem;
 			$this->wpfs = $wp_filesystem;
 
-			return true;
+			if ( ! get_transient( $transient ) ) {
+				set_transient( $transient, $credentials );
+			}
 		}
 
 		return ! empty( $this->wpfs );
@@ -114,5 +124,12 @@ class Filesystem {
 
 	public function has_access() {
 		return $this->initialize_wp_filesystem();
+	}
+
+	/**
+	 * @return string
+	 */
+	public function get_credentials_transient_key() {
+		return 'ftb_filesystem_credentials';
 	}
 }
