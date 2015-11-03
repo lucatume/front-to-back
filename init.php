@@ -1,4 +1,5 @@
 <?php
+use tad\FrontToBack\Credentials\NonStoringCredentials;
 use tad\FrontToBack\OptionsPage;
 use tad\FrontToBack\Templates\Creator;
 use tad\FrontToBack\Templates\Filesystem;
@@ -29,11 +30,15 @@ $plugin->set( 'options-page', function () {
 	return new OptionsPage();
 } );
 
+$plugin->set( 'credentials-store', function () {
+	return new NonStoringCredentials();
+} );
+
 $plugin->set( 'templates-filesystem', function () {
 	$templates_folder = ftb_get_option( 'templates_folder' );
 	$templates_folder = $templates_folder ?: ftb()->get( 'templates/default-folder' );
 
-	return new Filesystem( $templates_folder );
+	return new Filesystem( $templates_folder, null, ftb()->get( 'credentials-store' ) );
 } );
 
 $plugin->set( 'master-template-checker', function () {

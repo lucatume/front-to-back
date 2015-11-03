@@ -3,6 +3,9 @@
 namespace tad\FrontToBack\Templates;
 
 
+use tad\FrontToBack\Credentials\NonStoringCredentials;
+use tad\FrontToBack\Credentials\CredentialsInterface;
+
 class Filesystem {
 
 	/**
@@ -24,12 +27,16 @@ class Filesystem {
 	 * @var \WP_Filesystem_Base
 	 */
 	protected $wpfs;
+	/**
+	 * @var CredentialsInterface
+	 */
+	private $credentials;
 
 
 	public function initialize_wp_filesystem( $templates_root_folder = null, $url = null ) {
 		if ( empty( $this->wpfs ) ) {
-			$transient   = $this->get_credentials_transient_key();
-			$credentials = get_transient( $transient );
+			$user_id     = get_current_user_id();
+			$credentials = $this->credentials->get_for_user( $user_id );
 
 			if ( empty( $credentials ) ) {
 				$templates_root_folder = $templates_root_folder ? $templates_root_folder : $this->templates_root_folder;
@@ -41,7 +48,7 @@ class Filesystem {
 			}
 
 			if ( ! WP_Filesystem( $credentials ) ) {
-				delete_transient( $transient );
+				$this->credentials->delete_for_user( $user_id );
 				request_filesystem_credentials( $url, '', true, $templates_root_folder, null );
 
 				return false;
@@ -49,20 +56,17 @@ class Filesystem {
 
 			global $wp_filesystem;
 			$this->wpfs = $wp_filesystem;
-
-			if ( ! get_transient( $transient ) ) {
-				// 30days
-				set_transient( $transient, $credentials, 2592000);
-			}
+			$this->credentials->set_for_user( $user_id, $credentials );
 		}
 
 		return ! empty( $this->wpfs );
 	}
 
-	public function __construct( $templates_root_folder = null, \WP_Filesystem_Base $wpfs = null ) {
+	public function __construct( $templates_root_folder = null, \WP_Filesystem_Base $wpfs = null, CredentialsInterface $credentials = null ) {
 		require_once ABSPATH . '/wp-admin/includes/class-wp-filesystem-base.php';
 		require_once ABSPATH . '/wp-admin/includes/file.php';
 		$this->templates_root_folder = $templates_root_folder ? trailingslashit( $templates_root_folder ) : ftb_get_option( 'templates_folder' );
+		$this->credentials           = $credentials ? $credentials : new NonStoringCredentials();
 		if ( empty( $wpfs ) ) {
 			$this->initialize_wp_filesystem();
 		} else {
@@ -81,8 +85,7 @@ class Filesystem {
 	 */
 	public function __call( $name, $arguments ) {
 		return call_user_func_array( array(
-			$this->wpfs,
-			$name
+			$this->wpfs, $name
 		), $arguments );
 	}
 
@@ -127,10 +130,13 @@ class Filesystem {
 		return $this->initialize_wp_filesystem();
 	}
 
-	/**
-	 * @return string
-	 */
-	public function get_credentials_transient_key() {
-		return 'ftb_filesystem_credentials';
+
+	public function get_credentials_cookie_name() {
+		return 'ftb_credentials';
+	}
+
+	public function get_credentials_cookie_expire() {
+		// 1 month
+		return 2592000;
 	}
 }
