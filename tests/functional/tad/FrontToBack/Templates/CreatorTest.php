@@ -22,9 +22,7 @@ class CreatorTest extends \WP_UnitTestCase {
 	public function postStatiNotToCreateOn() {
 		return [
 			[
-				'auto-draft',
-				'pending',
-				'draft'
+				'auto-draft', 'pending', 'draft'
 			]
 		];
 	}
@@ -63,12 +61,104 @@ class CreatorTest extends \WP_UnitTestCase {
 
 	/**
 	 * @test
+	 * it should create the template if post existing and no template
+	 */
+	public function it_should_create_the_template_if_post_existing_and_no_template() {
+		$filesystem   = $this->getMockBuilder( '\tad\FrontToBack\Templates\Filesystem' )
+		                     ->disableOriginalConstructor()
+		                     ->getMock();
+		$post         = $this->factory->post->create_and_get( [ 'post_type' => 'page' ] );
+		$_GET['post'] = $post->ID;
+		$screen       = \WP_Screen::get( 'page' );
+		$screen->base = 'post';
+		$filesystem->expects( $this->once() )->method( 'duplicate_master_template' )->with( $post->post_name );
+
+		$sut = new Creator( $filesystem );
+
+		$this->assertTrue( $sut->create_missing_template( $screen ) );
+	}
+
+	/**
+	 * @test
+	 * it should not create missing template if post type is not page
+	 */
+	public function it_should_not_create_missing_template_if_post_type_is_not_page() {
+		$filesystem = $this->getMockBuilder( '\tad\FrontToBack\Templates\Filesystem' )
+		                   ->disableOriginalConstructor()
+		                   ->getMock();
+		global $post;
+		$post         = $this->factory->post->create_and_get( [ 'post_status' => 'publish' ] );
+		$screen       = \WP_Screen::get( 'another_post_type' );
+		$screen->base = 'post';
+
+		$sut = new Creator( $filesystem );
+
+		$this->assertFalse( $sut->create_missing_template( $screen ) );
+	}
+
+	/**
+	 * @test
+	 * it should not create missing template if base is not post
+	 */
+	public function it_should_not_create_missing_template_if_base_is_not_post() {
+		$filesystem = $this->getMockBuilder( '\tad\FrontToBack\Templates\Filesystem' )
+		                   ->disableOriginalConstructor()
+		                   ->getMock();
+		global $post;
+		$post         = $this->factory->post->create_and_get( array( 'post_type' => 'page' ) );
+		$screen       = \WP_Screen::get( 'page' );
+		$screen->base = 'other';
+
+		$sut = new Creator( $filesystem );
+
+		$this->assertFalse( $sut->create_missing_template( $screen ) );
+	}
+
+	/**
+	 * @test
+	 * it should not create missing template if empty global post
+	 */
+	public function it_should_not_create_missing_template_if_empty_global_post() {
+		$filesystem   = $this->getMockBuilder( '\tad\FrontToBack\Templates\Filesystem' )
+		                     ->disableOriginalConstructor()
+		                     ->getMock();
+		$_GET['post'] = null;
+		$screen       = \WP_Screen::get( 'page' );
+		$screen->base = 'post';
+
+		$sut = new Creator( $filesystem );
+
+		$this->assertFalse( $sut->create_missing_template( $screen ) );
+	}
+
+	/**
+	 * @test
+	 * it should not create template if already existing
+	 */
+	public function it_should_not_create_template_if_already_existing() {
+		$post          = $this->factory->post->create_and_get( array( 'post_type' => 'page' ) );
+		$_GET['post'] = $post->ID;
+		$filesystem    = $this->getMockBuilder( '\tad\FrontToBack\Templates\Filesystem' )
+		                      ->disableOriginalConstructor()
+		                      ->getMock();
+		$template_name = $post->post_name . '.' . ftb()->get( 'templates/extension' );
+		$filesystem->expects( $this->once() )->method( 'exists' )->with( $template_name )->willReturn( true );
+		$screen       = \WP_Screen::get( 'page' );
+		$screen->base = 'post';
+
+		$sut = new Creator( $filesystem );
+
+		$this->assertFalse( $sut->create_missing_template( $screen ) );
+	}
+
+	/**
+	 * @test
 	 * it should rename the template if the post name changes
 	 */
 	public function it_should_rename_the_template_if_the_post_name_changes() {
 		$post_before      = $this->factory->post->create_and_get();
 		$post_name_before = $post_before->post_name;
-		$post_name_after = 'new-post-name';
+		$post_name_after  = 'new-post-name';
 
 		$fs = $this->getMock( '\tad\FrontToBack\Templates\Filesystem' );
 		$fs->expects( $this->once() )->method( 'duplicate_master_template' )->with( $post_name_before );
@@ -95,7 +185,7 @@ class CreatorTest extends \WP_UnitTestCase {
 		$fs = $this->getMock( '\tad\FrontToBack\Templates\Filesystem' );
 		$fs->expects( $this->once() )->method( 'duplicate_master_template' )->with( $post_name_before );
 		$fs->expects( $this->never() )->method( 'move_template' );
-		$sut     = new Creator( $fs );
+		$sut = new Creator( $fs );
 
 		$created = $sut->create_template( $post_before->ID, $post_before );
 

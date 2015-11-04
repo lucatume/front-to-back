@@ -139,4 +139,8 @@ class Filesystem {
 		// 1 month
 		return 2592000;
 	}
+
+	public function exists( $file ) {
+		return $this->wpfs->exists( $file );
+	}
 }

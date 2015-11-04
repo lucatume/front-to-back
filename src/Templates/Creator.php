@@ -19,17 +19,31 @@ class Creator {
 
 	public function hooks() {
 		add_action( 'save_post_page', array(
-			$this,
-			'create_template'
+			$this, 'create_template'
 		), 10, 2 );
 		add_action( 'post_updated', array(
-			$this,
-			'move_template'
+			$this, 'move_template'
 		), 10, 3 );
+		// wwid
+		add_action( 'current_screen', array(
+			$this, 'create_missing_template'
+		) );
 	}
 
-	public function rename_template( $post_ID, \WP_Post $post_after, \WP_Post $post_before ) {
+	public function create_missing_template( \WP_Screen $screen ) {
+		if ( ! ( $screen->post_type === 'page' && $screen->base === 'post' ) ) {
+			return false;
+		}
+		$post = empty( $_GET['post'] ) ? null : get_post( $_GET['post'] );
+		if ( empty( $post ) ) {
+			return false;
+		}
+		$template_name = $this->get_post_template_name( $post );
+		if ( $this->filesystem->exists( $template_name ) ) {
+			return false;
+		}
 
+		return $this->create_template( $post->ID, $post );
 	}
 
 	public function create_template(
@@ -51,9 +65,7 @@ class Creator {
 	 */
 	public function get_bail_stati() {
 		$bail_stati = array(
-			'draft',
-			'pending',
-			'auto-draft'
+			'draft', 'pending', 'auto-draft'
 		);
 
 		return $bail_stati;
@@ -66,5 +78,17 @@ class Creator {
 			return;
 		}
 		$this->filesystem->move_template( $old_name, $new_name );
+	}
+
+	/**
+	 * @param $post
+	 *
+	 * @return string
+	 */
+	protected function get_post_template_name( $post ) {
+		$extension     = ftb()->get( 'templates/extension' );
+		$template_name = "{$post->post_name}.{$extension}";
+
+		return $template_name;
 	}
 }
