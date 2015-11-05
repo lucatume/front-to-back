@@ -131,9 +131,7 @@ class FilesystemTest extends \WP_UnitTestCase {
 		$sut = new Filesystem( __DIR__ );
 
 		$request_filesystem_credentials->wasCalledOnce();
-		$request_filesystem_credentials->wasCalledWithOnce( [
-			$url, '', false, __DIR__ . '/', null
-		] );
+		$request_filesystem_credentials->wasCalledWithOnce( [ $url, '', false, __DIR__ . '/', null ] );
 	}
 
 	/**
@@ -150,12 +148,8 @@ class FilesystemTest extends \WP_UnitTestCase {
 		$sut = new Filesystem( __DIR__ );
 
 		$request_filesystem_credentials->wasCalledTimes( 2 );
-		$request_filesystem_credentials->wasCalledWithOnce( [
-			$url, '', false, __DIR__ . '/', null
-		] );
-		$request_filesystem_credentials->wasCalledWithOnce( [
-			$url, '', true, __DIR__ . '/', null
-		] );
+		$request_filesystem_credentials->wasCalledWithOnce( [ $url, '', false, __DIR__ . '/', null ] );
+		$request_filesystem_credentials->wasCalledWithOnce( [ $url, '', true, __DIR__ . '/', null ] );
 	}
 
 	/**
@@ -165,9 +159,7 @@ class FilesystemTest extends \WP_UnitTestCase {
 	public function it_should_try_to_get_stored_credentials_before_requiring_them() {
 		$request_filesystem_credentials = Test::replace( 'request_filesystem_credentials', true );
 		Test::replace( 'WP_Filesystem', true );
-		$credentials = Test::replace( '\tad\FrontToBack\Credentials\CredentialsInterface' )
-		                   ->method( 'get_for_user' )
-		                   ->get();
+		$credentials = Test::replace( '\tad\FrontToBack\Credentials\CredentialsInterface' )->method( 'get_for_user' )->get();
 
 		$sut = new Filesystem( __DIR__, null, $credentials );
 
@@ -181,10 +173,7 @@ class FilesystemTest extends \WP_UnitTestCase {
 	public function it_should_delete_invalid_stored_credentials() {
 		$request_filesystem_credentials = Test::replace( 'request_filesystem_credentials', true );
 		Test::replace( 'WP_Filesystem', false );
-		$credentials = Test::replace( '\tad\FrontToBack\Credentials\CredentialsInterface' )
-		                   ->method( 'get_for_user' )
-		                   ->method( 'delete_for_user' )
-		                   ->get();
+		$credentials = Test::replace( '\tad\FrontToBack\Credentials\CredentialsInterface' )->method( 'get_for_user' )->method( 'delete_for_user' )->get();
 
 		$sut = new Filesystem( __DIR__, null, $credentials );
 
@@ -199,10 +188,7 @@ class FilesystemTest extends \WP_UnitTestCase {
 		$creds                          = 'valid_credentials';
 		$request_filesystem_credentials = Test::replace( 'request_filesystem_credentials', $creds );
 		Test::replace( 'WP_Filesystem', true );
-		$credentials = Test::replace( '\tad\FrontToBack\Credentials\CredentialsInterface' )
-		                   ->method( 'get_for_user', null )
-		                   ->method( 'set_for_user' )
-		                   ->get();
+		$credentials = Test::replace( '\tad\FrontToBack\Credentials\CredentialsInterface' )->method( 'get_for_user', null )->method( 'set_for_user' )->get();
 
 		$sut = new Filesystem( __DIR__, null, $credentials );
 
@@ -214,9 +200,7 @@ class FilesystemTest extends \WP_UnitTestCase {
 	 * it should missing master template from templates folder
 	 */
 	public function it_should_spot_missing_master_template_from_templates_folder() {
-		vfsStream::setup( 'root', null, [
-			'wordpress' => [ 'content' => [ 'templates' ] ]
-		] );
+		vfsStream::setup( 'root', null, [ 'wordpress' => [ 'content' => [ 'templates' ] ] ] );
 		$templates_root_folder = vfsStream::url( 'root/wordpress/content/templates' );
 
 		require_once( ABSPATH . 'wp-admin/includes/class-wp-filesystem-base.php' );
@@ -232,9 +216,7 @@ class FilesystemTest extends \WP_UnitTestCase {
 	 * it should duplicate the master template given a post name
 	 */
 	public function it_should_duplicate_the_master_template_given_a_post_name() {
-		vfsStream::setup( 'root', null, [
-			'wordpress' => [ 'content' => [ 'templates' => [ $this->masterTemplateName => '// some content' ] ] ]
-		] );
+		vfsStream::setup( 'root', null, [ 'wordpress' => [ 'content' => [ 'templates' => [ $this->masterTemplateName => '// some content' ] ] ] ] );
 		$root = vfsStream::url( 'root/wordpress/content/templates' );
 
 		$sut = new Filesystem( $root );
@@ -248,16 +230,7 @@ class FilesystemTest extends \WP_UnitTestCase {
 	 * it should not duplicate the master template again if already done
 	 */
 	public function it_should_not_duplicate_the_master_template_again_if_already_done() {
-		vfsStream::setup( 'root', null, [
-			'wordpress' => [
-				'content' => [
-					'templates' => [
-						$this->masterTemplateName          => '// foo',
-						'foo.' . $this->templatesExtension => '// bar'
-					]
-				]
-			]
-		] );
+		vfsStream::setup( 'root', null, [ 'wordpress' => [ 'content' => [ 'templates' => [ $this->masterTemplateName => '// foo', 'foo.' . $this->templatesExtension => '// bar' ] ] ] ] );
 		$root = vfsStream::url( 'root/wordpress/content/templates' );
 
 		$sut = new Filesystem( $root );
@@ -283,5 +256,77 @@ class FilesystemTest extends \WP_UnitTestCase {
 		$this->assertFileNotExists( $root . '/foo.php' );
 		$this->assertFileExists( $root . '/bar.php' );
 		$this->assertEquals( $contents, file_get_contents( $root . '/bar.php' ) );
+	}
+
+	/**
+	 * @test
+	 * it should create deleted folders if missing
+	 */
+	public function it_should_create_deleted_folders_if_missing() {
+		$contents = 'foo file';
+		vfsStream::setup( 'root', null, [ 'templates' => [ 'foo.php' => $contents ] ] );
+		$root = vfsStream::url( 'root/templates' );
+		$wpfs = $this->getMock( 'WP_Filesystem_Base' );
+		$wpfs->expects( $this->once() )->method( 'exists' )->with( $root . '/deleted' )->willReturn( false );
+		$wpfs->expects( $this->once() )->method( 'mkdir' )->with( $root . '/deleted' )->willReturn( true );
+
+		$sut = new Filesystem( $root, $wpfs );
+
+		$post_name = 'foo';
+		$sut->delete_template( $post_name );
+	}
+
+	/**
+	 * @test
+	 * it should move template to deleted folders
+	 */
+	public function it_should_move_template_to_deleted_folders() {
+		$contents = 'foo file';
+		vfsStream::setup( 'root', null, [ 'templates' => [ 'foo.php' => $contents, 'deleted' => [ ] ] ] );
+		$root      = vfsStream::url( 'root/templates' );
+		$sut       = new Filesystem( $root );
+		$post_name = 'foo';
+
+		$sut->delete_template( $post_name );
+
+		$this->assertFileNotExists( $root . '/foo.php' );
+		$this->assertFileExists( $root . '/deleted/foo.php' );
+		$this->assertEquals( $contents, file_get_contents( $root . '/deleted/foo.php' ) );
+	}
+
+	/**
+	 * @test
+	 * it should allow for deleted template restore
+	 */
+	public function it_should_allow_for_deleted_template_restore() {
+		$contents = 'foo file';
+		vfsStream::setup( 'root', null, [ 'templates' => [ 'deleted' => [ 'foo.php' => $contents ] ] ] );
+		$root = vfsStream::url( 'root/templates' );
+		$sut  = new Filesystem( $root );
+
+		$post_name = 'foo';
+		$sut->restore_deleted_template( $post_name );
+
+		$this->assertFileNotExists( $root . '/deleted/foo.php' );
+		$this->assertFileExists( $root . '/foo.php' );
+		$this->assertEquals( $contents, file_get_contents( $root . '/foo.php' ) );
+	}
+
+	/**
+	 * @test
+	 * it should restore existing deleted template when duplicating master
+	 */
+	public function it_should_restore_existing_deleted_template_when_duplicating_master() {
+		$contents = 'foo file';
+		vfsStream::setup( 'root', null, [ 'templates' => [ 'deleted' => [ 'foo.php' => $contents ], 'master.php' => 'master contents' ] ] );
+		$root      = vfsStream::url( 'root/templates' );
+		$sut       = new Filesystem( $root );
+		$post_name = 'foo';
+
+		$sut->duplicate_master_template( $post_name );
+
+		$this->assertFileExists( $sut->get_templates_root_folder() . 'foo.php' );
+		$this->assertFileNotExists( $sut->get_deleted_templates_root_folder() . 'foo.php' );
+		$this->assertEquals( file_get_contents( $sut->get_templates_root_folder() . 'foo.php' ), $contents );
 	}
 }

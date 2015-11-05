@@ -18,20 +18,14 @@ class Creator {
 	}
 
 	public function hooks() {
-		add_action( 'save_post_page', array(
-			$this, 'create_template'
-		), 10, 2 );
-		add_action( 'post_updated', array(
-			$this, 'move_template'
-		), 10, 3 );
-		// wwid
-		add_action( 'current_screen', array(
-			$this, 'create_missing_template'
-		) );
+		add_action( 'save_post_page', array( $this, 'create_template' ), 10, 2 );
+		add_action( 'post_updated', array( $this, 'move_template' ), 10, 3 );
+		add_action( 'current_screen', array( $this, 'create_missing_template' ) );
+		add_action( 'delete_post', array( $this, 'delete_template' ) );
 	}
 
 	public function create_missing_template( \WP_Screen $screen ) {
-		if ( ! ( $screen->post_type === 'page' && $screen->base === 'post' ) ) {
+		if ( !( $screen->post_type === 'page' && $screen->base === 'post' ) ) {
 			return false;
 		}
 		$post = empty( $_GET['post'] ) ? null : get_post( $_GET['post'] );
@@ -43,13 +37,16 @@ class Creator {
 			return false;
 		}
 
+		$deleted_template_name = $this->get_deleted_post_template_name( $post );
+		if ( $this->filesystem->exists( $deleted_template_name ) ) {
+			return $this->filesystem->restore_deleted_template( $post->post_name );
+		}
+
 		return $this->create_template( $post->ID, $post );
 	}
 
-	public function create_template(
-		/** @noinspection PhpUnusedParameterInspection */
-		$id, \WP_Post $post
-	) {
+	public function create_template( /** @noinspection PhpUnusedParameterInspection */
+		$id, \WP_Post $post ) {
 		$bail_stati = $this->get_bail_stati();
 		if ( in_array( $post->post_status, $bail_stati ) ) {
 			return false;
@@ -64,9 +61,7 @@ class Creator {
 	 * @return array
 	 */
 	public function get_bail_stati() {
-		$bail_stati = array(
-			'draft', 'pending', 'auto-draft'
-		);
+		$bail_stati = array( 'draft', 'pending', 'auto-draft' );
 
 		return $bail_stati;
 	}
@@ -74,10 +69,14 @@ class Creator {
 	public function move_template( $post_id, \WP_Post $post_after, \WP_Post $post_before ) {
 		$old_name = $post_before->post_name;
 		$new_name = $post_after->post_name;
-		if ( $old_name === $new_name ) {
-			return;
+		if ( empty( $old_name ) || empty( $new_name ) ) {
+			return false;
 		}
-		$this->filesystem->move_template( $old_name, $new_name );
+		if ( $old_name === $new_name ) {
+			return false;
+		}
+
+		return $this->filesystem->move_template( $old_name, $new_name );
 	}
 
 	/**
@@ -85,10 +84,26 @@ class Creator {
 	 *
 	 * @return string
 	 */
-	protected function get_post_template_name( $post ) {
+	public function get_post_template_name( $post ) {
 		$extension     = ftb()->get( 'templates/extension' );
 		$template_name = "{$post->post_name}.{$extension}";
 
 		return $template_name;
 	}
+
+	public function delete_template( $post_id ) {
+		$post = get_post( $post_id );
+		if ( 'page' !== $post->post_type ) {
+			return;
+		}
+		return $this->filesystem->delete_template( $post->post_name );
+	}
+
+	public function get_deleted_post_template_name( $post ) {
+		$extension     = ftb()->get( 'templates/extension' );
+		$template_name = "deleted/{$post->post_name}.{$extension}";
+
+		return $template_name;
+	}
+
 }

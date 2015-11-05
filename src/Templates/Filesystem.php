@@ -9,6 +9,11 @@ use tad\FrontToBack\Credentials\CredentialsInterface;
 class Filesystem {
 
 	/**
+	 * @var string The absolute path to the deleted templates folder.
+	 */
+	protected $deleted_templates_folder;
+
+	/**
 	 * @var string The file extension of the template files.
 	 */
 	protected $templates_extension;
@@ -47,7 +52,7 @@ class Filesystem {
 				}
 			}
 
-			if ( ! WP_Filesystem( $credentials ) ) {
+			if ( !WP_Filesystem( $credentials ) ) {
 				$this->credentials->delete_for_user( $user_id );
 				request_filesystem_credentials( $url, '', true, $templates_root_folder, null );
 
@@ -59,14 +64,15 @@ class Filesystem {
 			$this->credentials->set_for_user( $user_id, $credentials );
 		}
 
-		return ! empty( $this->wpfs );
+		return !empty( $this->wpfs );
 	}
 
 	public function __construct( $templates_root_folder = null, \WP_Filesystem_Base $wpfs = null, CredentialsInterface $credentials = null ) {
 		require_once ABSPATH . '/wp-admin/includes/class-wp-filesystem-base.php';
 		require_once ABSPATH . '/wp-admin/includes/file.php';
-		$this->templates_root_folder = $templates_root_folder ? trailingslashit( $templates_root_folder ) : ftb_get_option( 'templates_folder' );
-		$this->credentials           = $credentials ? $credentials : new NonStoringCredentials();
+		$this->templates_root_folder    = $templates_root_folder ? trailingslashit( $templates_root_folder ) : ftb_get_option( 'templates_folder' );
+		$this->deleted_templates_folder = $this->templates_root_folder . 'deleted';
+		$this->credentials              = $credentials ? $credentials : new NonStoringCredentials();
 		if ( empty( $wpfs ) ) {
 			$this->initialize_wp_filesystem();
 		} else {
@@ -84,23 +90,25 @@ class Filesystem {
 	 * @return mixed
 	 */
 	public function __call( $name, $arguments ) {
-		return call_user_func_array( array(
-			$this->wpfs, $name
-		), $arguments );
+		return call_user_func_array( array( $this->wpfs, $name ), $arguments );
 	}
 
 	public function duplicate_master_template( $post_name ) {
 		$filesystem_ok = $this->initialize_wp_filesystem();
-		if ( ! $filesystem_ok ) {
+		if ( !$filesystem_ok ) {
 			return;
 		}
 		$master_template_ok = $this->ensure_master_template();
-		if ( ! $master_template_ok ) {
+		if ( !$master_template_ok ) {
 			return;
 		}
 		$template_path = $this->templates_root_folder . "{$post_name}.{$this->templates_extension}";
 		if ( $this->wpfs->exists( $template_path ) ) {
-			return;
+			return false;
+		}
+		$deleted_template_path = $this->templates_root_folder . "deleted/{$post_name}.{$this->templates_extension}";
+		if ( $this->wpfs->exists( $deleted_template_path ) ) {
+			return $this->restore_deleted_template( $post_name );
 		}
 		$contents = $this->wpfs->get_contents( $this->master_template_path );
 		$append   = false;
@@ -115,7 +123,8 @@ class Filesystem {
 		$extension = ftb()->get( 'templates/extension' );
 		$from      = $this->templates_root_folder . "{$old_name}.{$extension}";
 		$to        = $this->templates_root_folder . "{$new_name}.{$extension}";
-		$this->wpfs->move( $from, $to, true );
+
+		return $this->wpfs->move( $from, $to, true );
 	}
 
 	public function get_wpfs() {
@@ -130,17 +139,35 @@ class Filesystem {
 		return $this->initialize_wp_filesystem();
 	}
 
-
-	public function get_credentials_cookie_name() {
-		return 'ftb_credentials';
-	}
-
-	public function get_credentials_cookie_expire() {
-		// 1 month
-		return 2592000;
-	}
-
 	public function exists( $file ) {
 		return $this->wpfs->exists( $file );
+	}
+
+	public function delete_template( $post_name ) {
+		$this->ensure_deleted_templates_folder();
+		$extension = ftb()->get( 'templates/extension' );
+		$from      = $this->templates_root_folder . "{$post_name}.{$extension}";
+		$to        = $this->templates_root_folder . "deleted/{$post_name}.{$extension}";
+
+		return $this->wpfs->move( $from, $to, true );
+	}
+
+	public function restore_deleted_template( $post_name ) {
+		$this->ensure_deleted_templates_folder();
+		$extension = ftb()->get( 'templates/extension' );
+		$from      = $this->templates_root_folder . "deleted/{$post_name}.{$extension}";
+		$to        = $this->templates_root_folder . "{$post_name}.{$extension}";
+
+		return $this->wpfs->move( $from, $to, true );
+	}
+
+	protected function ensure_deleted_templates_folder() {
+		if ( !$this->wpfs->exists( $this->deleted_templates_folder ) ) {
+			$this->wpfs->mkdir( $this->deleted_templates_folder );
+		}
+	}
+
+	public function get_deleted_templates_root_folder() {
+		return $this->deleted_templates_folder;
 	}
 }
