@@ -1,9 +1,11 @@
 <?php
 use tad\FrontToBack\Credentials\NonStoringCredentials;
+use tad\FrontToBack\Fields\FieldsUpdater;
 use tad\FrontToBack\OptionsPage;
 use tad\FrontToBack\Templates\Creator;
 use tad\FrontToBack\Templates\Filesystem;
 use tad\FrontToBack\Templates\MasterChecker;
+use tad\FrontToBack\Templates\TemplateScanner;
 
 require_once __DIR__ . '/src/functions/commons.php';
 
