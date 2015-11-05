@@ -20,14 +20,12 @@ class Creator {
 	public function hooks() {
 		add_action( 'save_post_page', array( $this, 'create_template' ), 10, 2 );
 		add_action( 'post_updated', array( $this, 'move_template' ), 10, 3 );
-		add_action( 'current_screen', array( $this, 'create_missing_template' ) );
+//		add_action( 'current_screen', array( $this, 'create_missing_template' ) );
 		add_action( 'delete_post', array( $this, 'delete_template' ) );
+		add_action( 'load-page.php', array( $this, 'create_missing_template' ) );
 	}
 
-	public function create_missing_template( \WP_Screen $screen ) {
-		if ( !( $screen->post_type === 'page' && $screen->base === 'post' ) ) {
-			return false;
-		}
+	public function create_missing_template() {
 		$post = empty( $_GET['post'] ) ? null : get_post( $_GET['post'] );
 		if ( empty( $post ) ) {
 			return false;

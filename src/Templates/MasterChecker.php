@@ -15,6 +15,7 @@ class MasterChecker {
 		$this->fs = $fs ? $fs : new Filesystem();
 	}
 
+
 	public function hooks() {
 		add_action( 'admin_notices', array( $this, 'the_admin_notice' ) );
 	}
@@ -41,7 +42,7 @@ class MasterChecker {
 	 * @return bool
 	 */
 	protected function saving_templates_folder_option() {
-		return ! empty( $_POST['object_id'] ) && $_POST['object_id'] === 'ftb_options' && ! empty( $_POST['templates_folder'] ) && $_POST['templates_folder'] !== ftb_get_option( 'templates_folder' );
+		return !empty( $_POST['object_id'] ) && $_POST['object_id'] === 'ftb_options' && !empty( $_POST['templates_folder'] ) && $_POST['templates_folder'] !== ftb_get_option( 'templates_folder' );
 	}
 
 	public function check( $templates_folder ) {

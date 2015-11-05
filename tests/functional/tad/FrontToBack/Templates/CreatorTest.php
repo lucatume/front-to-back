@@ -59,13 +59,11 @@ class CreatorTest extends \WP_UnitTestCase {
 		$filesystem   = $this->getMockBuilder( '\tad\FrontToBack\Templates\Filesystem' )->disableOriginalConstructor()->getMock();
 		$post         = $this->factory->post->create_and_get( [ 'post_type' => 'page' ] );
 		$_GET['post'] = $post->ID;
-		$screen       = \WP_Screen::get( 'page' );
-		$screen->base = 'post';
 		$filesystem->expects( $this->once() )->method( 'duplicate_master_template' )->with( $post->post_name );
 
 		$sut = new Creator( $filesystem );
 
-		$this->assertTrue( $sut->create_missing_template( $screen ) );
+		$this->assertTrue( $sut->create_missing_template() );
 	}
 
 	/**
@@ -75,13 +73,11 @@ class CreatorTest extends \WP_UnitTestCase {
 	public function it_should_not_create_missing_template_if_post_type_is_not_page() {
 		$filesystem = $this->getMockBuilder( '\tad\FrontToBack\Templates\Filesystem' )->disableOriginalConstructor()->getMock();
 		global $post;
-		$post         = $this->factory->post->create_and_get( [ 'post_status' => 'publish' ] );
-		$screen       = \WP_Screen::get( 'another_post_type' );
-		$screen->base = 'post';
+		$post = $this->factory->post->create_and_get( [ 'post_status' => 'publish' ] );
 
 		$sut = new Creator( $filesystem );
 
-		$this->assertFalse( $sut->create_missing_template( $screen ) );
+		$this->assertFalse( $sut->create_missing_template() );
 	}
 
 	/**
@@ -91,13 +87,11 @@ class CreatorTest extends \WP_UnitTestCase {
 	public function it_should_not_create_missing_template_if_base_is_not_post() {
 		$filesystem = $this->getMockBuilder( '\tad\FrontToBack\Templates\Filesystem' )->disableOriginalConstructor()->getMock();
 		global $post;
-		$post         = $this->factory->post->create_and_get( array( 'post_type' => 'page' ) );
-		$screen       = \WP_Screen::get( 'page' );
-		$screen->base = 'other';
+		$post = $this->factory->post->create_and_get( array( 'post_type' => 'page' ) );
 
 		$sut = new Creator( $filesystem );
 
-		$this->assertFalse( $sut->create_missing_template( $screen ) );
+		$this->assertFalse( $sut->create_missing_template() );
 	}
 
 	/**
@@ -107,12 +101,10 @@ class CreatorTest extends \WP_UnitTestCase {
 	public function it_should_not_create_missing_template_if_empty_global_post() {
 		$filesystem   = $this->getMockBuilder( '\tad\FrontToBack\Templates\Filesystem' )->disableOriginalConstructor()->getMock();
 		$_GET['post'] = null;
-		$screen       = \WP_Screen::get( 'page' );
-		$screen->base = 'post';
 
 		$sut = new Creator( $filesystem );
 
-		$this->assertFalse( $sut->create_missing_template( $screen ) );
+		$this->assertFalse( $sut->create_missing_template() );
 	}
 
 	/**
@@ -125,12 +117,10 @@ class CreatorTest extends \WP_UnitTestCase {
 		$filesystem    = $this->getMockBuilder( '\tad\FrontToBack\Templates\Filesystem' )->disableOriginalConstructor()->getMock();
 		$template_name = $post->post_name . '.' . ftb()->get( 'templates/extension' );
 		$filesystem->expects( $this->once() )->method( 'exists' )->with( $template_name )->willReturn( true );
-		$screen       = \WP_Screen::get( 'page' );
-		$screen->base = 'post';
 
 		$sut = new Creator( $filesystem );
 
-		$this->assertFalse( $sut->create_missing_template( $screen ) );
+		$this->assertFalse( $sut->create_missing_template() );
 	}
 
 	/**
@@ -247,13 +237,11 @@ class CreatorTest extends \WP_UnitTestCase {
 
 		$sut = new Creator( $fs );
 
-		$fs->expects( $this->at( 0 ) )->method( 'exists' )->with( $sut->get_post_template_name($post) )->willReturn( false );
+		$fs->expects( $this->at( 0 ) )->method( 'exists' )->with( $sut->get_post_template_name( $post ) )->willReturn( false );
 		$fs->expects( $this->at( 1 ) )->method( 'exists' )->with( $sut->get_deleted_post_template_name( $post ) )->willReturn( true );
 		$fs->expects( $this->at( 2 ) )->method( 'restore_deleted_template' )->with( $post->post_name )->willReturn( true );
-		$screen       = \WP_Screen::get( 'page' );
-		$screen->base = 'post';
 
-		$sut->create_missing_template( $screen );
+		$sut->create_missing_template();
 	}
 
 	/**
