@@ -35,19 +35,19 @@ class Creator {
 		if ( empty( $post ) ) {
 			return false;
 		}
-		$template_name = $this->get_post_template_name( $post );
-		if ( $this->filesystem->exists( $template_name ) ) {
+		$template_path = $this->get_post_template_path( $post );
+		if ( $this->filesystem->exists( $template_path ) ) {
 			return false;
 		}
 
-		$deleted_template_name = $this->get_deleted_post_template_name( $post );
-		if ( $this->filesystem->exists( $deleted_template_name ) ) {
+		$deleted_template_path = $this->get_post_deleted_template_path( $post );
+		if ( $this->filesystem->exists( $deleted_template_path ) ) {
 			$restored = $this->filesystem->restore_deleted_template( $post->post_name );
 		}
 
 		$created = $this->create_template( $post->ID, $post );
 		if ( $created || $restored ) {
-			$location = $_SERVER['SCRIPT_NAME'];
+			$location = $_SERVER['REQUEST_URI'];
 			return $this->wp->safe_redirect( $location );
 		}
 	}
@@ -111,6 +111,26 @@ class Creator {
 		$template_name = "deleted/{$post->post_name}.{$extension}";
 
 		return $template_name;
+	}
+
+	/**
+	 * @param $post
+	 * @return string
+	 */
+	public function get_post_template_path( $post ) {
+		$template_name = $this->get_post_template_name( $post );
+		$template_path = trailingslashit( ftb_get_option( 'templates_folder' ) ) . $template_name;
+		return $template_path;
+	}
+
+	/**
+	 * @param $post
+	 * @return string
+	 */
+	public function get_post_deleted_template_path( $post ) {
+		$deleted_template_name = $this->get_deleted_post_template_name( $post );
+		$deleted_template_path = trailingslashit( ftb_get_option( 'templates_folder' ) ) . 'deleted/' . $deleted_template_name;
+		return $deleted_template_name;
 	}
 
 }

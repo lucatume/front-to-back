@@ -114,13 +114,14 @@ class CreatorTest extends \WP_UnitTestCase {
 	 * it should not create template if already existing
 	 */
 	public function it_should_not_create_template_if_already_existing() {
-		$post          = $this->factory->post->create_and_get( array( 'post_type' => 'page' ) );
-		$_GET['post']  = $post->ID;
-		$filesystem    = $this->getMockBuilder( '\tad\FrontToBack\Templates\Filesystem' )->disableOriginalConstructor()->getMock();
-		$template_name = $post->post_name . '.' . ftb()->get( 'templates/extension' );
-		$filesystem->expects( $this->once() )->method( 'exists' )->with( $template_name )->willReturn( true );
+		$post         = $this->factory->post->create_and_get( array( 'post_type' => 'page' ) );
+		$_GET['post'] = $post->ID;
+		$filesystem   = $this->getMockBuilder( '\tad\FrontToBack\Templates\Filesystem' )->disableOriginalConstructor()->getMock();
 
-		$sut = new Creator( $filesystem );
+		$sut           = new Creator( $filesystem );
+
+		$template_path = $sut->get_post_template_path( $post );
+		$filesystem->expects( $this->once() )->method( 'exists' )->with( $template_path )->willReturn( true );
 
 		$this->assertFalse( $sut->create_missing_template() );
 	}
@@ -239,8 +240,8 @@ class CreatorTest extends \WP_UnitTestCase {
 
 		$sut = new Creator( $fs );
 
-		$fs->expects( $this->at( 0 ) )->method( 'exists' )->with( $sut->get_post_template_name( $post ) )->willReturn( false );
-		$fs->expects( $this->at( 1 ) )->method( 'exists' )->with( $sut->get_deleted_post_template_name( $post ) )->willReturn( true );
+		$fs->expects( $this->at( 0 ) )->method( 'exists' )->with( $sut->get_post_template_path( $post ) )->willReturn( false );
+		$fs->expects( $this->at( 1 ) )->method( 'exists' )->with( $sut->get_post_deleted_template_path( $post ) )->willReturn( true );
 		$fs->expects( $this->at( 2 ) )->method( 'restore_deleted_template' )->with( $post->post_name )->willReturn( true );
 
 		$sut->create_missing_template();
@@ -260,7 +261,7 @@ class CreatorTest extends \WP_UnitTestCase {
 
 		$fs->expects( $this->any() )->method( 'exists' )->willReturn( false );
 		$fs->expects( $this->any() )->method( 'create_template' )->willReturn( true );
-		$location = $_SERVER['SCRIPT_NAME'];
+		$location = $_SERVER['REQUEST_URI'];
 		$wp->expects( $this->once() )->method( 'safe_redirect' )->with( $location );
 
 		$sut->create_missing_template();
