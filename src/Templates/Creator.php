@@ -2,6 +2,7 @@
 
 namespace tad\FrontToBack\Templates;
 
+use tad\FrontToBack\Adapters\WP;
 
 class Creator {
 
@@ -9,12 +10,17 @@ class Creator {
 	 * @var Filesystem
 	 */
 	private $filesystem;
+	/**
+	 * @var WP
+	 */
+	private $wp;
 
 	/**
 	 * @param Filesystem $filesystem
 	 */
-	public function __construct( Filesystem $filesystem ) {
+	public function __construct( Filesystem $filesystem, WP $wp = null ) {
 		$this->filesystem = $filesystem;
+		$this->wp         = $wp ? $wp : new WP();
 	}
 
 	public function hooks() {
@@ -36,10 +42,14 @@ class Creator {
 
 		$deleted_template_name = $this->get_deleted_post_template_name( $post );
 		if ( $this->filesystem->exists( $deleted_template_name ) ) {
-			return $this->filesystem->restore_deleted_template( $post->post_name );
+			$restored = $this->filesystem->restore_deleted_template( $post->post_name );
 		}
 
-		return $this->create_template( $post->ID, $post );
+		$created = $this->create_template( $post->ID, $post );
+		if ( $created || $restored ) {
+			$location = $_SERVER['SCRIPT_NAME'];
+			return $this->wp->safe_redirect( $location );
+		}
 	}
 
 	public function create_template( /** @noinspection PhpUnusedParameterInspection */

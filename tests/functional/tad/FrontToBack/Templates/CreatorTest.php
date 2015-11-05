@@ -60,8 +60,10 @@ class CreatorTest extends \WP_UnitTestCase {
 		$post         = $this->factory->post->create_and_get( [ 'post_type' => 'page' ] );
 		$_GET['post'] = $post->ID;
 		$filesystem->expects( $this->once() )->method( 'duplicate_master_template' )->with( $post->post_name );
+		$wp = $this->getMock( 'tad\\FrontToBack\\Adapters\\WP' );
+		$wp->expects( $this->once() )->method( 'safe_redirect' )->willReturn( true );
 
-		$sut = new Creator( $filesystem );
+		$sut = new Creator( $filesystem, $wp );
 
 		$this->assertTrue( $sut->create_missing_template() );
 	}
@@ -240,6 +242,26 @@ class CreatorTest extends \WP_UnitTestCase {
 		$fs->expects( $this->at( 0 ) )->method( 'exists' )->with( $sut->get_post_template_name( $post ) )->willReturn( false );
 		$fs->expects( $this->at( 1 ) )->method( 'exists' )->with( $sut->get_deleted_post_template_name( $post ) )->willReturn( true );
 		$fs->expects( $this->at( 2 ) )->method( 'restore_deleted_template' )->with( $post->post_name )->willReturn( true );
+
+		$sut->create_missing_template();
+	}
+
+	/**
+	 * @test
+	 * it should redirect to same page when creating missing template
+	 */
+	public function it_should_redirect_to_same_page_when_creating_missing_template() {
+		$post         = $this->factory->post->create_and_get( [ 'post_type' => 'page' ] );
+		$_GET['post'] = $post->ID;
+		$fs           = $this->make_fs();
+		$wp           = $this->getMock( 'tad\\FrontToBack\\Adapters\\WP' );
+
+		$sut = new Creator( $fs, $wp );
+
+		$fs->expects( $this->any() )->method( 'exists' )->willReturn( false );
+		$fs->expects( $this->any() )->method( 'create_template' )->willReturn( true );
+		$location = $_SERVER['SCRIPT_NAME'];
+		$wp->expects( $this->once() )->method( 'safe_redirect' )->with( $location );
 
 		$sut->create_missing_template();
 	}
