@@ -1,7 +1,7 @@
 <?php
 use tad\FrontToBack\Credentials\NonStoringCredentials;
 use tad\FrontToBack\Fields\FieldsUpdater;
-use tad\FrontToBack\MetaBoxes\MetaBoxes;
+use tad\FrontToBack\MetaBoxes\Page;
 use tad\FrontToBack\OptionsPage;
 use tad\FrontToBack\Templates\Creator;
 use tad\FrontToBack\Templates\Filesystem;
@@ -52,14 +52,15 @@ $plugin->set( 'templates-creator', function () {
 	return new Creator( ftb()->get( 'templates-filesystem' ) );
 } );
 
-$plugin->set( 'meta-boxes', function () {
-	return new MetaBoxes();
+$plugin->set( 'page-meta-boxes', function () {
+	return new Page();
 } );
 
 /**
  * Kickstart
  */
 add_action( 'plugins_loaded', function () use ( $plugin ) {
+
 	/** @var OptionsPage $optionsPage */
 	$optionsPage = $plugin->get( 'options-page' );
 	$optionsPage->hooks();
@@ -71,7 +72,8 @@ add_action( 'plugins_loaded', function () use ( $plugin ) {
 	/** @var Creator $templatesCreator */
 	$templatesCreator = $plugin->get( 'templates-creator' );
 	$templatesCreator->hooks();
-	/** @var MetaBoxes $metaBoxes */
-	$metaBoxes = $plugin->get( 'meta-boxes' );
-	$metaBoxes->hooks();
+
+	/** @var Page $metaBoxes */
+	$pageMetaBoxes = $plugin->get( 'page-meta-boxes' );
+	$pageMetaBoxes->hooks();
 } );
