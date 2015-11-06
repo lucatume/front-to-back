@@ -1,6 +1,7 @@
 <?php
 use tad\FrontToBack\Credentials\NonStoringCredentials;
 use tad\FrontToBack\Fields\FieldsUpdater;
+use tad\FrontToBack\MetaBoxes\MetaBoxes;
 use tad\FrontToBack\OptionsPage;
 use tad\FrontToBack\Templates\Creator;
 use tad\FrontToBack\Templates\Filesystem;
@@ -51,17 +52,26 @@ $plugin->set( 'templates-creator', function () {
 	return new Creator( ftb()->get( 'templates-filesystem' ) );
 } );
 
+$plugin->set( 'meta-boxes', function () {
+	return new MetaBoxes();
+} );
+
 /**
  * Kickstart
  */
-/** @var OptionsPage $optionsPage */
-$optionsPage = $plugin->get( 'options-page' );
-$optionsPage->hooks();
+add_action( 'plugins_loaded', function () use ( $plugin ) {
+	/** @var OptionsPage $optionsPage */
+	$optionsPage = $plugin->get( 'options-page' );
+	$optionsPage->hooks();
 
-/** @var MasterChecker $masterTemplateChecker */
-$masterTemplateChecker = $plugin->get( 'master-template-checker' );
-$masterTemplateChecker->hooks();
+	/** @var MasterChecker $masterTemplateChecker */
+	$masterTemplateChecker = $plugin->get( 'master-template-checker' );
+	$masterTemplateChecker->hooks();
 
-/** @var Creator $templatesCreator */
-$templatesCreator = $plugin->get( 'templates-creator' );
-$templatesCreator->hooks();
+	/** @var Creator $templatesCreator */
+	$templatesCreator = $plugin->get( 'templates-creator' );
+	$templatesCreator->hooks();
+	/** @var MetaBoxes $metaBoxes */
+	$metaBoxes = $plugin->get( 'meta-boxes' );
+	$metaBoxes->hooks();
+} );
