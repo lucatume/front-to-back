@@ -1,0 +1,42 @@
+{
+    "name": "lucatume/front-to-back",
+    "description": "Easy WordPress page templating for developers.",
+    "type": "wordpress-plugin",
+    "license": "GPL v2.0",
+    "authors": [
+        {
+            "name": "Luca Tumedei",
+            "email": "luca@theaveragedev.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "composer/installers": "~1.0",
+        "xrstf/composer-php52": "^1.0",
+        "aristath/kirki": "~2.1"
+    },
+    "extra": {
+        "installer-paths": {
+            "vendor/{$vendor}/{$name}": [
+                "aristath/kirki"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-0": {
+            "FTB_": "src/"
+        },
+        "files": ["vendor/aristath/kirki/autoloader.php"]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ],
+        "post-update-cmd": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ],
+        "post-autoload-dump": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ]
+    }
+}
