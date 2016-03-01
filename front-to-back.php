@@ -13,6 +13,7 @@
 include "vendor/autoload_52.php";
 
 $page_locator = new FTB_Locators_Page();
+$about_us_page = new FTB_Pages_AboutUs(new FTB_Locators_Page());
 
 $config_id = 'front-to-back-example';
 
@@ -33,17 +34,17 @@ Kirki::add_section('ftb-page-about_us-section-content', array(
 ));
 
 Kirki::add_field($config_id, array(
-    'settings' => 'ftb-page-about_us-picture_1',
-    'label' => 'First picture',
+    'settings' => 'ftb-page-about_us-featured_image',
+    'label' => 'Featured image',
     'section' => 'ftb-page-about_us-section-content',
     'type' => 'image',
 ));
 
 Kirki::add_field($config_id, array(
-    'settings' => 'ftb-page-about_us-picture_2',
-    'label' => 'Second picture',
+    'settings' => 'ftb-page-about_us-featured_image_caption',
+    'label' => 'Featured image caption',
     'section' => 'ftb-page-about_us-section-content',
-    'type' => 'image',
+    'type' => 'text',
 ));
 
 Kirki::add_field($config_id, array(
@@ -66,7 +67,10 @@ add_action('customize_preview_init', 'ftb_add_about_us_page_filters');
 function ftb_add_about_us_page_filters()
 {
     $about_us_page = new FTB_Pages_AboutUs(new FTB_Locators_Page());
-    add_filter('the_title', array($about_us_page, 'filter_the_title'), 1, 2);
-    add_filter('the_content', array($about_us_page, 'filter_the_content'), 1, 2);
-    add_action('customize_save_after', array($about_us_page, 'on_customize_after_save'), 10, 10);
+
+    add_filter('the_title', array($about_us_page, 'filter_the_title'), 0, 2);
+    add_filter('the_content', array($about_us_page, 'filter_the_content'), 0, 2);
+    add_filter('get_post_metadata', array($about_us_page, 'filter_get_post_metadata'), 0, 3);
 }
+
+add_action('customize_save_after', array($about_us_page, 'on_customize_save_after'), 10, 1);
