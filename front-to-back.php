@@ -63,6 +63,24 @@ Kirki::add_field($config_id, array(
     'default' => 'We are skilled',
 ));
 
+//Kirki::add_field( '', array(
+//    'type'        => 'select',
+//    'settings'    => 'select_demo',
+//    'label'       => __( 'This is the label', 'kirki' ),
+//    'description' => __( 'This is the control description', 'kirki' ),
+//    'help'        => __( 'This is some extra help text.', 'kirki' ),
+//    'section'     => 'ftb-page-about_us-section-content',
+//    'default'     => 'option-1',
+//    'priority'    => 10,
+//    'choices'     => array(
+//        'option-1' => __( 'Option 1', 'kirki' ),
+//        'option-2' => __( 'Option 2', 'kirki' ),
+//        'option-3' => __( 'Option 3', 'kirki' ),
+//        'option-4' => __( 'Option 4', 'kirki' ),
+//    ),
+//    'multiple'    => 3,
+//) );
+
 add_action('customize_preview_init', 'ftb_add_about_us_page_filters');
 function ftb_add_about_us_page_filters()
 {
