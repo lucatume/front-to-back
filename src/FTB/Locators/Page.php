@@ -52,7 +52,7 @@ class FTB_Locators_Page
         return $out;
     }
 
-    private function get_queried_post()
+    public function get_queried_post()
     {
         global $wp_query;
         $posts = $wp_query->get_posts();

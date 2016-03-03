@@ -13,7 +13,8 @@
     "require": {
         "composer/installers": "~1.0",
         "xrstf/composer-php52": "^1.0",
-        "aristath/kirki": "~2.1"
+        "aristath/kirki": "~2.1",
+        "lucatume/di52": "^1.2"
     },
     "extra": {
         "installer-paths": {
@@ -37,6 +38,11 @@
         ],
         "post-autoload-dump": [
             "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        
         ]
+    },
+    "require-dev": {
+        "lucatume/wp-browser": "^1.10",
+        "lucatume/function-mocker": "^1.0"
     }
 }
