@@ -12,83 +12,74 @@
 
 include "vendor/autoload_52.php";
 
-$page_locator = new FTB_Locators_Page();
-$about_us_page = new FTB_Pages_AboutUs(new FTB_Locators_Page());
+$page_locator  = new FTB_Locators_Page();
+$wp            = new FTB_Adapters_WP();
+$about_us_page = new FTB_Pages_AboutUs( $wp, $page_locator );
 
 $config_id = 'front-to-back-example';
 
-Kirki::add_config($config_id, array(
-    'capability' => 'edit_theme_options',
-    'option_type' => 'theme_mod',
-));
+Kirki::add_config( $config_id,
+	array(
+		'capability'  => 'edit_theme_options',
+		'option_type' => 'theme_mod',
+	) );
 
-Kirki::add_panel('ftb-page-about_us-panel-customizations', array(
-    'title' => 'Page customization',
-    'active_callback' => array($page_locator, 'is_about_us'),
-    'priority' => 150,
-));
+Kirki::add_panel( 'ftb-page-about_us-panel-customizations',
+	array(
+		'title'           => 'Page customization',
+		'active_callback' => array( $page_locator, 'is_about_us' ),
+		'priority'        => 150,
+	) );
 
-Kirki::add_section('ftb-page-about_us-section-content', array(
-    'title' => 'Content',
-    'panel' => 'ftb-page-about_us-panel-customizations',
-));
+Kirki::add_section( 'ftb-page-about_us-section-content',
+	array(
+		'title' => 'Content',
+		'panel' => 'ftb-page-about_us-panel-customizations',
+	) );
 
-Kirki::add_field($config_id, array(
-    'settings' => 'ftb-page-about_us-featured_image',
-    'label' => 'Featured image',
-    'section' => 'ftb-page-about_us-section-content',
-    'type' => 'image',
-));
+Kirki::add_field( $config_id,
+	array(
+		'settings' => 'ftb-page-about_us-featured_image',
+		'label'    => 'Featured image',
+		'section'  => 'ftb-page-about_us-section-content',
+		'type'     => 'image',
+	) );
 
-Kirki::add_field($config_id, array(
-    'settings' => 'ftb-page-about_us-featured_image_caption',
-    'label' => 'Featured image caption',
-    'section' => 'ftb-page-about_us-section-content',
-    'type' => 'text',
-));
+Kirki::add_field( $config_id,
+	array(
+		'settings' => 'ftb-page-about_us-featured_image_caption',
+		'label'    => 'Featured image caption',
+		'section'  => 'ftb-page-about_us-section-content',
+		'type'     => 'text',
+	) );
 
-Kirki::add_field($config_id, array(
-    'settings' => 'ftb-page-about_us-title',
-    'label' => 'Title',
-    'section' => 'ftb-page-about_us-section-content',
-    'type' => 'text',
-    'default' => 'About us',
-));
+Kirki::add_field( $config_id,
+	array(
+		'settings' => 'ftb-page-about_us-title',
+		'label'    => 'Title',
+		'section'  => 'ftb-page-about_us-section-content',
+		'type'     => 'text',
+		'default'  => 'About us',
+	) );
 
-Kirki::add_field($config_id, array(
-    'settings' => 'ftb-page-about_us-content',
-    'label' => 'Content',
-    'section' => 'ftb-page-about_us-section-content',
-    'type' => 'textarea',
-    'default' => 'We are skilled',
-));
+Kirki::add_field( $config_id,
+	array(
+		'settings' => 'ftb-page-about_us-content',
+		'label'    => 'Content',
+		'section'  => 'ftb-page-about_us-section-content',
+		'type'     => 'textarea',
+		'default'  => 'We are skilled',
+	) );
 
-//Kirki::add_field( '', array(
-//    'type'        => 'select',
-//    'settings'    => 'select_demo',
-//    'label'       => __( 'This is the label', 'kirki' ),
-//    'description' => __( 'This is the control description', 'kirki' ),
-//    'help'        => __( 'This is some extra help text.', 'kirki' ),
-//    'section'     => 'ftb-page-about_us-section-content',
-//    'default'     => 'option-1',
-//    'priority'    => 10,
-//    'choices'     => array(
-//        'option-1' => __( 'Option 1', 'kirki' ),
-//        'option-2' => __( 'Option 2', 'kirki' ),
-//        'option-3' => __( 'Option 3', 'kirki' ),
-//        'option-4' => __( 'Option 4', 'kirki' ),
-//    ),
-//    'multiple'    => 3,
-//) );
+add_action( 'customize_preview_init', 'ftb_add_about_us_page_filters' );
+function ftb_add_about_us_page_filters() {
+	$page_locator  = new FTB_Locators_Page();
+	$wp            = new FTB_Adapters_WP();
+	$about_us_page = new FTB_Pages_AboutUs( $wp, $page_locator );
 
-add_action('customize_preview_init', 'ftb_add_about_us_page_filters');
-function ftb_add_about_us_page_filters()
-{
-    $about_us_page = new FTB_Pages_AboutUs(new FTB_Locators_Page());
-
-    add_filter('the_title', array($about_us_page, 'filter_the_title'), 0, 2);
-    add_filter('the_content', array($about_us_page, 'filter_the_content'), 0, 2);
-    add_filter('get_post_metadata', array($about_us_page, 'filter_get_post_metadata'), 0, 3);
+	add_filter( 'the_title', array( $about_us_page, 'filter_the_title' ), 0, 2 );
+	add_filter( 'the_content', array( $about_us_page, 'filter_the_content' ), 0, 2 );
+	add_filter( 'get_post_metadata', array( $about_us_page, 'filter_get_post_metadata' ), 0, 3 );
 }
 
-add_action('customize_save_after', array($about_us_page, 'on_customize_save_after'), 10, 1);
+add_action( 'customize_save_after', array( $about_us_page, 'on_customize_save_after' ), 10, 1 );

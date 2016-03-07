@@ -1,6 +1,6 @@
 <?php
 
-class FTB_Locators_Page
+class FTB_Locators_Page implements FTB_Locators_PageInterface
 {
     protected $cache = array();
 
