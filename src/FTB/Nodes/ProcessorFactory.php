@@ -1,7 +1,7 @@
 <?php
 
 
-class FTB_Nodes_ProcessorFactory {
+class FTB_Nodes_ProcessorFactory implements FTB_Nodes_ProcessorFactoryInterface {
 
 	/**
 	 * @var array
@@ -15,6 +15,23 @@ class FTB_Nodes_ProcessorFactory {
 			return false;
 		}
 
-		return new $this->supported_types[$type]( $node );
+		$instance = null;
+		if ( is_string( $this->supported_types[ $type ] ) ) {
+			$instance = new $this->supported_types[$type]();
+		} else {
+			$instance = $this->supported_types[ $type ];
+		}
+
+		/** @var FTB_Nodes_ProcessorInterface $instance */
+		$instance->set_node( $node );
+
+		return $instance;
+	}
+
+	public function set_class_for_type( $class, $type ) {
+		if ( ! in_array( 'FTB_Nodes_ProcessorInterface', class_implements( $class ) ) ) {
+			throw new InvalidArgumentException( "Class or instance for type [{$type}] does not implement interface [FTB_Nodes_ProcessorInterface]" );
+		}
+		$this->supported_types[ $type ] = $class;
 	}
 }
