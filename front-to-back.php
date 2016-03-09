@@ -28,7 +28,7 @@ function ftb_templates( $path ) {
 	return plugin_dir_path( __FILE__ ) . DIRECTORY_SEPARATOR . ltrim( $path, DIRECTORY_SEPARATOR ) . '.php';
 }
 
-$template_reader = new FTB_Templates_Reader( ftb_templates( 'pages/about-us' ) );
+$template_reader = new FTB_Templates_Reader( new FTB_Nodes_ProcessorFactory() );
 
 Kirki::add_panel( 'ftb-page-about_us-panel-customizations',
 	array(
