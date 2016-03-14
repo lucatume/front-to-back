@@ -183,4 +183,66 @@ class PageTest extends \Codeception\TestCase\WPTestCase {
 	private function make_instance() {
 		return new Page();
 	}
+
+	/**
+	 * @test
+	 * it should return false if trying to get queried post and global wp_query is not set
+	 */
+	public function it_should_return_false_if_trying_to_get_queried_post_and_global_wp_query_is_not_set() {
+		global $wp_query;
+		$wp_query = null;
+
+		$sut = $this->make_instance();
+
+		$this->assertFalse( $sut->get_queried_post() );
+	}
+
+	/**
+	 * @test
+	 * it should return false if global wp_query has no posts
+	 */
+	public function it_should_return_false_if_global_wp_query_has_no_posts() {
+		global /** @var \WP_Query $wp_query */
+		$wp_query;
+		$_wp_query = $this->prophesize( 'WP_Query' );
+		$_wp_query->get_posts()->willReturn( [ ] );
+		$wp_query = $_wp_query->reveal();
+
+		$sut = $this->make_instance();
+
+		$this->assertFalse( $sut->get_queried_post() );
+	}
+
+	/**
+	 * @test
+	 * it should return false if global wp_query has more than one post
+	 */
+	public function it_should_return_false_if_global_wp_query_has_more_than_one_post() {
+		global /** @var \WP_Query $wp_query */
+		$wp_query;
+		$_wp_query = $this->prophesize( 'WP_Query' );
+		$_wp_query->get_posts()->willReturn( $this->factory()->post->create_many( 3 ) );
+		$wp_query = $_wp_query->reveal();
+
+		$sut = $this->make_instance();
+
+		$this->assertFalse( $sut->get_queried_post() );
+	}
+
+	/**
+	 * @test
+	 * it should return the post if global wp_query has one
+	 */
+	public function it_should_return_the() {
+		global /** @var \WP_Query $wp_query */
+		$wp_query;
+		$_wp_query = $this->prophesize( 'WP_Query' );
+		$post      = $this->factory()->post->create_and_get();
+		$_wp_query->get_posts()->willReturn( $post );
+		$wp_query = $_wp_query->reveal();
+
+		$sut = $this->make_instance();
+
+		$this->assertEquals( $post, $sut->get_queried_post() );
+	}
 }

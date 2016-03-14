@@ -10,7 +10,7 @@
  * License: GPL 2.0
  */
 
-include "vendor/autoload_52.php";
+include 'vendor/autoload_52.php';
 
 $page_locator  = new FTB_Locators_Page();
 $wp            = new FTB_Adapters_WP();
