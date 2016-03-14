@@ -29,6 +29,11 @@ class FTB_Templates_Reader {
 	 */
 	protected $found_supported_elements;
 
+	/**
+	 * @var string[]
+	 */
+	protected $template_lines;
+
 	public function __construct( FTB_Nodes_ProcessorFactory $nodes_processor_factory, $template_contents = '' ) {
 		$this->nodes_processor_factory = $nodes_processor_factory;
 		$this->template_contents       = $template_contents;
@@ -40,7 +45,7 @@ class FTB_Templates_Reader {
 
 	public function read_and_process() {
 		$this->doc = new DOMDocument();
-		$this->doc->loadXML( $this->template_contents, LIBXML_NOERROR );
+		$this->doc->loadXML( $this->template_contents );
 
 		$this->ftb_elements = array();
 

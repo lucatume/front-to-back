@@ -26,5 +26,5 @@ return array(
     'Facebook\\WebDriver\\' => array($vendorDir . '/facebook/webdriver/lib'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'Codeception\\Extension\\' => array($vendorDir . '/codeception/codeception/ext'),
-    'Codeception\\' => array($vendorDir . '/codeception/codeception/src/Codeception', $vendorDir . '/lucatume/wp-browser/src/Codeception'),
+    'Codeception\\' => array($vendorDir . '/lucatume/wp-browser/src/Codeception', $vendorDir . '/codeception/codeception/src/Codeception'),
 );
