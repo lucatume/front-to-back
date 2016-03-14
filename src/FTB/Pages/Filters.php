@@ -1,7 +1,7 @@
 <?php
 
 
-class FTB_Pages_Filters {
+class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 
 	protected $page_name = '';
 
