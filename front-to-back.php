@@ -11,13 +11,14 @@
  */
 
 include 'vendor/autoload_52.php';
+include 'vendor/aristath/kirki/kirki.php';
 
 /**
  * Utility functions
  */
 
 function ftb_templates( $path ) {
-	$path_frags = array( plugin_dir_path( __FILE__ ), 'templates', ltrim( $path, DIRECTORY_SEPARATOR ) . '.php' );
+	$path_frags = array( get_stylesheet_directory(), 'ftb-templates', ltrim( $path, DIRECTORY_SEPARATOR ) . '.php' );
 
 	return join( DIRECTORY_SEPARATOR, $path_frags );
 }
