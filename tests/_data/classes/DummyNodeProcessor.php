@@ -6,7 +6,4 @@ class DummyNodeProcessor extends \FTB_Nodes_AbstractNodeProcessor implements \FT
 
 	public function process() {
 	}
-
-	public function set_node( \DOMNode $node ) {
-	}
 }

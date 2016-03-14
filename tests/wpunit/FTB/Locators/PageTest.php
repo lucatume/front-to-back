@@ -233,12 +233,12 @@ class PageTest extends \Codeception\TestCase\WPTestCase {
 	 * @test
 	 * it should return the post if global wp_query has one
 	 */
-	public function it_should_return_the() {
+	public function it_should_return_the_post_if_global_wp_query_has_one() {
 		global /** @var \WP_Query $wp_query */
 		$wp_query;
 		$_wp_query = $this->prophesize( 'WP_Query' );
 		$post      = $this->factory()->post->create_and_get();
-		$_wp_query->get_posts()->willReturn( $post );
+		$_wp_query->get_posts()->willReturn( [ $post ] );
 		$wp_query = $_wp_query->reveal();
 
 		$sut = $this->make_instance();

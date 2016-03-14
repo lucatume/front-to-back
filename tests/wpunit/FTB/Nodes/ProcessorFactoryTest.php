@@ -6,11 +6,23 @@ use Prophecy\Argument;
 
 class ProcessorFactoryTest extends \Codeception\TestCase\WPTestCase {
 
+	/**
+	 * @var \FTB_Output_TemplateTagsInterface
+	 */
+	protected $template_tags;
+
+	/**
+	 * @var \FTB_Fields_ConfigInterface
+	 */
+	protected $config;
+
 	public function setUp() {
 		// before
 		parent::setUp();
 
 		// your set up methods here
+		$this->template_tags = $this->prophesize( 'FTB_Output_TemplateTagsInterface' );
+		$this->config        = $this->prophesize( 'FTB_Fields_ConfigInterface' );
 	}
 
 	public function tearDown() {
@@ -66,7 +78,6 @@ class ProcessorFactoryTest extends \Codeception\TestCase\WPTestCase {
 
 		$node      = new \DOMNode();
 		$processor = $this->prophesize( 'FTB_Nodes_ProcessorInterface' );
-		$processor->set_node( Argument::type( 'DOMNode' ) )->shouldBeCalled();
 		$revealed_processor = $processor->reveal();
 
 		$sut->set_class_for_type( $revealed_processor, 'some-type' );
@@ -90,7 +101,52 @@ class ProcessorFactoryTest extends \Codeception\TestCase\WPTestCase {
 		$sut->set_class_for_type( 'stdClass', 'some-type' );
 	}
 
+	/**
+	 * @test
+	 * it should set the node on the processor
+	 */
+	public function it_should_set_the_node_on_the_processor() {
+		$sut = $this->make_instance();
+
+		$node = new \DOMNode();
+		$sut->set_class_for_type( 'FTB\Test\DummyNodeProcessor', 'some-type' );
+		/** @var \FTB_Nodes_ProcessorInterface $out */
+		$out = $sut->make_for_type( 'some-type', $node );
+
+		$this->assertInstanceOf( 'FTB_Nodes_DOMNodeInterface', $out->get_node() );
+	}
+
+	/**
+	 * @test
+	 * it should set the template_tags on the processor
+	 */
+	public function it_should_set_the_template_tags_on_the_processor() {
+		$sut = $this->make_instance();
+
+		$node = new \DOMNode();
+		$sut->set_class_for_type( 'FTB\Test\DummyNodeProcessor', 'some-type' );
+		/** @var \FTB_Nodes_ProcessorInterface $out */
+		$out = $sut->make_for_type( 'some-type', $node );
+
+		$this->assertInstanceOf( 'FTB_Output_TemplateTagsInterface', $out->get_template_tags() );
+	}
+
+	/**
+	 * @test
+	 * it should set the config on the processor
+	 */
+	public function it_should_set_the_config_on_the_processor() {
+		$sut = $this->make_instance();
+
+		$node = new \DOMNode();
+		$sut->set_class_for_type( 'FTB\Test\DummyNodeProcessor', 'some-type' );
+		/** @var \FTB_Nodes_ProcessorInterface $out */
+		$out = $sut->make_for_type( 'some-type', $node );
+
+		$this->assertInstanceOf( 'FTB_Fields_ConfigInterface', $out->get_config() );
+	}
+
 	private function make_instance() {
-		return new Factory();
+		return new Factory( $this->template_tags->reveal(), $this->config->reveal() );
 	}
 }

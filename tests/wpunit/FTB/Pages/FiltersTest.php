@@ -65,8 +65,8 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 			} );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 
 		$not_this_post_id = $this->factory()->post->create( [ 'post_type' => 'page' ] );
 		global $post;
@@ -90,8 +90,8 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 			} );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 
 		$out = $sut->filter_the_title( 'Original title' );
 
@@ -110,8 +110,8 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 			} );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 
 		$not_this_post_id = $this->factory()->post->create( [ 'post_type' => 'page' ] );
 		global $post;
@@ -135,8 +135,8 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 			} );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 
 		$out = $sut->filter_the_content( 'Original content' );
 
@@ -155,8 +155,8 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 			} );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 
 		$not_this_post_id = $this->factory()->post->create( [ 'post_type' => 'page' ] );
 		$out              = $sut->filter_the_title( 'Original title', $not_this_post_id );
@@ -176,8 +176,8 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 			} );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 
 		$out = $sut->filter_the_title( 'Original title', $post_id );
 
@@ -196,8 +196,8 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 			} );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 
 		$not_this_post_id = $this->factory()->post->create( [ 'post_type' => 'page' ] );
 		$out              = $sut->filter_the_content( 'Original content', $not_this_post_id );
@@ -217,8 +217,8 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 			} );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 
 		$out = $sut->filter_the_content( 'Original content', $post_id );
 
@@ -237,8 +237,8 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 			} );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 		$sut->set_custom_fields( [ 'some_field' => 'some_field' ] );
 
 		$not_this_post_id = $this->factory()->post->create( [ 'post_type' => 'page' ] );
@@ -259,8 +259,8 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 			} );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 		$sut->set_custom_fields( [ 'some_field' => 'some_field' ] );
 
 		$this->assertEquals( 'Some foo text', $sut->filter_get_post_metadata( 23, $post_id, 'some_field' ) );
@@ -282,8 +282,8 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 		$this->wp->get_attachment_id_from_url( $attachment_url )->willReturn( $attachment_id );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 		$sut->set_custom_fields( [ '_thumbnail_id' => 'featured_image' ] );
 
 		$this->assertEquals( $attachment_id, $sut->filter_get_post_metadata( 23, $post_id, '_thumbnail_id' ) );

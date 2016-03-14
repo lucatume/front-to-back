@@ -1,18 +1,39 @@
 <?php
 
 
-class FTB_Nodes_AbstractNodeProcessor {
+abstract class FTB_Nodes_AbstractNodeProcessor implements FTB_Nodes_ProcessorInterface {
 
 	/**
-	 * @var DOMNode
+	 * @var FTB_Nodes_DOMNodeInterface
 	 */
 	protected $node;
 
-	public function __construct( DOMNode $node = null ) {
-		$this->node = $node;
+	/**
+	 * @var FTB_Output_TemplateTagsInterface
+	 */
+	protected $template_tags;
+	/**
+	 * @var FTB_Fields_ConfigInterface
+	 */
+	protected $config;
+
+	public function __construct( FTB_Nodes_DOMNodeInterface $node, FTB_Output_TemplateTagsInterface $template_tags, FTB_Fields_ConfigInterface $config ) {
+		$this->node          = $node;
+		$this->template_tags = $template_tags;
+		$this->config        = $config;
 	}
 
-	public function set_node( DOMNode $node ) {
-		$this->node = $node;
+	public function get_node() {
+		return $this->node;
 	}
+
+	public function get_template_tags() {
+		return $this->template_tags;
+	}
+
+	public function get_config() {
+		return $this->config;
+	}
+
+	abstract public function process();
 }

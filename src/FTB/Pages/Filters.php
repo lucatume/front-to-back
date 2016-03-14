@@ -22,11 +22,11 @@ class FTB_Pages_Filters {
 		return $this->page_name;
 	}
 
-	public function set_page_name( $page_name ) {
+	public function set_page_slug( $page_name ) {
 		$this->page_name = $page_name;
 	}
 
-	public function set_page_slug( $page_slug ) {
+	public function set_page_name( $page_slug ) {
 		$this->page_slug = $page_slug;
 	}
 

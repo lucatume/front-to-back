@@ -69,8 +69,8 @@ class FiltersFunctionalTest extends \Codeception\TestCase\WPTestCase {
 		$this->wp->get_attachment_id_from_url( $attachment_url )->willReturn( $attachment_id );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 		$sut->set_custom_fields( [ '_thumbnail_id' => 'featured_image' ] );
 
 		$this->assertEquals( $attachment_id, $sut->filter_get_post_metadata( 23, $post_id, '_thumbnail_id' ) );
@@ -91,8 +91,8 @@ class FiltersFunctionalTest extends \Codeception\TestCase\WPTestCase {
 		$wp_customize->get_setting( 'ftb-page-some_page-title' )->willReturn( $setting->reveal() );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 		$sut->on_customize_save_after( $wp_customize->reveal() );
 
 		$this->assertEquals( 'Some title', get_post( $post_id )->post_title );
@@ -113,8 +113,8 @@ class FiltersFunctionalTest extends \Codeception\TestCase\WPTestCase {
 		$wp_customize->get_setting( 'ftb-page-some_page-content' )->willReturn( $setting->reveal() );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 		$sut->on_customize_save_after( $wp_customize->reveal() );
 
 		$this->assertEquals( 'Some post content', get_post( $post_id )->post_content );
@@ -135,8 +135,8 @@ class FiltersFunctionalTest extends \Codeception\TestCase\WPTestCase {
 		$wp_customize->get_setting( 'ftb-page-some_page-some_field' )->willReturn( $setting->reveal() );
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 		$sut->set_custom_fields( [ '_some_field' => 'some_field' ] );
 		$sut->on_customize_save_after( $wp_customize->reveal() );
 
@@ -162,8 +162,8 @@ class FiltersFunctionalTest extends \Codeception\TestCase\WPTestCase {
 
 
 		$sut = $this->make_instance();
-		$sut->set_page_name( 'some_page' );
-		$sut->set_page_slug( 'some-page' );
+		$sut->set_page_slug( 'some_page' );
+		$sut->set_page_name( 'some-page' );
 		$sut->set_custom_fields( [ '_thumbnail_id' => 'featured_image' ] );
 		$sut->on_customize_save_after( $wp_customize->reveal() );
 

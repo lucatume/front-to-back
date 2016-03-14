@@ -5,5 +5,9 @@ interface FTB_Nodes_ProcessorInterface {
 
 	public function process();
 
-	public function set_node( DOMNode $node );
+	public function get_node();
+
+	public function get_template_tags();
+
+	public function get_config();
 }

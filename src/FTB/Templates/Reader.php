@@ -40,7 +40,7 @@ class FTB_Templates_Reader {
 
 	public function read_and_process() {
 		$this->doc = new DOMDocument();
-		$this->doc->loadXML( $this->template_contents );
+		$this->doc->loadXML( $this->template_contents, LIBXML_NOERROR );
 
 		$this->ftb_elements = array();
 

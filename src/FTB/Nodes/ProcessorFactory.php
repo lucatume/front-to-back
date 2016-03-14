@@ -4,6 +4,21 @@
 class FTB_Nodes_ProcessorFactory implements FTB_Nodes_ProcessorFactoryInterface {
 
 	/**
+	 * @var FTB_Output_TemplateTagsInterface
+	 */
+	protected $template_tags;
+
+	/**
+	 * @var FTB_Fields_ConfigInterface
+	 */
+	protected $config;
+
+	public function __construct( FTB_Output_TemplateTagsInterface $template_tags, FTB_Fields_ConfigInterface $config ) {
+		$this->template_tags = $template_tags;
+		$this->config        = $config;
+	}
+
+	/**
 	 * @var array
 	 */
 	protected $supported_types = array(
@@ -17,13 +32,10 @@ class FTB_Nodes_ProcessorFactory implements FTB_Nodes_ProcessorFactoryInterface 
 
 		$instance = null;
 		if ( is_string( $this->supported_types[ $type ] ) ) {
-			$instance = new $this->supported_types[$type]();
+			$instance = new $this->supported_types[$type]( new FTB_Nodes_DOMNode( $node ), $this->template_tags, $this->config );
 		} else {
 			$instance = $this->supported_types[ $type ];
 		}
-
-		/** @var FTB_Nodes_ProcessorInterface $instance */
-		$instance->set_node( $node );
 
 		return $instance;
 	}
