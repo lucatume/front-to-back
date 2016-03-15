@@ -1,27 +1,33 @@
 <?php
 
 
-class FTB_ServiceProviders_TemplateOperations extends tad_DI52_ServiceProvider{
+class FTB_ServiceProviders_TemplateOperations extends tad_DI52_ServiceProvider {
 
 	/**
 	 * Binds and sets up implementations.
 	 */
 	public function register() {
-		$this->container->bind('FTB_Locators_PageInterface',  new FTB_LocatorsPage());
-		$this->container->singleton('FTB_Adapters_WP', new FTB_Adapters_WP() );
-		$this->container->bind('FTB_PagesFiltersInterface', 'FTB_PagesFiltersInterface');
-		
-		$about_us_page = new FTB_Pages_Filters( $wp, $page_locator );
-//		$about_us_page->set_page_slug( 'about_us' );
-//		$about_us_page->set_page_name( 'about-us' );
+		$config_id = 'front-to-back';
 
+		Kirki::add_config( $config_id,
+			array(
+				'capability'  => 'edit_theme_options',
+				'option_type' => 'theme_mod',
+			) );
 
-		$config            = new FTB_Fields_KirkiConfig( 'ftb-page', 'about_us', $config_id, new  FTB_Locators_Page() );
-		$processor_factory = new FTB_Nodes_ProcessorFactory( new FTB_Output_TemplateTags(), $config );
-		$template_contents = file_get_contents( ftb_template_path( 'about-us' ) );
-		$template_reader   = new FTB_Templates_Reader( $processor_factory, $template_contents );
-		$output            = $template_reader->read_and_process();
-		file_put_contents( get_stylesheet_directory() . '/page-about-us.php', $output );
+		$this->container->singleton( 'FTB_Filesystem_FilesystemInterface', 'FTB_Filesystem_DirectFilesystem' );
+		$this->container->bind( 'FTB_Templates_RepositoryInterface',
+			new FTB_Templates_Repository( get_stylesheet_directory() . DIRECTORY_SEPARATOR . 'ftb-templates', $this->container->make( 'FTB_Filesystem_FilesystemInterface' ) ) );
+		$this->container->bind( 'FTB_Output_TemplateTagsInterface', new FTB_Output_TemplateTags() );
+		$this->container->singleton( 'FTB_Templates_ReaderInterface', 'FTB_Templates_Reader' );
+		$this->container->singleton( 'FTB_Nodes_ProcessorFactoryInterface', 'FTB_Nodes_ProcessorFactory' );
+
+		$this->container->bind( 'FTB_Locators_PageInterface', new FTB_Locators_Page() );
+		$this->container->singleton( 'FTB_Adapters_WPInterface', new FTB_Adapters_WP() );
+		$this->container->bind( 'FTB_Pages_FiltersInterface', 'FTB_Pages_Filters' );
+
+		$this->container->bind( 'FTB_Fields_ConfigInterface',
+			new FTB_Fields_KirkiConfig( 'ftb-page', 'about_us', $config_id, $this->container->make( 'FTB_Locators_PageInterface' ) ) );
 	}
 
 	/**

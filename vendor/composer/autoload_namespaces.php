@@ -11,6 +11,7 @@ return array(
     'tad_' => array($vendorDir . '/lucatume/args/src'),
     'tad\\FunctionMocker' => array($vendorDir . '/lucatume/function-mocker/src'),
     'phpDocumentor' => array($vendorDir . '/phpdocumentor/reflection-docblock/src'),
+    'org\\bovigo\\vfs\\' => array($vendorDir . '/mikey179/vfsStream/src/main/php'),
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'Hautelook' => array($vendorDir . '/hautelook/phpass/src'),
     'Handlebars' => array($vendorDir . '/xamin/handlebars.php/src'),

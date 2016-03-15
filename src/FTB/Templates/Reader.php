@@ -3,7 +3,7 @@
 
 use SebastianBergmann\Comparator\DOMNodeComparatorTest;
 
-class FTB_Templates_Reader {
+class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 
 	/**
 	 * @var string

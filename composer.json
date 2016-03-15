@@ -43,6 +43,7 @@
     },
     "require-dev": {
         "lucatume/wp-browser": "^1.10",
-        "lucatume/function-mocker": "^1.0"
+        "lucatume/function-mocker": "^1.0",
+        "mikey179/vfsStream": "^1.6"
     }
 }
