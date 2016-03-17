@@ -16,7 +16,7 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 	protected $template_tags;
 
 	/**
-	 * @var \FTB_Fields_ConfigInterface
+	 * @var \FTB_Fields_ConfigDumperInterface
 	 */
 	protected $config;
 	protected $node_value = 'The title';
@@ -28,7 +28,7 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 		// your set up methods here
 		$this->node          = $this->prophesize( 'FTB_Nodes_DOMNodeInterface' );
 		$this->template_tags = $this->prophesize( 'FTB_Output_TemplateTagsInterface' );
-		$this->config        = $this->prophesize( 'FTB_Fields_ConfigInterface' );
+		$this->config        = $this->prophesize( 'FTB_Fields_ConfigDumperInterface' );
 	}
 
 	public function tearDown() {
@@ -51,7 +51,7 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 	 * it should return the title template tag markup when processing
 	 */
 	public function it_should_return_the_title_template_tag_markup_when_processing() {
-		$this->config->add_field( Argument::any() )->willReturn( true );
+		$this->config->add_field( Argument::type( 'string' ), Argument::any() )->willReturn( true );
 		$this->template_tags->the_title()->willReturn( 'foo' );
 
 		$sut = $this->make_instance();
@@ -64,13 +64,14 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 	 */
 	public function it_should_add_title_theme_mod_to_the_current_section() {
 		$this->node->nodeValue()->willReturn( 'Some Title' );
-		$this->config->add_field( [
-			'settings' => 'title',
-			'section'  => 'some-section',
-			'label'    => 'Title',
-			'type'     => 'text',
-			'default'  => 'Some Title',
-		] )->shouldBeCalled();
+		$this->config->add_field( 'some-section-post_title',
+			[
+				'settings' => 'title',
+				'section'  => 'some-section',
+				'label'    => 'Title',
+				'type'     => 'text',
+				'default'  => 'Some Title',
+			] )->shouldBeCalled();
 		$this->template_tags->the_title()->willReturn( 'foo' );
 
 		$sut = $this->make_instance();

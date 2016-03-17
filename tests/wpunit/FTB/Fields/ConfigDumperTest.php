@@ -296,7 +296,7 @@ class ConfigDumperTest extends \Codeception\TestCase\WPTestCase {
 		$config                                                   = KirkiConfigDumper::get_empty_config();
 		$section_config                                           = [
 			'title'           => 'Page Content',
-			'active_callback' => [ $this->page_locator->reveal(), 'is_some_page_page' ],
+			'active_callback' => 'is_some_page_page',
 		];
 		$config['sections']['ftb-page-some_page-section-content'] = $section_config;
 		$this->wp->save_configuration( $config )->shouldBeCalled();

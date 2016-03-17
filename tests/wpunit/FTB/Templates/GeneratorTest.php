@@ -16,6 +16,11 @@ class GeneratorTest extends \Codeception\TestCase\WPTestCase {
 	 */
 	protected $templates_reader;
 
+	/**
+	 * @var \FTB_Fields_ConfigDumperInterface
+	 */
+	protected $config;
+
 	public function setUp() {
 		// before
 		parent::setUp();
@@ -25,6 +30,7 @@ class GeneratorTest extends \Codeception\TestCase\WPTestCase {
 		Test::replace( 'wp_redirect' );
 		$this->templates_repository = $this->prophesize( 'FTB_Templates_RepositoryInterface' );
 		$this->templates_reader     = $this->prophesize( 'FTB_Templates_ReaderInterface' );
+		$this->config               = $this->prophesize( 'FTB_Fields_ConfigDumperInterface' );
 	}
 
 	public function tearDown() {
@@ -108,12 +114,13 @@ class GeneratorTest extends \Codeception\TestCase\WPTestCase {
 		$this->templates_reader->set_template_contents( 'one' )->shouldBeCalled();
 		$this->templates_reader->read_and_process( 'template-one' )->willReturn( 'output' );
 		$this->templates_repository->write_template( 'template-one', 'output' )->shouldBeCalled();
+		$this->config->save_configuration()->shouldBeCalled();
 
 		$sut = $this->make_instance();
 		$sut->maybe_generate();
 	}
 
 	private function make_instance() {
-		return new Generator( $this->templates_repository->reveal(), $this->templates_reader->reveal() );
+		return new Generator( $this->templates_repository->reveal(), $this->templates_reader->reveal(), $this->config->reveal() );
 	}
 }

@@ -13,7 +13,7 @@ abstract class FTB_Nodes_AbstractNodeProcessor implements FTB_Nodes_ProcessorInt
 	 */
 	protected $template_tags;
 	/**
-	 * @var FTB_Fields_ConfigInterface
+	 * @var FTB_Fields_ConfigDumperInterface
 	 */
 	protected $config;
 
@@ -22,7 +22,7 @@ abstract class FTB_Nodes_AbstractNodeProcessor implements FTB_Nodes_ProcessorInt
 	 */
 	protected $section;
 
-	public function __construct( FTB_Nodes_DOMNodeInterface $node, FTB_Output_TemplateTagsInterface $template_tags, FTB_Fields_ConfigInterface $config ) {
+	public function __construct( FTB_Nodes_DOMNodeInterface $node, FTB_Output_TemplateTagsInterface $template_tags, FTB_Fields_ConfigDumperInterface $config ) {
 		$this->node          = $node;
 		$this->template_tags = $template_tags;
 		$this->config        = $config;

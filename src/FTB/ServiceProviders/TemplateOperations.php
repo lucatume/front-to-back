@@ -25,7 +25,6 @@ class FTB_ServiceProviders_TemplateOperations extends tad_DI52_ServiceProvider {
 		$this->container->singleton( 'FTB_Locators_PageInterface', 'FTB_Locators_Page' );
 		$this->container->singleton( 'FTB_Adapters_WPInterface', 'FTB_Adapters_WP' );
 		$this->container->singleton( 'FTB_Pages_FiltersInterface', 'FTB_Pages_Filters' );
-
 	}
 
 	/**

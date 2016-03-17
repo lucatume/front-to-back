@@ -12,7 +12,7 @@ class ProcessorFactoryTest extends \Codeception\TestCase\WPTestCase {
 	protected $template_tags;
 
 	/**
-	 * @var \FTB_Fields_ConfigInterface
+	 * @var \FTB_Fields_ConfigDumperInterface
 	 */
 	protected $config;
 
@@ -22,7 +22,7 @@ class ProcessorFactoryTest extends \Codeception\TestCase\WPTestCase {
 
 		// your set up methods here
 		$this->template_tags = $this->prophesize( 'FTB_Output_TemplateTagsInterface' );
-		$this->config        = $this->prophesize( 'FTB_Fields_ConfigInterface' );
+		$this->config        = $this->prophesize( 'FTB_Fields_ConfigDumperInterface' );
 	}
 
 	public function tearDown() {
@@ -143,7 +143,7 @@ class ProcessorFactoryTest extends \Codeception\TestCase\WPTestCase {
 		/** @var \FTB_Nodes_ProcessorInterface $out */
 		$out = $sut->make_for_type( 'some-type', $node );
 
-		$this->assertInstanceOf( 'FTB_Fields_ConfigInterface', $out->get_config() );
+		$this->assertInstanceOf( 'FTB_Fields_ConfigDumperInterface', $out->get_config() );
 	}
 
 	private function make_instance() {

@@ -9,11 +9,11 @@ class FTB_Nodes_ProcessorFactory implements FTB_Nodes_ProcessorFactoryInterface 
 	protected $template_tags;
 
 	/**
-	 * @var FTB_Fields_ConfigInterface
+	 * @var FTB_Fields_ConfigDumperInterface
 	 */
 	protected $config;
 
-	public function __construct( FTB_Output_TemplateTagsInterface $template_tags, FTB_Fields_ConfigInterface $config ) {
+	public function __construct( FTB_Output_TemplateTagsInterface $template_tags, FTB_Fields_ConfigDumperInterface $config ) {
 		$this->template_tags = $template_tags;
 		$this->config        = $config;
 	}
