@@ -11,7 +11,7 @@ class ReaderTest extends \Codeception\TestCase\WPTestCase {
 	protected $node_processor_factory;
 
 	/**
-	 * @var \FTB_Fields_ConfigInterface
+	 * @var \FTB_Fields_ConfigDumperInterface
 	 */
 	protected $config;
 
@@ -21,7 +21,7 @@ class ReaderTest extends \Codeception\TestCase\WPTestCase {
 
 		// your set up methods here
 		$this->node_processor_factory = $this->prophesize( 'FTB_Nodes_ProcessorFactory' );
-		$this->config                 = $this->prophesize( 'FTB_Fields_ConfigInterface' );
+		$this->config                 = $this->prophesize( 'FTB_Fields_ConfigDumperInterface' );
 	}
 
 	public function tearDown() {
@@ -66,7 +66,7 @@ get_header(); ?>
 TEMPLATE;
 		$sut->set_template_contents( $template_contents );
 
-		$out = $sut->read_and_process('about-us');
+		$out = $sut->read_and_process( 'about-us' );
 
 		$this->assertTrue( xml_strcasecmp( $template_contents, $out ) );
 	}
@@ -79,6 +79,9 @@ TEMPLATE;
 		/** @var \FTB_Nodes_ProcessorInterface $title_processor */
 		$title_processor = $this->prophesize( 'FTB_Nodes_ProcessorInterface' );
 		$title_processor->process()->willReturn( '<?php the_title(); ?>' );
+		$this->config->get_section_id( 'about_us' )->willReturn( 'some-section' );
+		$this->config->add_content_section( 'about_us' )->shouldBeCalled();
+		$title_processor->set_section( 'some-section' )->shouldBeCalled();
 		$this->node_processor_factory->make_for_type( 'title', Argument::any() )->willReturn( $title_processor->reveal() );
 		$sut               = $this->make_instance();
 		$template_contents = <<< TEMPLATE
@@ -119,7 +122,7 @@ TEMPLATE;
 
 		$sut->set_template_contents( $template_contents );
 
-		$out = $sut->read_and_process('about-us');
+		$out = $sut->read_and_process( 'about-us' );
 
 		$this->assertTrue( xml_strcasecmp( $expected_template_contents, $out ) );
 	}

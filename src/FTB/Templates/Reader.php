@@ -8,6 +8,11 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 	/**
 	 * @var string
 	 */
+	protected $page_slug;
+
+	/**
+	 * @var string
+	 */
 	protected $template_contents;
 
 	/**
@@ -40,11 +45,16 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 	protected $template_name;
 
 	/**
-	 * @var FTB_Fields_ConfigInterface
+	 * @var FTB_Fields_ConfigDumperInterface
 	 */
 	protected $config;
 
-	public function __construct( FTB_Nodes_ProcessorFactory $nodes_processor_factory, FTB_Fields_ConfigInterface $config, $template_contents = '' ) {
+	/**
+	 * @var string
+	 */
+	protected $current_section;
+
+	public function __construct( FTB_Nodes_ProcessorFactory $nodes_processor_factory, FTB_Fields_ConfigDumperInterface $config, $template_contents = '' ) {
 		$this->nodes_processor_factory = $nodes_processor_factory;
 		$this->config                  = $config;
 		$this->template_contents       = $template_contents;
@@ -56,6 +66,7 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 
 	public function read_and_process( $template_name ) {
 		$this->template_name = $template_name;
+		$this->page_slug     = str_replace( '-', '_', $this->template_name );
 		$this->doc           = new DOMDocument();
 		$this->doc->loadXML( $this->template_contents );
 
@@ -66,7 +77,8 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 		$exit_markup = $this->template_contents;
 
 		if ( ! empty( $this->found_supported_elements ) ) {
-			$this->config->add_content_section( str_replace( '-', '_', $this->template_name ) );
+			$this->config->add_content_section( $this->page_slug);
+			$this->current_section = $this->config->get_section_id($this->page_slug);
 			array_walk( $this->ftb_elements, array( $this, 'replace_supported_elements' ) );
 
 			$exit_markup = $this->doc->saveHTML();
@@ -104,7 +116,8 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 		/** @var DOMNode $node */
 		foreach ( $nodes as $node ) {
 			/** @var FTB_Nodes_ProcessorInterface $node_processor */
-			$node_processor   = $this->nodes_processor_factory->make_for_type( $type, $node );
+			$node_processor = $this->nodes_processor_factory->make_for_type( $type, $node );
+			$node_processor->set_section( $this->current_section );
 			$processed_string = $node_processor->process();
 
 			$parent = $node->parentNode;

@@ -2,6 +2,7 @@
 namespace FTB\Fields;
 
 use FTB_Fields_KirkiConfigDumper as KirkiConfigDumper;
+use Prophecy\Argument;
 
 class ConfigDumperTest extends \Codeception\TestCase\WPTestCase {
 
@@ -10,12 +11,18 @@ class ConfigDumperTest extends \Codeception\TestCase\WPTestCase {
 	 */
 	protected $wp;
 
+	/**
+	 * @var \FTB_Locators_PageInterface
+	 */
+	protected $page_locator;
+
 	public function setUp() {
 		// before
 		parent::setUp();
 
 		// your set up methods here
-		$this->wp = $this->prophesize( 'FTB_Adapters_WPInterface' );
+		$this->wp           = $this->prophesize( 'FTB_Adapters_WPInterface' );
+		$this->page_locator = $this->prophesize( 'FTB_Locators_PageInterface' );
 	}
 
 	public function tearDown() {
@@ -193,16 +200,16 @@ class ConfigDumperTest extends \Codeception\TestCase\WPTestCase {
 		$sut->remove_section( 'some-section' );
 		$this->assertFalse( $sut->has_section( 'some-section' ) );
 	}
-	
+
 	/**
 	 * @test
 	 * it should allow adding a field
 	 */
 	public function it_should_allow_adding_fields() {
-		$config                             = KirkiConfigDumper::get_empty_config();
-		$field_config                     = [
-			'settings'    => 'some-setting',
-			'section'       => 'some-section',
+		$config                         = KirkiConfigDumper::get_empty_config();
+		$field_config                   = [
+			'settings' => 'some-setting',
+			'section'  => 'some-section',
 		];
 		$config['fields']['some-field'] = $field_config;
 		$this->wp->save_configuration( $config )->shouldBeCalled();
@@ -218,10 +225,10 @@ class ConfigDumperTest extends \Codeception\TestCase\WPTestCase {
 	 * it should throw if field ID is not string
 	 */
 	public function it_should_throw_if_field_id_is_not_string() {
-		$config         = KirkiConfigDumper::get_empty_config();
+		$config       = KirkiConfigDumper::get_empty_config();
 		$field_config = [
-			'settings'    => 'some-setting',
-			'section'       => 'some-section',
+			'settings' => 'some-setting',
+			'section'  => 'some-section',
 		];
 
 		$this->setExpectedException( 'InvalidArgumentException' );
@@ -235,9 +242,9 @@ class ConfigDumperTest extends \Codeception\TestCase\WPTestCase {
 	 * it should throw if field config does not contain settings
 	 */
 	public function it_should_throw_if_field_config_does_not_contain_a_title() {
-		$config         = KirkiConfigDumper::get_empty_config();
+		$config       = KirkiConfigDumper::get_empty_config();
 		$field_config = [
-			'section'       => 'some-section',
+			'section' => 'some-section',
 		];
 
 		$this->setExpectedException( 'InvalidArgumentException' );
@@ -245,15 +252,15 @@ class ConfigDumperTest extends \Codeception\TestCase\WPTestCase {
 		$sut = $this->make_instance();
 		$sut->add_field( 'some-field', $field_config );
 	}
-	
+
 	/**
 	 * @test
 	 * it should throw if field config does not contain a section
 	 */
 	public function it_should_throw_if_field_config_does_not_contain_a_section() {
-		$config         = KirkiConfigDumper::get_empty_config();
+		$config       = KirkiConfigDumper::get_empty_config();
 		$field_config = [
-			'settings'       => 'some-setting',
+			'settings' => 'some-setting',
 		];
 
 		$this->setExpectedException( 'InvalidArgumentException' );
@@ -267,10 +274,10 @@ class ConfigDumperTest extends \Codeception\TestCase\WPTestCase {
 	 * it should allow removing a field
 	 */
 	public function it_should_allow_removing_a_field() {
-		$config         = KirkiConfigDumper::get_empty_config();
+		$config       = KirkiConfigDumper::get_empty_config();
 		$field_config = [
-			'settings'    => 'some-setting',
-			'section'       => 'some-section',
+			'settings' => 'some-setting',
+			'section'  => 'some-section',
 		];
 
 		$sut = $this->make_instance();
@@ -281,8 +288,26 @@ class ConfigDumperTest extends \Codeception\TestCase\WPTestCase {
 		$this->assertFalse( $sut->has_field( 'some-field' ) );
 	}
 
+	/**
+	 * @test
+	 * it should allow adding the page content section
+	 */
+	public function it_should_allow_adding_the_page_content_section() {
+		$config                                                   = KirkiConfigDumper::get_empty_config();
+		$section_config                                           = [
+			'title'           => 'Page Content',
+			'active_callback' => [ $this->page_locator->reveal(), 'is_some_page_page' ],
+		];
+		$config['sections']['ftb-page-some_page-section-content'] = $section_config;
+		$this->wp->save_configuration( $config )->shouldBeCalled();
+
+		$sut = $this->make_instance();
+		$sut->add_content_section( 'some_page' );
+		$sut->save_configuration();
+	}
+
 	private function make_instance() {
-		return new KirkiConfigDumper( $this->wp->reveal() );
+		return new KirkiConfigDumper( $this->wp->reveal(), $this->page_locator->reveal() );
 	}
 
 }

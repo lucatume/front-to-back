@@ -9,6 +9,11 @@ class FTB_Fields_KirkiConfigDumper implements FTB_Fields_ConfigDumperInterface {
 	protected $config;
 
 	/**
+	 * @var FTB_Locators_PageInterface
+	 */
+	protected $page_locator;
+
+	/**
 	 * @var FTB_Adapters_WPInterface
 	 */
 	private $wp;
@@ -17,9 +22,10 @@ class FTB_Fields_KirkiConfigDumper implements FTB_Fields_ConfigDumperInterface {
 		return [ 'panels' => [ ], 'sections' => [ ], 'fields' => [ ] ];
 	}
 
-	public function __construct( FTB_Adapters_WPInterface $wp ) {
-		$this->config = self::get_empty_config();
-		$this->wp     = $wp;
+	public function __construct( FTB_Adapters_WPInterface $wp, FTB_Locators_PageInterface $page_locator ) {
+		$this->config       = self::get_empty_config();
+		$this->wp           = $wp;
+		$this->page_locator = $page_locator;
 	}
 
 	public function save_configuration() {
@@ -93,5 +99,29 @@ class FTB_Fields_KirkiConfigDumper implements FTB_Fields_ConfigDumperInterface {
 			unset( $this->config['fields'][ $field_id ] );
 			$this->config['fields'] = $this->config['fields'];
 		}
+	}
+
+	public function add_content_section( $page_slug ) {
+		Arg::_( $page_slug, 'Page slug' )->is_string()->assert( preg_match( '/^[A-Za-z0-9_]+$/', $page_slug ), 'should be a snake_case string' );
+
+		$this->add_section( $this->get_section_id( $page_slug ),
+			array(
+				'title'           => __( 'Page Content', 'ftb' ),
+				'active_callback' => array( $this->page_locator, 'is_' . $page_slug . '_page' )
+			) );
+	}
+
+	/**
+	 * @param string $page_slug
+	 *
+	 * @param string $section_slug
+	 *
+	 * @return string
+	 */
+	public function get_section_id( $page_slug, $section_slug = 'content' ) {
+		Arg::_( $page_slug, 'Page slug' )->is_string();
+		Arg::_( $section_slug, 'Section slug' )->is_string();
+
+		return 'ftb-page-' . $page_slug . '-section-' . $section_slug;
 	}
 }

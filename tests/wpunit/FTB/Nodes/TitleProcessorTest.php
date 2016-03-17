@@ -66,6 +66,7 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 		$this->node->nodeValue()->willReturn( 'Some Title' );
 		$this->config->add_field( [
 			'settings' => 'title',
+			'section'  => 'some-section',
 			'label'    => 'Title',
 			'type'     => 'text',
 			'default'  => 'Some Title',
@@ -73,6 +74,7 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 		$this->template_tags->the_title()->willReturn( 'foo' );
 
 		$sut = $this->make_instance();
+		$sut->set_section( 'some-section' );
 		$sut->process();
 	}
 
