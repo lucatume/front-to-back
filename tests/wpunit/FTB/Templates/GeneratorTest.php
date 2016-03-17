@@ -22,7 +22,7 @@ class GeneratorTest extends \Codeception\TestCase\WPTestCase {
 
 		// your set up methods here
 		Test::setUp();
-		Test::replace('wp_redirect');
+		Test::replace( 'wp_redirect' );
 		$this->templates_repository = $this->prophesize( 'FTB_Templates_RepositoryInterface' );
 		$this->templates_reader     = $this->prophesize( 'FTB_Templates_ReaderInterface' );
 	}
@@ -30,7 +30,7 @@ class GeneratorTest extends \Codeception\TestCase\WPTestCase {
 	public function tearDown() {
 		// your tear down methods here
 		Test::tearDown();
-	
+
 		// then
 		parent::tearDown();
 	}
@@ -103,11 +103,11 @@ class GeneratorTest extends \Codeception\TestCase\WPTestCase {
 		$this->templates_repository->has_templates()->willReturn( true );
 		$template = $this->prophesize( 'FTB_Templates_TemplateInterface' );
 		$template->get_contents()->willReturn( 'one' );
-		$template->name()->willReturn( 'Template One' );
+		$template->name()->willReturn( 'template-one' );
 		$this->templates_repository->get_templates()->willReturn( [ $template->reveal() ] );
 		$this->templates_reader->set_template_contents( 'one' )->shouldBeCalled();
-		$this->templates_reader->read_and_process()->willReturn( 'output' );
-		$this->templates_repository->write_template( 'Template One', 'output' )->shouldBeCalled();
+		$this->templates_reader->read_and_process( 'template-one' )->willReturn( 'output' );
+		$this->templates_repository->write_template( 'template-one', 'output' )->shouldBeCalled();
 
 		$sut = $this->make_instance();
 		$sut->maybe_generate();

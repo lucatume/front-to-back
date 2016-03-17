@@ -30,7 +30,7 @@ class FTB_Templates_Generator implements FTB_Templates_GeneratorInterface {
 
 	private function process_template( FTB_Templates_TemplateInterface $template ) {
 		$this->templates_reader->set_template_contents( $template->get_contents() );
-		$output = $this->templates_reader->read_and_process();
+		$output = $this->templates_reader->read_and_process($template->name());
 		$this->templates_repository->write_template( $template->name(), $output );
 	}
 }

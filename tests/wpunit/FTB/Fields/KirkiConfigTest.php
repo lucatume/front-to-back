@@ -52,15 +52,15 @@ class KirkiConfigTest extends \Codeception\TestCase\WPTestCase {
 
 	/**
 	 * @test
-	 * it should add the section when constructing
+	 * it should add the section when add section called
 	 */
 	public function it_should_add_the_section_when_constructing() {
 		$this->prefix    = 'ftb-page';
-		$this->page_slug = 'some_page';
 		$this->config_id = 'some-config';
 		$add_section     = Test::replace( 'Kirki::add_section' );
 
-		$this->make_instance();
+		$sut = $this->make_instance();
+		$sut->add_content_section( 'some_page' );
 
 		$add_section->wasCalledWithOnce( [
 			'ftb-page-some_page-section-content',
@@ -78,11 +78,11 @@ class KirkiConfigTest extends \Codeception\TestCase\WPTestCase {
 	 */
 	public function it_should_default_the_field_settings() {
 		$this->prefix    = 'ftb-page';
-		$this->page_slug = 'some_page';
 		$this->config_id = 'some-config';
 		$add_field       = Test::replace( 'Kirki::add_field', true );
 
 		$sut = $this->make_instance();
+		$sut->add_content_section( 'some_page' );
 		$sut->add_field( [
 			'settings' => 'some_setting'
 		] );
@@ -92,7 +92,7 @@ class KirkiConfigTest extends \Codeception\TestCase\WPTestCase {
 	}
 
 	private function make_instance() {
-		return new KirkiConfig( $this->prefix, $this->page_slug, $this->config_id, $this->page_locator->reveal() );
+		return new KirkiConfig( $this->prefix, $this->config_id, $this->page_locator->reveal() );
 	}
 
 }

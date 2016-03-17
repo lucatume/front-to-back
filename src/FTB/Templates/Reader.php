@@ -34,8 +34,19 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 	 */
 	protected $template_lines;
 
-	public function __construct( FTB_Nodes_ProcessorFactory $nodes_processor_factory, $template_contents = '' ) {
+	/**
+	 * @var string
+	 */
+	protected $template_name;
+
+	/**
+	 * @var FTB_Fields_ConfigInterface
+	 */
+	protected $config;
+
+	public function __construct( FTB_Nodes_ProcessorFactory $nodes_processor_factory, FTB_Fields_ConfigInterface $config, $template_contents = '' ) {
 		$this->nodes_processor_factory = $nodes_processor_factory;
+		$this->config                  = $config;
 		$this->template_contents       = $template_contents;
 	}
 
@@ -43,8 +54,9 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 		$this->template_contents = $template_contents;
 	}
 
-	public function read_and_process() {
-		$this->doc = new DOMDocument();
+	public function read_and_process( $template_name ) {
+		$this->template_name = $template_name;
+		$this->doc           = new DOMDocument();
 		$this->doc->loadXML( $this->template_contents );
 
 		$this->ftb_elements = array();
@@ -54,6 +66,7 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 		$exit_markup = $this->template_contents;
 
 		if ( ! empty( $this->found_supported_elements ) ) {
+			$this->config->add_content_section( str_replace( '-', '_', $this->template_name ) );
 			array_walk( $this->ftb_elements, array( $this, 'replace_supported_elements' ) );
 
 			$exit_markup = $this->doc->saveHTML();

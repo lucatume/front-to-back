@@ -16,8 +16,8 @@ class FTB_ServiceProviders_TemplateOperations extends tad_DI52_ServiceProvider {
 			) );
 
 		$this->container->singleton( 'FTB_Filesystem_FilesystemInterface', 'FTB_Filesystem_DirectFilesystem' );
-		$this->container->bind( 'FTB_Templates_RepositoryInterface',
-			new FTB_Templates_Repository( get_stylesheet_directory() . DIRECTORY_SEPARATOR . 'ftb-templates', $this->container->make( 'FTB_Filesystem_FilesystemInterface' ) ) );
+		$this->container->bind( 'FTB_Fields_ConfigInterface', 'FTB_Fields_KirkiConfig' );
+		$this->container->bind( 'FTB_Templates_RepositoryInterface', 'FTB_Templates_Repository' );
 		$this->container->bind( 'FTB_Output_TemplateTagsInterface', new FTB_Output_TemplateTags() );
 		$this->container->singleton( 'FTB_Templates_ReaderInterface', 'FTB_Templates_Reader' );
 		$this->container->singleton( 'FTB_Nodes_ProcessorFactoryInterface', 'FTB_Nodes_ProcessorFactory' );
@@ -26,8 +26,6 @@ class FTB_ServiceProviders_TemplateOperations extends tad_DI52_ServiceProvider {
 		$this->container->singleton( 'FTB_Adapters_WPInterface', new FTB_Adapters_WP() );
 		$this->container->bind( 'FTB_Pages_FiltersInterface', 'FTB_Pages_Filters' );
 
-		$this->container->bind( 'FTB_Fields_ConfigInterface',
-			new FTB_Fields_KirkiConfig( 'ftb-page', 'about_us', $config_id, $this->container->make( 'FTB_Locators_PageInterface' ) ) );
 	}
 
 	/**

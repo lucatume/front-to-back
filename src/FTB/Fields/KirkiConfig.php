@@ -26,18 +26,10 @@ class FTB_Fields_KirkiConfig implements FTB_Fields_ConfigInterface {
 	 */
 	protected $page_locator;
 
-	public function __construct( $prefix, $page_slug, $config_id, FTB_Locators_PageInterface $page_locator ) {
-		$this->page_slug    = $page_slug;
+	public function __construct( $prefix = 'ftb-page-', $config_id = 'front-to-back', FTB_Locators_PageInterface $page_locator ) {
 		$this->config_id    = $config_id;
 		$this->prefix       = $prefix;
 		$this->page_locator = $page_locator;
-
-		$section_args = array(
-			'title'           => _x( 'Content', 'The section title in the Theme Customizer', 'ftb' ),
-			'active_callback' => array( $this->page_locator, 'is_' . $this->page_slug ),
-			'priority'        => 150,
-		);
-		Kirki::add_section( $this->section_id(), $section_args );
 	}
 
 	public function add_field( array $field_config ) {
@@ -76,5 +68,20 @@ class FTB_Fields_KirkiConfig implements FTB_Fields_ConfigInterface {
 	 */
 	protected function prefix() {
 		return $this->prefix . '-' . $this->page_slug;
+	}
+
+	/**
+	 * @param string $page_slug
+	 */
+	public function add_content_section( $page_slug ) {
+
+		$this->page_slug = $page_slug;
+
+		$section_args = array(
+			'title'           => _x( 'Content', 'The section title in the Theme Customizer', 'ftb' ),
+			'active_callback' => array( $this->page_locator, 'is_' . $this->page_slug ),
+			'priority'        => 150,
+		);
+		Kirki::add_section( $this->section_id(), $section_args );
 	}
 }

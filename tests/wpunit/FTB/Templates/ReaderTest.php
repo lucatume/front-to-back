@@ -10,12 +10,18 @@ class ReaderTest extends \Codeception\TestCase\WPTestCase {
 	 */
 	protected $node_processor_factory;
 
+	/**
+	 * @var \FTB_Fields_ConfigInterface
+	 */
+	protected $config;
+
 	public function setUp() {
 		// before
 		parent::setUp();
 
 		// your set up methods here
 		$this->node_processor_factory = $this->prophesize( 'FTB_Nodes_ProcessorFactory' );
+		$this->config                 = $this->prophesize( 'FTB_Fields_ConfigInterface' );
 	}
 
 	public function tearDown() {
@@ -60,7 +66,7 @@ get_header(); ?>
 TEMPLATE;
 		$sut->set_template_contents( $template_contents );
 
-		$out = $sut->read_and_process();
+		$out = $sut->read_and_process('about-us');
 
 		$this->assertTrue( xml_strcasecmp( $template_contents, $out ) );
 	}
@@ -113,12 +119,12 @@ TEMPLATE;
 
 		$sut->set_template_contents( $template_contents );
 
-		$out = $sut->read_and_process();
+		$out = $sut->read_and_process('about-us');
 
 		$this->assertTrue( xml_strcasecmp( $expected_template_contents, $out ) );
 	}
 
 	private function make_instance() {
-		return new \FTB_Templates_Reader( $this->node_processor_factory->reveal() );
+		return new \FTB_Templates_Reader( $this->node_processor_factory->reveal(), $this->config->reveal() );
 	}
 }
