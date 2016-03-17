@@ -11,4 +11,8 @@ class FTB_Adapters_WP implements FTB_Adapters_WPInterface {
 
 		return empty( $id ) ? false : $id;
 	}
+
+	public function save_configuration( $config ) {
+		return update_option( 'ftb-configuration', json_encode( $config ) );
+	}
 }

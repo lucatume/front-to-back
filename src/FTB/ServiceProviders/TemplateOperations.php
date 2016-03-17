@@ -15,6 +15,7 @@ class FTB_ServiceProviders_TemplateOperations extends tad_DI52_ServiceProvider {
 				'option_type' => 'theme_mod',
 			) );
 
+		$this->singleton( 'FTB_Fields_ConfigDumperInterface', 'FTB_Fields_KirkiConfigDumper' );
 		$this->container->singleton( 'FTB_Filesystem_FilesystemInterface', 'FTB_Filesystem_DirectFilesystem' );
 		$this->container->bind( 'FTB_Fields_ConfigInterface', 'FTB_Fields_KirkiConfig' );
 		$this->container->bind( 'FTB_Templates_RepositoryInterface', 'FTB_Templates_Repository' );
