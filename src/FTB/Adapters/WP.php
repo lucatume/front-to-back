@@ -15,4 +15,8 @@ class FTB_Adapters_WP implements FTB_Adapters_WPInterface {
 	public function save_configuration( $config ) {
 		return update_option( 'ftb-configuration', json_encode( $config ) );
 	}
+
+	public function get_json_decoded_option( $name, array $default = array() ) {
+		return json_decode( get_option( $name, $default ), true );
+	}
 }

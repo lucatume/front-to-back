@@ -107,7 +107,7 @@ class FTB_Fields_KirkiConfigDumper implements FTB_Fields_ConfigDumperInterface {
 		$this->add_section( $this->get_section_id( $page_slug ),
 			array(
 				'title'           => __( 'Page Content', 'ftb' ),
-				'active_callback' => 'is_' . $page_slug . '_page',
+				'active_callback' => 'is_' . $page_slug,
 			) );
 	}
 
