@@ -89,6 +89,7 @@ class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 	}
 
 	public function on_customize_save_after( $wp_customize ) {
+		/** @var WP_Customize_Manager $wp_customize */
 		$title   = $wp_customize->get_setting( "ftb-page-{$this->page_name()}-title" );
 		$content = $wp_customize->get_setting( "ftb-page-{$this->page_name()}-content" );
 
