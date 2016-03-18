@@ -77,8 +77,9 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 		$exit_markup = $this->template_contents;
 
 		if ( ! empty( $this->found_supported_elements ) ) {
-			$this->config->add_content_section( $this->page_slug);
-			$this->current_section = $this->config->get_section_id($this->page_slug);
+			$this->config->add_page_slug( $this->page_slug );
+			$this->config->add_content_section( $this->page_slug );
+			$this->current_section = $this->config->get_section_id( $this->page_slug );
 			array_walk( $this->ftb_elements, array( $this, 'replace_supported_elements' ) );
 
 			$exit_markup = $this->doc->saveHTML();
@@ -117,6 +118,7 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 		foreach ( $nodes as $node ) {
 			/** @var FTB_Nodes_ProcessorInterface $node_processor */
 			$node_processor = $this->nodes_processor_factory->make_for_type( $type, $node );
+			$node_processor->set_page_slug( $this->page_slug );
 			$node_processor->set_section( $this->current_section );
 			$processed_string = $node_processor->process();
 

@@ -14,12 +14,17 @@ class FTB_Fields_KirkiConfigDumper implements FTB_Fields_ConfigDumperInterface {
 	protected $page_locator;
 
 	/**
+	 * @var array
+	 */
+	protected $page_slugs = array();
+
+	/**
 	 * @var FTB_Adapters_WPInterface
 	 */
 	private $wp;
 
 	public static function get_empty_config() {
-		return [ 'panels' => [ ], 'sections' => [ ], 'fields' => [ ] ];
+		return array( 'panels' => array(), 'sections' => array(), 'fields' => array(), 'page_slugs' => array() );
 	}
 
 	public function __construct( FTB_Adapters_WPInterface $wp, FTB_Locators_PageInterface $page_locator ) {
@@ -123,5 +128,9 @@ class FTB_Fields_KirkiConfigDumper implements FTB_Fields_ConfigDumperInterface {
 		Arg::_( $section_slug, 'Section slug' )->is_string();
 
 		return 'ftb-page-' . $page_slug . '-section-' . $section_slug;
+	}
+
+	public function add_page_slug( $page_slug ) {
+		$this->config['page_slugs'][] = $page_slug;
 	}
 }

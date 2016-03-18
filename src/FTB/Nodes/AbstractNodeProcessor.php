@@ -21,6 +21,10 @@ abstract class FTB_Nodes_AbstractNodeProcessor implements FTB_Nodes_ProcessorInt
 	 * @var string
 	 */
 	protected $section;
+	/**
+	 * @var string
+	 */
+	protected $page_slug;
 
 	public function __construct( FTB_Nodes_DOMNodeInterface $node, FTB_Output_TemplateTagsInterface $template_tags, FTB_Fields_ConfigDumperInterface $config ) {
 		$this->node          = $node;
@@ -44,5 +48,9 @@ abstract class FTB_Nodes_AbstractNodeProcessor implements FTB_Nodes_ProcessorInt
 
 	public function set_section( $section ) {
 		$this->section = $section;
+	}
+
+	public function set_page_slug( $page_slug ) {
+		$this->page_slug = $page_slug;
 	}
 }

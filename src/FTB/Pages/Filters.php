@@ -34,10 +34,6 @@ class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 		$this->custom_fields = $custom_fields;
 	}
 
-	protected function page_slug() {
-		return $this->page_slug;
-	}
-
 	public function __construct( FTB_Adapters_WPInterface $wp, FTB_Locators_PageInterface $page_locator ) {
 		$this->wp           = $wp;
 		$this->page_locator = $page_locator;
@@ -53,7 +49,8 @@ class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 			$post_id = $post->ID;
 		}
 
-		if ( $post_id == $this->page_locator->{"get_{$this->page_name()}"}()->ID ) {
+		$page_post = $this->page_locator->{"get_{$this->page_name()}"}();
+		if ( $post_id == $page_post->ID ) {
 			return get_theme_mod( "ftb-page-{$this->page_name()}-title", 'Page Title' );
 		}
 

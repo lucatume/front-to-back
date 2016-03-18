@@ -66,7 +66,7 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 		$this->node->nodeValue()->willReturn( 'Some Title' );
 		$this->config->add_field( 'some-section-post_title',
 			[
-				'settings' => 'title',
+				'settings' => 'ftb-page-some_page-title',
 				'section'  => 'some-section',
 				'label'    => 'Title',
 				'type'     => 'text',
@@ -76,6 +76,7 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 
 		$sut = $this->make_instance();
 		$sut->set_section( 'some-section' );
+		$sut->set_page_slug('some_page');
 		$sut->process();
 	}
 

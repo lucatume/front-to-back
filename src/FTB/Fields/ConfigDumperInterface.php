@@ -33,4 +33,6 @@ interface FTB_Fields_ConfigDumperInterface {
 	 * @return string
 	 */
 	public function get_section_id( $page_slug, $section_slug = 'content' );
+
+	public function add_page_slug( $page_slug );
 }

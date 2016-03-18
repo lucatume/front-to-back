@@ -6,4 +6,8 @@ class DummyNodeProcessor extends \FTB_Nodes_AbstractNodeProcessor implements \FT
 
 	public function process() {
 	}
+
+	public function set_page_slug( $page_slug ) {
+		// TODO: Implement set_page_slug() method.
+	}
 }

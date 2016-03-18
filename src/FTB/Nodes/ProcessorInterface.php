@@ -12,4 +12,6 @@ interface FTB_Nodes_ProcessorInterface {
 	public function get_config();
 
 	public function set_section( $section );
+
+	public function set_page_slug( $page_slug );
 }

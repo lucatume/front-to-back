@@ -81,7 +81,9 @@ TEMPLATE;
 		$title_processor->process()->willReturn( '<?php the_title(); ?>' );
 		$this->config->get_section_id( 'about_us' )->willReturn( 'some-section' );
 		$this->config->add_content_section( 'about_us' )->shouldBeCalled();
+		$this->config->add_page_slug( 'about_us' )->shouldBeCalled();
 		$title_processor->set_section( 'some-section' )->shouldBeCalled();
+		$title_processor->set_page_slug( 'about_us' )->shouldBeCalled();
 		$this->node_processor_factory->make_for_type( 'title', Argument::any() )->willReturn( $title_processor->reveal() );
 		$sut               = $this->make_instance();
 		$template_contents = <<< TEMPLATE

@@ -23,6 +23,11 @@ class FTB_Customizer_ControlsConfig implements FTB_Customizer_ControlsConfigInte
 	 */
 	protected $option;
 
+	/**
+	 * @var bool
+	 */
+	protected $option_fetched = false;
+
 
 	public function __construct( FTB_Adapters_WPInterface $wp, FTB_Fields_ConfigDumperInterface $config_dumper, $option_name = 'ftb-configuration' ) {
 		$this->wp            = $wp;
@@ -50,6 +55,15 @@ class FTB_Customizer_ControlsConfig implements FTB_Customizer_ControlsConfigInte
 	}
 
 	private function init_option() {
-		$this->option = $this->wp->get_json_decoded_option( $this->option_name, $this->config_dumper->get_empty_config() );
+		if ( $this->option_fetched === false ) {
+			$this->option         = $this->wp->get_json_decoded_option( $this->option_name, $this->config_dumper->get_empty_config() );
+			$this->option_fetched = true;
+		}
+	}
+
+	public function get_page_slugs() {
+		$this->init_option();
+
+		return $this->option['page_slugs'];
 	}
 }
