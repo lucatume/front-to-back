@@ -8,6 +8,13 @@ settings:
     bootstrap: _bootstrap.php
     colors: true
     memory_limit: 1024M
+coverage:
+    enabled: true
+    include:
+        - src/*
+    exclude:
+        - vendor/*
+        - src/FTB/Adapters/*
 modules:
     config:
         Db:

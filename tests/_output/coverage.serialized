@@ -1,0 +1,1811 @@
+<?php
+$coverage = new PHP_CodeCoverage;
+$coverage->setData(array (
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Generator.php' => 
+  array (
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    28 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    33 => 
+    array (
+    ),
+    34 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+    41 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/ProcessorFactory.php' => 
+  array (
+    17 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => NULL,
+    33 => 
+    array (
+    ),
+    34 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+    41 => NULL,
+    44 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    46 => NULL,
+    47 => 
+    array (
+    ),
+    48 => 
+    array (
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/KirkiConfigDumper.php' => 
+  array (
+    27 => 
+    array (
+    ),
+    28 => NULL,
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    33 => 
+    array (
+    ),
+    34 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    41 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    44 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    48 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    51 => NULL,
+    54 => 
+    array (
+    ),
+    56 => 
+    array (
+    ),
+    57 => 
+    array (
+    ),
+    58 => 
+    array (
+    ),
+    59 => 
+    array (
+    ),
+    60 => 
+    array (
+    ),
+    63 => 
+    array (
+    ),
+    64 => 
+    array (
+    ),
+    66 => 
+    array (
+    ),
+    67 => 
+    array (
+    ),
+    70 => 
+    array (
+    ),
+    72 => 
+    array (
+    ),
+    73 => NULL,
+    76 => 
+    array (
+    ),
+    78 => 
+    array (
+    ),
+    79 => 
+    array (
+    ),
+    80 => 
+    array (
+    ),
+    81 => 
+    array (
+    ),
+    82 => 
+    array (
+    ),
+    85 => 
+    array (
+    ),
+    86 => 
+    array (
+    ),
+    87 => 
+    array (
+    ),
+    88 => 
+    array (
+    ),
+    89 => 
+    array (
+    ),
+    91 => 
+    array (
+    ),
+    92 => 
+    array (
+    ),
+    95 => 
+    array (
+    ),
+    97 => 
+    array (
+    ),
+    98 => NULL,
+    101 => 
+    array (
+    ),
+    103 => 
+    array (
+    ),
+    104 => 
+    array (
+    ),
+    105 => 
+    array (
+    ),
+    106 => 
+    array (
+    ),
+    107 => 
+    array (
+    ),
+    110 => 
+    array (
+    ),
+    112 => 
+    array (
+    ),
+    114 => 
+    array (
+    ),
+    115 => 
+    array (
+    ),
+    116 => 
+    array (
+    ),
+    117 => 
+    array (
+    ),
+    127 => 
+    array (
+    ),
+    128 => 
+    array (
+    ),
+    130 => 
+    array (
+    ),
+    131 => NULL,
+    134 => 
+    array (
+    ),
+    135 => 
+    array (
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Pages/Filters.php' => 
+  array (
+    22 => 
+    array (
+    ),
+    23 => NULL,
+    26 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    34 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    44 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    46 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    48 => NULL,
+    49 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    52 => 
+    array (
+    ),
+    53 => 
+    array (
+    ),
+    54 => 
+    array (
+    ),
+    55 => NULL,
+    57 => 
+    array (
+    ),
+    58 => NULL,
+    61 => 
+    array (
+    ),
+    62 => 
+    array (
+    ),
+    63 => 
+    array (
+    ),
+    64 => 
+    array (
+    ),
+    65 => 
+    array (
+    ),
+    66 => NULL,
+    67 => 
+    array (
+    ),
+    68 => 
+    array (
+    ),
+    70 => 
+    array (
+    ),
+    71 => 
+    array (
+    ),
+    72 => NULL,
+    74 => 
+    array (
+    ),
+    75 => NULL,
+    78 => 
+    array (
+    ),
+    79 => 
+    array (
+    ),
+    80 => 
+    array (
+    ),
+    82 => 
+    array (
+    ),
+    83 => 
+    array (
+    ),
+    84 => 
+    array (
+    ),
+    85 => 
+    array (
+    ),
+    86 => 
+    array (
+    ),
+    88 => 
+    array (
+    ),
+    89 => NULL,
+    93 => 
+    array (
+    ),
+    94 => 
+    array (
+    ),
+    96 => 
+    array (
+    ),
+    98 => 
+    array (
+    ),
+    99 => 
+    array (
+    ),
+    100 => 
+    array (
+    ),
+    101 => 
+    array (
+    ),
+    102 => 
+    array (
+    ),
+    103 => 
+    array (
+    ),
+    104 => 
+    array (
+    ),
+    105 => 
+    array (
+    ),
+    107 => 
+    array (
+    ),
+    108 => 
+    array (
+    ),
+    110 => 
+    array (
+    ),
+    111 => 
+    array (
+    ),
+    112 => 
+    array (
+    ),
+    114 => 
+    array (
+    ),
+    115 => 
+    array (
+    ),
+    116 => 
+    array (
+    ),
+    118 => 
+    array (
+    ),
+    119 => 
+    array (
+    ),
+    120 => 
+    array (
+    ),
+    122 => 
+    array (
+    ),
+    123 => 
+    array (
+    ),
+    126 => 
+    array (
+    ),
+    127 => 
+    array (
+    ),
+    128 => NULL,
+    130 => 
+    array (
+    ),
+    131 => NULL,
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/ServiceProviders/TemplateOperations.php' => 
+  array (
+    10 => 
+    array (
+    ),
+    12 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    15 => 
+    array (
+    ),
+    16 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    25 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    34 => 
+    array (
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Pages/PreviewFilters.php' => 
+  array (
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    33 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+    41 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    48 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    51 => 
+    array (
+    ),
+    59 => 
+    array (
+    ),
+    60 => 
+    array (
+    ),
+    61 => 
+    array (
+    ),
+    62 => 
+    array (
+    ),
+    63 => 
+    array (
+    ),
+    64 => 
+    array (
+    ),
+    65 => 
+    array (
+    ),
+    67 => 
+    array (
+    ),
+    68 => 
+    array (
+    ),
+    70 => 
+    array (
+    ),
+    71 => NULL,
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/functions.php' => 
+  array (
+    12 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    15 => NULL,
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Repository.php' => 
+  array (
+    38 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+    46 => 
+    array (
+    ),
+    47 => NULL,
+    53 => 
+    array (
+    ),
+    54 => 
+    array (
+    ),
+    55 => NULL,
+    57 => 
+    array (
+    ),
+    58 => NULL,
+    67 => 
+    array (
+    ),
+    68 => 
+    array (
+    ),
+    69 => 
+    array (
+    ),
+    75 => 
+    array (
+    ),
+    76 => 
+    array (
+    ),
+    77 => 
+    array (
+    ),
+    79 => 
+    array (
+    ),
+    80 => NULL,
+    86 => 
+    array (
+    ),
+    87 => NULL,
+    93 => 
+    array (
+    ),
+    94 => 
+    array (
+    ),
+    97 => 
+    array (
+    ),
+    98 => NULL,
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Customizer/Controls.php' => 
+  array (
+    22 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_be_instantiatable',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_not_configure_kirki_if_there_are_no_fields',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      4 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      5 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    23 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_be_instantiatable',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_not_configure_kirki_if_there_are_no_fields',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      4 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      5 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    24 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_be_instantiatable',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_not_configure_kirki_if_there_are_no_fields',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      4 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      5 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    25 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_be_instantiatable',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_not_configure_kirki_if_there_are_no_fields',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      4 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      5 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    29 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_not_configure_kirki_if_there_are_no_fields',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      4 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    30 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_not_configure_kirki_if_there_are_no_fields',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      4 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    31 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_not_configure_kirki_if_there_are_no_fields',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      4 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    33 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_not_configure_kirki_if_there_are_no_fields',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      4 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    34 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_not_configure_kirki_if_there_are_no_fields',
+    ),
+    35 => NULL,
+    37 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    39 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    40 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    41 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    42 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    43 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    44 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    45 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    48 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    49 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+    ),
+    50 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+    ),
+    51 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    52 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    55 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    56 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+    ),
+    57 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+    ),
+    58 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    59 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    62 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    63 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    64 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    65 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+    66 => 
+    array (
+      0 => 'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls',
+      1 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified',
+      2 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified',
+      3 => 'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified',
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Reader.php' => 
+  array (
+    58 => 
+    array (
+    ),
+    59 => 
+    array (
+    ),
+    60 => 
+    array (
+    ),
+    61 => 
+    array (
+    ),
+    64 => 
+    array (
+    ),
+    65 => 
+    array (
+    ),
+    68 => 
+    array (
+    ),
+    69 => 
+    array (
+    ),
+    70 => 
+    array (
+    ),
+    71 => 
+    array (
+    ),
+    73 => 
+    array (
+    ),
+    75 => 
+    array (
+    ),
+    77 => 
+    array (
+    ),
+    79 => 
+    array (
+    ),
+    80 => 
+    array (
+    ),
+    81 => 
+    array (
+    ),
+    82 => 
+    array (
+    ),
+    83 => 
+    array (
+    ),
+    85 => 
+    array (
+    ),
+    87 => 
+    array (
+    ),
+    88 => 
+    array (
+    ),
+    90 => 
+    array (
+    ),
+    91 => 
+    array (
+    ),
+    93 => 
+    array (
+    ),
+    94 => NULL,
+    98 => 
+    array (
+    ),
+    99 => 
+    array (
+    ),
+    100 => NULL,
+    103 => 
+    array (
+    ),
+    104 => 
+    array (
+    ),
+    105 => 
+    array (
+    ),
+    106 => 
+    array (
+    ),
+    107 => 
+    array (
+    ),
+    114 => 
+    array (
+    ),
+    118 => 
+    array (
+    ),
+    120 => 
+    array (
+    ),
+    121 => 
+    array (
+    ),
+    122 => 
+    array (
+    ),
+    123 => 
+    array (
+    ),
+    125 => 
+    array (
+    ),
+    127 => 
+    array (
+    ),
+    128 => 
+    array (
+    ),
+    129 => NULL,
+    131 => 
+    array (
+    ),
+    132 => 
+    array (
+    ),
+    133 => 
+    array (
+    ),
+    134 => 
+    array (
+    ),
+    135 => 
+    array (
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/ServiceProviders/UIControls.php' => 
+  array (
+    10 => 
+    array (
+    ),
+    11 => 
+    array (
+    ),
+    13 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    15 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Locators/Page.php' => 
+  array (
+    9 => 
+    array (
+    ),
+    10 => 
+    array (
+    ),
+    11 => NULL,
+    14 => 
+    array (
+    ),
+    15 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => NULL,
+    33 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+    41 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    44 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    46 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    48 => 
+    array (
+    ),
+    49 => 
+    array (
+    ),
+    51 => 
+    array (
+    ),
+    53 => 
+    array (
+    ),
+    54 => NULL,
+    57 => 
+    array (
+    ),
+    59 => 
+    array (
+    ),
+    60 => 
+    array (
+    ),
+    61 => NULL,
+    63 => 
+    array (
+    ),
+    66 => 
+    array (
+    ),
+    67 => 
+    array (
+    ),
+    68 => NULL,
+    71 => 
+    array (
+    ),
+    72 => 
+    array (
+    ),
+    73 => NULL,
+    75 => 
+    array (
+    ),
+    76 => NULL,
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/UI/GeneratorControl.php' => 
+  array (
+    7 => 
+    array (
+    ),
+    9 => 
+    array (
+    ),
+    10 => 
+    array (
+    ),
+    11 => 
+    array (
+    ),
+    12 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    15 => 
+    array (
+    ),
+    16 => 
+    array (
+    ),
+    17 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    25 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/KirkiConfig.php' => 
+  array (
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    33 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    44 => 
+    array (
+    ),
+    45 => NULL,
+    46 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    51 => NULL,
+    55 => 
+    array (
+    ),
+    56 => 
+    array (
+    ),
+    57 => NULL,
+    63 => 
+    array (
+    ),
+    64 => NULL,
+    70 => 
+    array (
+    ),
+    71 => NULL,
+    78 => 
+    array (
+    ),
+    81 => 
+    array (
+    ),
+    82 => 
+    array (
+    ),
+    83 => 
+    array (
+    ),
+    84 => 
+    array (
+    ),
+    85 => 
+    array (
+    ),
+    86 => 
+    array (
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Customizer/ControlsConfig.php' => 
+  array (
+    33 => 
+    array (
+    ),
+    34 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    43 => NULL,
+    46 => 
+    array (
+    ),
+    48 => 
+    array (
+    ),
+    49 => NULL,
+    52 => 
+    array (
+    ),
+    54 => 
+    array (
+    ),
+    55 => NULL,
+    58 => 
+    array (
+    ),
+    59 => 
+    array (
+    ),
+    60 => 
+    array (
+    ),
+    61 => 
+    array (
+    ),
+    62 => 
+    array (
+    ),
+    65 => 
+    array (
+    ),
+    67 => 
+    array (
+    ),
+    68 => NULL,
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Filesystem/DirectFilesystem.php' => 
+  array (
+    13 => 
+    array (
+    ),
+    14 => NULL,
+    22 => 
+    array (
+    ),
+    23 => NULL,
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Output/TemplateTags.php' => 
+  array (
+    7 => 
+    array (
+    ),
+    8 => NULL,
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/ServiceProviders/ThemeCustomizerSetup.php' => 
+  array (
+    10 => 
+    array (
+    ),
+    11 => 
+    array (
+    ),
+    12 => 
+    array (
+    ),
+    13 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    16 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Customizer/ControlsConfigInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Customizer/ControlsInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/ConfigDumperInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/ConfigInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Filesystem/FilesystemInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Locators/PageInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/AbstractNodeProcessor.php' => 
+  array (
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    33 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+    41 => 
+    array (
+    ),
+    44 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    51 => 
+    array (
+    ),
+    54 => 
+    array (
+    ),
+    55 => 
+    array (
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/DOMNode.php' => 
+  array (
+    27 => 
+    array (
+    ),
+    28 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+    41 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    44 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    49 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    56 => 
+    array (
+    ),
+    57 => 
+    array (
+    ),
+    58 => 
+    array (
+    ),
+    59 => 
+    array (
+    ),
+    60 => 
+    array (
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/DOMNodeInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/ProcessorFactoryInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/ProcessorInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/TitleProcessor.php' => 
+  array (
+    7 => 
+    array (
+    ),
+    8 => 
+    array (
+    ),
+    9 => 
+    array (
+    ),
+    10 => 
+    array (
+    ),
+    11 => 
+    array (
+    ),
+    12 => 
+    array (
+    ),
+    13 => 
+    array (
+    ),
+    15 => 
+    array (
+    ),
+    17 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Output/TemplateTagsInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Pages/FiltersInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Pages/PreviewFiltersInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/GeneratorInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/ReaderInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/RepositoryInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Template.php' => 
+  array (
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    25 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/TemplateInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/UI/GeneratorControlInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Utils/DOMNodeRecursiveIterator.php' => 
+  array (
+    12 => 
+    array (
+    ),
+    13 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    15 => 
+    array (
+    ),
+    17 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+  ),
+));
+$coverage->setTests(array (
+  'FTB\\Customizer\\ControlsTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsTest::it_should_not_configure_kirki_if_there_are_no_fields' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsTest::it_should_add_the_kirki_config_when_registering_controls' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_panels_if_specified' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_sections_if_specified' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsTest::it_should_set_the_active_callback_on_fields_if_specified' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'UNCOVERED_FILES_FROM_WHITELIST' => 
+  array (
+    'size' => 'unknown',
+    'status' => NULL,
+  ),
+));
+
+$filter = $coverage->filter();
+$filter->setBlacklistedFiles(array (
+));
+$filter->setWhitelistedFiles(array (
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Customizer/Controls.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Customizer/ControlsConfig.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Customizer/ControlsConfigInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Customizer/ControlsInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/ConfigDumperInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/ConfigInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/KirkiConfig.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/KirkiConfigDumper.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Filesystem/DirectFilesystem.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Filesystem/FilesystemInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Locators/Page.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Locators/PageInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/AbstractNodeProcessor.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/DOMNode.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/DOMNodeInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/ProcessorFactory.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/ProcessorFactoryInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/ProcessorInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/TitleProcessor.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Output/TemplateTags.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Output/TemplateTagsInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Pages/Filters.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Pages/FiltersInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Pages/PreviewFilters.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Pages/PreviewFiltersInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/ServiceProviders/TemplateOperations.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/ServiceProviders/ThemeCustomizerSetup.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/ServiceProviders/UIControls.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Generator.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/GeneratorInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Reader.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/ReaderInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Repository.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/RepositoryInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Template.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/TemplateInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/UI/GeneratorControl.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/UI/GeneratorControlInterface.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Utils/DOMNodeRecursiveIterator.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/functions.php' => true,
+));
+
+return $coverage;
