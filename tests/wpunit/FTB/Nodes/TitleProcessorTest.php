@@ -52,7 +52,10 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 	 */
 	public function it_should_return_the_title_template_tag_markup_when_processing() {
 		$this->config->add_field( Argument::type( 'string' ), Argument::any() )->willReturn( true );
-		$this->template_tags->the_title()->willReturn( 'foo' );
+		$this->node->nodeValue()->willReturn('Something');
+		$this->node->attr( 'before', '' )->willReturn( '' );
+		$this->node->attr( 'after', '' )->willReturn( '' );
+		$this->template_tags->the_title( '', '' )->willReturn( 'foo' );
 
 		$sut = $this->make_instance();
 		$this->assertEquals( 'foo', $sut->process() );
@@ -64,6 +67,8 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 	 */
 	public function it_should_add_title_theme_mod_to_the_current_section() {
 		$this->node->nodeValue()->willReturn( 'Some Title' );
+		$this->node->attr( 'before', '' )->willReturn( 'before' );
+		$this->node->attr( 'after', '' )->willReturn( 'after' );
 		$this->config->add_field( 'some-section-post_title',
 			[
 				'settings' => 'ftb-page-some_page-title',
@@ -72,11 +77,11 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 				'type'     => 'text',
 				'default'  => 'Some Title',
 			] )->shouldBeCalled();
-		$this->template_tags->the_title()->willReturn( 'foo' );
+		$this->template_tags->the_title( 'before', 'after' )->willReturn( 'foo' );
 
 		$sut = $this->make_instance();
 		$sut->set_section( 'some-section' );
-		$sut->set_page_slug('some_page');
+		$sut->set_page_slug( 'some_page' );
 		$sut->process();
 	}
 

@@ -3,6 +3,6 @@
 
 interface FTB_Output_TemplateTagsInterface {
 
-	public function the_title();
+	public function the_title( $before = '', $after = '' );
 
 }
