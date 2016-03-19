@@ -133,4 +133,8 @@ class FTB_Fields_KirkiConfigDumper implements FTB_Fields_ConfigDumperInterface {
 	public function add_page_slug( $page_slug ) {
 		$this->config['page_slugs'][] = $page_slug;
 	}
+
+	public function empty_config() {
+		return self::get_empty_config();
+	}
 }

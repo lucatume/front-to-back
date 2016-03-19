@@ -16,7 +16,7 @@ class FTB_Pages_PreviewFilters implements FTB_Pages_PreviewFiltersInterface {
 	/**
 	 * @var array
 	 */
-	protected $page_filters;
+	protected $page_filters = array();
 
 	public function __construct( tad_DI52_Container $container, FTB_Customizer_ControlsConfigInterface $controls_config ) {
 		$this->container       = $container;
@@ -35,6 +35,10 @@ class FTB_Pages_PreviewFilters implements FTB_Pages_PreviewFiltersInterface {
 		array_walk( $page_slugs, array( $this, 'add_page_save_filters' ) );
 	}
 
+	public function get_page_filters() {
+		return $this->page_filters;
+	}
+
 	private function add_page_preview_filters( $page_slug ) {
 		$filter = $this->get_filter_for_page_slug( $page_slug );
 
@@ -46,7 +50,7 @@ class FTB_Pages_PreviewFilters implements FTB_Pages_PreviewFiltersInterface {
 
 	private function add_page_save_filters( $page_slug ) {
 		$filter = $this->get_filter_for_page_slug( $page_slug );
-	
+
 		add_action( 'customize_save_after', array( $filter, 'on_customize_save_after' ), 10, 1 );
 	}
 

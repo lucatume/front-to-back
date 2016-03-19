@@ -15,6 +15,10 @@ coverage:
     exclude:
         - vendor/*
         - src/FTB/Adapters/*
+        - src/FTB/ServiceProviders/*
+        - src/FTB/Filesystem/DirectFilesystem.php
+        - src/FTB/Utils/DOMNodeRecursiveIterator.php
+        - src/FTB/UI/GeneratorControl.php
 modules:
     config:
         Db:

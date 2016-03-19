@@ -124,10 +124,6 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 
 			$parent = $node->parentNode;
 
-			if ( ! $parent ) {
-				continue;
-			}
-
 			$new = $this->doc->createTextNode( $processed_string );
 			$parent->insertBefore( $new, $node );
 			$parent->removeChild( $node );

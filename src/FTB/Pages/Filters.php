@@ -107,6 +107,8 @@ class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 			}
 		}
 
+		$postarr = array();
+
 		if ( ! empty( $title ) ) {
 			$postarr['post_title'] = $title->value();
 		}

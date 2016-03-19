@@ -5,274 +5,568 @@ $coverage->setData(array (
   array (
     20 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_be_instantiatable',
+      1 => 'FTB\\Templates\\GeneratorTest::it_should_not_genereate_templates_if_get_not_set',
+      2 => 'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_set',
+      3 => 'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_truthy',
+      4 => 'FTB\\Templates\\GeneratorTest::it_should_genereate_templates_if_get_var_set_and_truthy',
+      5 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     21 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_be_instantiatable',
+      1 => 'FTB\\Templates\\GeneratorTest::it_should_not_genereate_templates_if_get_not_set',
+      2 => 'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_set',
+      3 => 'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_truthy',
+      4 => 'FTB\\Templates\\GeneratorTest::it_should_genereate_templates_if_get_var_set_and_truthy',
+      5 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     22 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_be_instantiatable',
+      1 => 'FTB\\Templates\\GeneratorTest::it_should_not_genereate_templates_if_get_not_set',
+      2 => 'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_set',
+      3 => 'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_truthy',
+      4 => 'FTB\\Templates\\GeneratorTest::it_should_genereate_templates_if_get_var_set_and_truthy',
+      5 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     23 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_be_instantiatable',
+      1 => 'FTB\\Templates\\GeneratorTest::it_should_not_genereate_templates_if_get_not_set',
+      2 => 'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_set',
+      3 => 'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_truthy',
+      4 => 'FTB\\Templates\\GeneratorTest::it_should_genereate_templates_if_get_var_set_and_truthy',
+      5 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     26 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_not_genereate_templates_if_get_not_set',
+      1 => 'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_set',
+      2 => 'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_truthy',
+      3 => 'FTB\\Templates\\GeneratorTest::it_should_genereate_templates_if_get_var_set_and_truthy',
+      4 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     27 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_not_genereate_templates_if_get_not_set',
+      1 => 'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_set',
+      2 => 'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_truthy',
+      3 => 'FTB\\Templates\\GeneratorTest::it_should_genereate_templates_if_get_var_set_and_truthy',
+      4 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     28 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     29 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     31 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     33 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     34 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     36 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_not_genereate_templates_if_get_not_set',
+      1 => 'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_set',
+      2 => 'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_truthy',
+      3 => 'FTB\\Templates\\GeneratorTest::it_should_genereate_templates_if_get_var_set_and_truthy',
+      4 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     39 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     40 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     41 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
     42 => 
     array (
+      0 => 'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template',
     ),
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/ProcessorFactory.php' => 
   array (
     17 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_be_instantiatable',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_false_if_trying_to_get_processor_for_unsupported_type',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
+      4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_throw_if_trying_to_associate_a_class_not_implementing_the_processor_interface_with_a_type',
+      5 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      6 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      7 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
     18 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_be_instantiatable',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_false_if_trying_to_get_processor_for_unsupported_type',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
+      4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_throw_if_trying_to_associate_a_class_not_implementing_the_processor_interface_with_a_type',
+      5 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      6 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      7 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
     19 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_be_instantiatable',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_false_if_trying_to_get_processor_for_unsupported_type',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
+      4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_throw_if_trying_to_associate_a_class_not_implementing_the_processor_interface_with_a_type',
+      5 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      6 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      7 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
     29 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_false_if_trying_to_get_processor_for_unsupported_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      5 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
     30 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_false_if_trying_to_get_processor_for_unsupported_type',
     ),
     31 => NULL,
     33 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
     34 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
     35 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
     36 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
     37 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
     ),
     40 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
     41 => NULL,
     44 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_throw_if_trying_to_associate_a_class_not_implementing_the_processor_interface_with_a_type',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      5 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
     45 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_throw_if_trying_to_associate_a_class_not_implementing_the_processor_interface_with_a_type',
     ),
     46 => NULL,
     47 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
     48 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/KirkiConfigDumper.php' => 
   array (
     27 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_be_instantiatable',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_write_the_config_to_the_database',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_panels',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_id_is_not_string',
+      4 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_config_does_not_contain_a_title',
+      5 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
+      6 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_sections',
+      7 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_id_is_not_string',
+      8 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_config_does_not_contain_a_title',
+      9 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
+      10 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields',
+      11 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_id_is_not_string',
+      12 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_title',
+      13 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_section',
+      14 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
+      15 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     28 => NULL,
     31 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_be_instantiatable',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_write_the_config_to_the_database',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_panels',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_id_is_not_string',
+      4 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_config_does_not_contain_a_title',
+      5 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
+      6 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_sections',
+      7 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_id_is_not_string',
+      8 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_config_does_not_contain_a_title',
+      9 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
+      10 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields',
+      11 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_id_is_not_string',
+      12 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_title',
+      13 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_section',
+      14 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
+      15 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     32 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_be_instantiatable',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_write_the_config_to_the_database',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_panels',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_id_is_not_string',
+      4 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_config_does_not_contain_a_title',
+      5 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
+      6 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_sections',
+      7 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_id_is_not_string',
+      8 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_config_does_not_contain_a_title',
+      9 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
+      10 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields',
+      11 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_id_is_not_string',
+      12 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_title',
+      13 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_section',
+      14 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
+      15 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     33 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_be_instantiatable',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_write_the_config_to_the_database',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_panels',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_id_is_not_string',
+      4 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_config_does_not_contain_a_title',
+      5 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
+      6 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_sections',
+      7 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_id_is_not_string',
+      8 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_config_does_not_contain_a_title',
+      9 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
+      10 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields',
+      11 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_id_is_not_string',
+      12 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_title',
+      13 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_section',
+      14 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
+      15 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     34 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_be_instantiatable',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_write_the_config_to_the_database',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_panels',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_id_is_not_string',
+      4 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_config_does_not_contain_a_title',
+      5 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
+      6 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_sections',
+      7 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_id_is_not_string',
+      8 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_config_does_not_contain_a_title',
+      9 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
+      10 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields',
+      11 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_id_is_not_string',
+      12 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_title',
+      13 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_section',
+      14 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
+      15 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     37 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_write_the_config_to_the_database',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_panels',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_sections',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields',
+      4 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     38 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_write_the_config_to_the_database',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_panels',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_sections',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields',
+      4 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     41 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_panels',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_id_is_not_string',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_config_does_not_contain_a_title',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
     ),
     42 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_panels',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_config_does_not_contain_a_title',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
     ),
     44 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_panels',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
     ),
     45 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_panels',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
     ),
     48 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
     ),
     50 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
     ),
     51 => NULL,
     54 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
     ),
     56 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
     ),
     57 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
     ),
     58 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
     ),
     59 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
     ),
     60 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel',
     ),
     63 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_sections',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_id_is_not_string',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_config_does_not_contain_a_title',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
+      4 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     64 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_sections',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_config_does_not_contain_a_title',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     66 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_sections',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     67 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_sections',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     70 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
     ),
     72 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
     ),
     73 => NULL,
     76 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
     ),
     78 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
     ),
     79 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
     ),
     80 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
     ),
     81 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
     ),
     82 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section',
     ),
     85 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_id_is_not_string',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_title',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_section',
+      4 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     86 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_title',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_section',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     87 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_title',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_section',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     88 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_title',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_section',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     89 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_title',
+      2 => 'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_section',
+      3 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     91 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     92 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields',
+      1 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     95 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     97 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     98 => NULL,
     101 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     103 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     104 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     105 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     106 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     107 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field',
     ),
     110 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     112 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     114 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     115 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     116 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     117 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     127 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     128 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     130 => 
     array (
+      0 => 'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section',
     ),
     131 => NULL,
     134 => 
@@ -281,356 +575,731 @@ $coverage->setData(array (
     135 => 
     array (
     ),
+    138 => 
+    array (
+    ),
+    139 => NULL,
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Pages/Filters.php' => 
   array (
     22 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     23 => NULL,
     26 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_return_the_original_title_if_post_and_global_post_are_not_set',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_return_the_orginal_content_if_post_and_global_post_are_not_set',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     27 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_return_the_original_title_if_post_and_global_post_are_not_set',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_return_the_orginal_content_if_post_and_global_post_are_not_set',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     30 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_return_the_original_title_if_post_and_global_post_are_not_set',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_return_the_orginal_content_if_post_and_global_post_are_not_set',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     31 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_return_the_original_title_if_post_and_global_post_are_not_set',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_return_the_orginal_content_if_post_and_global_post_are_not_set',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     34 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     35 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     38 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_be_instantiatable',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_return_the_original_title_if_post_and_global_post_are_not_set',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_return_the_orginal_content_if_post_and_global_post_are_not_set',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      17 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     39 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_be_instantiatable',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_return_the_original_title_if_post_and_global_post_are_not_set',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_return_the_orginal_content_if_post_and_global_post_are_not_set',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      17 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     40 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_be_instantiatable',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_return_the_original_title_if_post_and_global_post_are_not_set',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_return_the_orginal_content_if_post_and_global_post_are_not_set',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      17 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     43 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_return_the_original_title_if_post_and_global_post_are_not_set',
     ),
     44 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_return_the_original_title_if_post_and_global_post_are_not_set',
     ),
     45 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_return_the_original_title_if_post_and_global_post_are_not_set',
     ),
     46 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_return_the_original_title_if_post_and_global_post_are_not_set',
     ),
     47 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_return_the_original_title_if_post_and_global_post_are_not_set',
     ),
     48 => NULL,
     49 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
     ),
     50 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
     ),
     52 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
     ),
     53 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
     ),
     54 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
     ),
     55 => NULL,
     57 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
     ),
     58 => NULL,
     61 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_return_the_orginal_content_if_post_and_global_post_are_not_set',
     ),
     62 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_return_the_orginal_content_if_post_and_global_post_are_not_set',
     ),
     63 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_return_the_orginal_content_if_post_and_global_post_are_not_set',
     ),
     64 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_return_the_orginal_content_if_post_and_global_post_are_not_set',
     ),
     65 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_return_the_orginal_content_if_post_and_global_post_are_not_set',
     ),
     66 => NULL,
     67 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
     ),
     68 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
     ),
     70 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
     ),
     71 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
     ),
     72 => NULL,
     74 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
     ),
     75 => NULL,
     78 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     79 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     80 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     82 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     83 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     84 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     85 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     86 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     88 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     89 => NULL,
     93 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     94 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     96 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     98 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     99 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     100 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     101 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     102 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     103 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
     ),
     104 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
     ),
     105 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     107 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     108 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     110 => 
     array (
-    ),
-    111 => 
-    array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     112 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
+    ),
+    113 => 
+    array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
     ),
     114 => 
     array (
-    ),
-    115 => 
-    array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
     ),
     116 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
+    ),
+    117 => 
+    array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
     ),
     118 => 
     array (
-    ),
-    119 => 
-    array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
     ),
     120 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
+    ),
+    121 => 
+    array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
     122 => 
     array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
     ),
-    123 => 
+    124 => 
+    array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
+    ),
+    125 => 
+    array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving',
+    ),
+    128 => 
+    array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
+    ),
+    129 => 
+    array (
+      0 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
+    ),
+    130 => NULL,
+    132 => 
     array (
     ),
-    126 => 
-    array (
-    ),
-    127 => 
-    array (
-    ),
-    128 => NULL,
-    130 => 
-    array (
-    ),
-    131 => NULL,
-  ),
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/ServiceProviders/TemplateOperations.php' => 
-  array (
-    10 => 
-    array (
-    ),
-    12 => 
-    array (
-    ),
-    14 => 
-    array (
-    ),
-    15 => 
-    array (
-    ),
-    16 => 
-    array (
-    ),
-    18 => 
-    array (
-    ),
-    19 => 
-    array (
-    ),
-    20 => 
-    array (
-    ),
-    21 => 
-    array (
-    ),
-    22 => 
-    array (
-    ),
-    23 => 
-    array (
-    ),
-    24 => 
-    array (
-    ),
-    25 => 
-    array (
-    ),
-    26 => 
-    array (
-    ),
-    27 => 
-    array (
-    ),
-    34 => 
-    array (
-    ),
+    133 => NULL,
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Pages/PreviewFilters.php' => 
   array (
     22 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_be_instantiatable',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_not_make_any_filter_if_page_slugs_are_empty',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      5 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
+      6 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
     23 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_be_instantiatable',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_not_make_any_filter_if_page_slugs_are_empty',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      5 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
+      6 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
     24 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_be_instantiatable',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_not_make_any_filter_if_page_slugs_are_empty',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      5 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
+      6 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
     27 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_not_make_any_filter_if_page_slugs_are_empty',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
     ),
     29 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_not_make_any_filter_if_page_slugs_are_empty',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
     ),
     30 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_not_make_any_filter_if_page_slugs_are_empty',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
     ),
     33 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_not_make_any_filter_if_page_slugs_are_empty',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
     35 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_not_make_any_filter_if_page_slugs_are_empty',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
     36 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_not_make_any_filter_if_page_slugs_are_empty',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
     39 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
     ),
-    41 => 
-    array (
-    ),
-    42 => 
-    array (
-    ),
+    40 => NULL,
     43 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
     ),
     45 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
     ),
-    48 => 
+    46 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
     ),
-    50 => 
+    47 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
     ),
-    51 => 
+    49 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
     ),
-    59 => 
+    52 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
-    60 => 
+    54 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
-    61 => 
+    55 => 
     array (
-    ),
-    62 => 
-    array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
     63 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
     64 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
     65 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
+    ),
+    66 => 
+    array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
     67 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
     68 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
-    70 => 
+    69 => 
     array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
     ),
-    71 => NULL,
+    71 => 
+    array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
+    ),
+    72 => 
+    array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
+    ),
+    74 => 
+    array (
+      0 => 'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page',
+      1 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter',
+      2 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter',
+      3 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter',
+      4 => 'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations',
+    ),
+    75 => NULL,
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/functions.php' => 
   array (
@@ -646,48 +1315,101 @@ $coverage->setData(array (
   array (
     38 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_be_instantiatable',
+      1 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_theme_templates_folder_is_missing',
+      2 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_templates_folder_contains_no_templates',
+      3 => 'FTB\\Templates\\RepositoryTest::it_should_have_templates_if_templates_folder_contains_one_template',
+      4 => 'FTB\\Templates\\RepositoryTest::it_should_not_return_any_template_if_has_no_templates',
+      5 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
+      6 => 'FTB\\Templates\\RepositoryTest::it_should_write_the_template_to_the_theme_root_directory',
     ),
     39 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_be_instantiatable',
+      1 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_theme_templates_folder_is_missing',
+      2 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_templates_folder_contains_no_templates',
+      3 => 'FTB\\Templates\\RepositoryTest::it_should_have_templates_if_templates_folder_contains_one_template',
+      4 => 'FTB\\Templates\\RepositoryTest::it_should_not_return_any_template_if_has_no_templates',
+      5 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
+      6 => 'FTB\\Templates\\RepositoryTest::it_should_write_the_template_to_the_theme_root_directory',
     ),
     40 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_be_instantiatable',
+      1 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_theme_templates_folder_is_missing',
+      2 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_templates_folder_contains_no_templates',
+      3 => 'FTB\\Templates\\RepositoryTest::it_should_have_templates_if_templates_folder_contains_one_template',
+      4 => 'FTB\\Templates\\RepositoryTest::it_should_not_return_any_template_if_has_no_templates',
+      5 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
+      6 => 'FTB\\Templates\\RepositoryTest::it_should_write_the_template_to_the_theme_root_directory',
     ),
     46 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_theme_templates_folder_is_missing',
+      1 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_templates_folder_contains_no_templates',
+      2 => 'FTB\\Templates\\RepositoryTest::it_should_have_templates_if_templates_folder_contains_one_template',
+      3 => 'FTB\\Templates\\RepositoryTest::it_should_not_return_any_template_if_has_no_templates',
+      4 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
     ),
     47 => NULL,
     53 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_not_return_any_template_if_has_no_templates',
+      1 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
     ),
     54 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_not_return_any_template_if_has_no_templates',
     ),
     55 => NULL,
     57 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
     ),
     58 => NULL,
     67 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_write_the_template_to_the_theme_root_directory',
     ),
     68 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_write_the_template_to_the_theme_root_directory',
     ),
     69 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_write_the_template_to_the_theme_root_directory',
     ),
     75 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_theme_templates_folder_is_missing',
+      1 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_templates_folder_contains_no_templates',
+      2 => 'FTB\\Templates\\RepositoryTest::it_should_have_templates_if_templates_folder_contains_one_template',
+      3 => 'FTB\\Templates\\RepositoryTest::it_should_not_return_any_template_if_has_no_templates',
+      4 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
     ),
     76 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_theme_templates_folder_is_missing',
+      1 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_templates_folder_contains_no_templates',
+      2 => 'FTB\\Templates\\RepositoryTest::it_should_have_templates_if_templates_folder_contains_one_template',
+      3 => 'FTB\\Templates\\RepositoryTest::it_should_not_return_any_template_if_has_no_templates',
+      4 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
     ),
     77 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_theme_templates_folder_is_missing',
+      1 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_templates_folder_contains_no_templates',
+      2 => 'FTB\\Templates\\RepositoryTest::it_should_have_templates_if_templates_folder_contains_one_template',
+      3 => 'FTB\\Templates\\RepositoryTest::it_should_not_return_any_template_if_has_no_templates',
+      4 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
     ),
     79 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_theme_templates_folder_is_missing',
+      1 => 'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_templates_folder_contains_no_templates',
+      2 => 'FTB\\Templates\\RepositoryTest::it_should_have_templates_if_templates_folder_contains_one_template',
+      3 => 'FTB\\Templates\\RepositoryTest::it_should_not_return_any_template_if_has_no_templates',
+      4 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
     ),
     80 => NULL,
     86 => 
@@ -696,12 +1418,15 @@ $coverage->setData(array (
     87 => NULL,
     93 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_write_the_template_to_the_theme_root_directory',
     ),
     94 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_write_the_template_to_the_theme_root_directory',
     ),
     97 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
     ),
     98 => NULL,
   ),
@@ -928,168 +1653,232 @@ $coverage->setData(array (
   array (
     58 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_be_instantiatable',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      2 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     59 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_be_instantiatable',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      2 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     60 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_be_instantiatable',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      2 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     61 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_be_instantiatable',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      2 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     64 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     65 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     68 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     69 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     70 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     71 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     73 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     75 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     77 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     79 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     80 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     81 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     82 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     83 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     85 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     87 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     88 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     90 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     91 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     93 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     94 => NULL,
     98 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     99 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     100 => NULL,
     103 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     104 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     105 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     106 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     107 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it',
+      1 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     114 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     118 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     120 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     121 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     122 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     123 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     125 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     127 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
     128 => 
     array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
-    129 => NULL,
+    129 => 
+    array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
+    ),
+    130 => 
+    array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
+    ),
     131 => 
     array (
-    ),
-    132 => 
-    array (
-    ),
-    133 => 
-    array (
-    ),
-    134 => 
-    array (
-    ),
-    135 => 
-    array (
-    ),
-  ),
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/ServiceProviders/UIControls.php' => 
-  array (
-    10 => 
-    array (
-    ),
-    11 => 
-    array (
-    ),
-    13 => 
-    array (
-    ),
-    14 => 
-    array (
-    ),
-    15 => 
-    array (
-    ),
-    22 => 
-    array (
+      0 => 'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag',
     ),
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Locators/Page.php' => 
   array (
     9 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_existing_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_page_page',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      3 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_wp_query_empty',
+      4 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_query_for_archive',
+      5 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_does_not_exist',
+      6 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_is_not_page',
+      7 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      8 => 'FTB\\Locators\\PageTest::it_should_return_false_is_trying_to_update_page_and_page_does_not_exist',
+      9 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_update_page_and_page_is_not_page',
+      10 => 'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page',
+      11 => 'FTB\\Locators\\PageTest::it_should_throw_for_non_supported_operations',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      17 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      18 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      19 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      20 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      21 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      22 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     10 => 
     array (
@@ -1097,201 +1886,480 @@ $coverage->setData(array (
     11 => NULL,
     14 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_existing_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_page_page',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      3 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_wp_query_empty',
+      4 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_query_for_archive',
+      5 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_does_not_exist',
+      6 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_is_not_page',
+      7 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      8 => 'FTB\\Locators\\PageTest::it_should_return_false_is_trying_to_update_page_and_page_does_not_exist',
+      9 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_update_page_and_page_is_not_page',
+      10 => 'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page',
+      11 => 'FTB\\Locators\\PageTest::it_should_throw_for_non_supported_operations',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      17 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      18 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      19 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      20 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      21 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      22 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     15 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_existing_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_page_page',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      3 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_wp_query_empty',
+      4 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_query_for_archive',
+      5 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_does_not_exist',
+      6 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_is_not_page',
+      7 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      8 => 'FTB\\Locators\\PageTest::it_should_return_false_is_trying_to_update_page_and_page_does_not_exist',
+      9 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_update_page_and_page_is_not_page',
+      10 => 'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page',
+      11 => 'FTB\\Locators\\PageTest::it_should_throw_for_non_supported_operations',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      17 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      18 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      19 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      20 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      21 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      22 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     18 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_existing_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_page_page',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      3 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_wp_query_empty',
+      4 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_query_for_archive',
+      5 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_does_not_exist',
+      6 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_is_not_page',
+      7 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      8 => 'FTB\\Locators\\PageTest::it_should_return_false_is_trying_to_update_page_and_page_does_not_exist',
+      9 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_update_page_and_page_is_not_page',
+      10 => 'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page',
+      11 => 'FTB\\Locators\\PageTest::it_should_throw_for_non_supported_operations',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      17 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      18 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      19 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      20 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      21 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      22 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     19 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_existing_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_page_page',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      3 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_wp_query_empty',
+      4 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_query_for_archive',
+      5 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_does_not_exist',
+      6 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_is_not_page',
+      7 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      8 => 'FTB\\Locators\\PageTest::it_should_return_false_is_trying_to_update_page_and_page_does_not_exist',
+      9 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_update_page_and_page_is_not_page',
+      10 => 'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      17 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      18 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      19 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      20 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      21 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     20 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_existing_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_page_page',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      3 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_wp_query_empty',
+      4 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_query_for_archive',
+      5 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_does_not_exist',
+      6 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_is_not_page',
+      7 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      8 => 'FTB\\Locators\\PageTest::it_should_return_false_is_trying_to_update_page_and_page_does_not_exist',
+      9 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_update_page_and_page_is_not_page',
+      10 => 'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      17 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      18 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      19 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      20 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      21 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     23 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_existing_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_page_page',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      3 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_wp_query_empty',
+      4 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_query_for_archive',
+      5 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_does_not_exist',
+      6 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_is_not_page',
+      7 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      8 => 'FTB\\Locators\\PageTest::it_should_return_false_is_trying_to_update_page_and_page_does_not_exist',
+      9 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_update_page_and_page_is_not_page',
+      10 => 'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      17 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      18 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      19 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      20 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      21 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     26 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_existing_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_page_page',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      3 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_wp_query_empty',
+      4 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_query_for_archive',
+      5 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_does_not_exist',
+      6 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_is_not_page',
+      7 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      8 => 'FTB\\Locators\\PageTest::it_should_return_false_is_trying_to_update_page_and_page_does_not_exist',
+      9 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_update_page_and_page_is_not_page',
+      10 => 'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      17 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      18 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      19 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      20 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      21 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     29 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_existing_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_page_page',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      3 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_wp_query_empty',
+      4 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_query_for_archive',
+      5 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_does_not_exist',
+      6 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_is_not_page',
+      7 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      8 => 'FTB\\Locators\\PageTest::it_should_return_false_is_trying_to_update_page_and_page_does_not_exist',
+      9 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_update_page_and_page_is_not_page',
+      10 => 'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      14 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      15 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      16 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      17 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      18 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      19 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      20 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      21 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     30 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_existing_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_page_page',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_wp_query_empty',
+      3 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_query_for_archive',
+      4 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_does_not_exist',
+      5 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_is_not_page',
+      6 => 'FTB\\Locators\\PageTest::it_should_return_false_is_trying_to_update_page_and_page_does_not_exist',
+      7 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_update_page_and_page_is_not_page',
     ),
     31 => NULL,
     33 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     35 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      13 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     37 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
     ),
     38 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
     ),
     39 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
     ),
     40 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     41 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     42 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      1 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     43 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page',
     ),
     44 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page',
     ),
-    45 => 
-    array (
-    ),
+    45 => NULL,
     46 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
     47 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_throw_for_non_supported_operations',
     ),
-    48 => 
+    50 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
-    49 => 
+    52 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      2 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post',
+      3 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post',
+      4 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post',
+      5 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post',
+      6 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one',
+      7 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one',
+      8 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one',
+      9 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one',
+      10 => 'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one',
+      11 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one',
+      12 => 'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id',
     ),
-    51 => 
+    53 => NULL,
+    56 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_queried_post_and_global_wp_query_is_not_set',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_false_if_global_wp_query_has_no_posts',
+      3 => 'FTB\\Locators\\PageTest::it_should_return_false_if_global_wp_query_has_more_than_one_post',
+      4 => 'FTB\\Locators\\PageTest::it_should_return_the_post_if_global_wp_query_has_one',
     ),
-    53 => 
+    58 => 
     array (
-    ),
-    54 => NULL,
-    57 => 
-    array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_queried_post_and_global_wp_query_is_not_set',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_false_if_global_wp_query_has_no_posts',
+      3 => 'FTB\\Locators\\PageTest::it_should_return_false_if_global_wp_query_has_more_than_one_post',
+      4 => 'FTB\\Locators\\PageTest::it_should_return_the_post_if_global_wp_query_has_one',
     ),
     59 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_queried_post_and_global_wp_query_is_not_set',
     ),
-    60 => 
+    60 => NULL,
+    62 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_global_wp_query_has_no_posts',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_false_if_global_wp_query_has_more_than_one_post',
+      3 => 'FTB\\Locators\\PageTest::it_should_return_the_post_if_global_wp_query_has_one',
     ),
-    61 => NULL,
-    63 => 
+    65 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_global_wp_query_has_no_posts',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_false_if_global_wp_query_has_more_than_one_post',
+      3 => 'FTB\\Locators\\PageTest::it_should_return_the_post_if_global_wp_query_has_one',
     ),
     66 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_false_if_global_wp_query_has_no_posts',
     ),
-    67 => 
+    67 => NULL,
+    70 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_false_if_global_wp_query_has_more_than_one_post',
+      2 => 'FTB\\Locators\\PageTest::it_should_return_the_post_if_global_wp_query_has_one',
     ),
-    68 => NULL,
     71 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_false_if_global_wp_query_has_more_than_one_post',
     ),
-    72 => 
+    72 => NULL,
+    74 => 
     array (
+      0 => 'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page',
+      1 => 'FTB\\Locators\\PageTest::it_should_return_the_post_if_global_wp_query_has_one',
     ),
-    73 => NULL,
-    75 => 
-    array (
-    ),
-    76 => NULL,
-  ),
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/UI/GeneratorControl.php' => 
-  array (
-    7 => 
-    array (
-    ),
-    9 => 
-    array (
-    ),
-    10 => 
-    array (
-    ),
-    11 => 
-    array (
-    ),
-    12 => 
-    array (
-    ),
-    14 => 
-    array (
-    ),
-    15 => 
-    array (
-    ),
-    16 => 
-    array (
-    ),
-    17 => 
-    array (
-    ),
-    18 => 
-    array (
-    ),
-    20 => 
-    array (
-    ),
-    21 => 
-    array (
-    ),
-    22 => 
-    array (
-    ),
-    23 => 
-    array (
-    ),
-    24 => 
-    array (
-    ),
-    25 => 
-    array (
-    ),
-    26 => 
-    array (
-    ),
+    75 => NULL,
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/KirkiConfig.php' => 
   array (
     30 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_be_instantiatable',
+      1 => 'FTB\\Fields\\KirkiConfigTest::it_should_add_the_section_when_constructing',
+      2 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     31 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_be_instantiatable',
+      1 => 'FTB\\Fields\\KirkiConfigTest::it_should_add_the_section_when_constructing',
+      2 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     32 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_be_instantiatable',
+      1 => 'FTB\\Fields\\KirkiConfigTest::it_should_add_the_section_when_constructing',
+      2 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     33 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_be_instantiatable',
+      1 => 'FTB\\Fields\\KirkiConfigTest::it_should_add_the_section_when_constructing',
+      2 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     36 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     37 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     38 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     39 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     42 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     43 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     44 => 
     array (
@@ -1299,165 +2367,598 @@ $coverage->setData(array (
     45 => NULL,
     46 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     47 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     50 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     51 => NULL,
     55 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     56 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     57 => NULL,
     63 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_add_the_section_when_constructing',
+      1 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     64 => NULL,
     70 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_add_the_section_when_constructing',
+      1 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     71 => NULL,
     78 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_add_the_section_when_constructing',
+      1 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     81 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_add_the_section_when_constructing',
+      1 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     82 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_add_the_section_when_constructing',
+      1 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     83 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_add_the_section_when_constructing',
+      1 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     84 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_add_the_section_when_constructing',
+      1 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     85 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_add_the_section_when_constructing',
+      1 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
     86 => 
     array (
+      0 => 'FTB\\Fields\\KirkiConfigTest::it_should_add_the_section_when_constructing',
+      1 => 'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings',
     ),
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Customizer/ControlsConfig.php' => 
   array (
     33 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_be_instantiatable',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_panels',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_panels_not_set_in_option',
+      3 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_panels_if_option_not_set',
+      4 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_sections',
+      5 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_sections_not_set_in_option',
+      6 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_sections_if_option_not_set',
+      7 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_fields',
+      8 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_fields_not_set_in_option',
+      9 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_fields_if_option_not_set',
+      10 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_page_slugs',
+      11 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_page_slugs_not_set_in_option',
+      12 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_page_slugs_if_option_not_set',
     ),
     34 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_be_instantiatable',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_panels',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_panels_not_set_in_option',
+      3 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_panels_if_option_not_set',
+      4 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_sections',
+      5 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_sections_not_set_in_option',
+      6 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_sections_if_option_not_set',
+      7 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_fields',
+      8 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_fields_not_set_in_option',
+      9 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_fields_if_option_not_set',
+      10 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_page_slugs',
+      11 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_page_slugs_not_set_in_option',
+      12 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_page_slugs_if_option_not_set',
     ),
     35 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_be_instantiatable',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_panels',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_panels_not_set_in_option',
+      3 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_panels_if_option_not_set',
+      4 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_sections',
+      5 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_sections_not_set_in_option',
+      6 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_sections_if_option_not_set',
+      7 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_fields',
+      8 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_fields_not_set_in_option',
+      9 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_fields_if_option_not_set',
+      10 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_page_slugs',
+      11 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_page_slugs_not_set_in_option',
+      12 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_page_slugs_if_option_not_set',
     ),
     36 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_be_instantiatable',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_panels',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_panels_not_set_in_option',
+      3 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_panels_if_option_not_set',
+      4 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_sections',
+      5 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_sections_not_set_in_option',
+      6 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_sections_if_option_not_set',
+      7 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_fields',
+      8 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_fields_not_set_in_option',
+      9 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_fields_if_option_not_set',
+      10 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_page_slugs',
+      11 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_page_slugs_not_set_in_option',
+      12 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_page_slugs_if_option_not_set',
     ),
     37 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_be_instantiatable',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_panels',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_panels_not_set_in_option',
+      3 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_panels_if_option_not_set',
+      4 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_sections',
+      5 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_sections_not_set_in_option',
+      6 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_sections_if_option_not_set',
+      7 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_fields',
+      8 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_fields_not_set_in_option',
+      9 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_fields_if_option_not_set',
+      10 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_page_slugs',
+      11 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_page_slugs_not_set_in_option',
+      12 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_page_slugs_if_option_not_set',
     ),
     40 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_panels',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_panels_not_set_in_option',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_panels_if_option_not_set',
     ),
     42 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_panels',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_panels_not_set_in_option',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_panels_if_option_not_set',
     ),
     43 => NULL,
     46 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_sections',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_sections_not_set_in_option',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_sections_if_option_not_set',
     ),
     48 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_sections',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_sections_not_set_in_option',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_sections_if_option_not_set',
     ),
     49 => NULL,
     52 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_fields',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_fields_not_set_in_option',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_fields_if_option_not_set',
     ),
     54 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_fields',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_fields_not_set_in_option',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_fields_if_option_not_set',
     ),
     55 => NULL,
     58 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_panels',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_panels_not_set_in_option',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_panels_if_option_not_set',
+      3 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_sections',
+      4 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_sections_not_set_in_option',
+      5 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_sections_if_option_not_set',
+      6 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_fields',
+      7 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_fields_not_set_in_option',
+      8 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_fields_if_option_not_set',
+      9 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_page_slugs',
+      10 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_page_slugs_not_set_in_option',
+      11 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_page_slugs_if_option_not_set',
     ),
     59 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_panels',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_panels_not_set_in_option',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_panels_if_option_not_set',
+      3 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_sections',
+      4 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_sections_not_set_in_option',
+      5 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_sections_if_option_not_set',
+      6 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_fields',
+      7 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_fields_not_set_in_option',
+      8 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_fields_if_option_not_set',
+      9 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_page_slugs',
+      10 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_page_slugs_not_set_in_option',
+      11 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_page_slugs_if_option_not_set',
     ),
     60 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_panels',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_panels_not_set_in_option',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_panels_if_option_not_set',
+      3 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_sections',
+      4 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_sections_not_set_in_option',
+      5 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_sections_if_option_not_set',
+      6 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_fields',
+      7 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_fields_not_set_in_option',
+      8 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_fields_if_option_not_set',
+      9 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_page_slugs',
+      10 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_page_slugs_not_set_in_option',
+      11 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_page_slugs_if_option_not_set',
     ),
     61 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_panels',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_panels_not_set_in_option',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_panels_if_option_not_set',
+      3 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_sections',
+      4 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_sections_not_set_in_option',
+      5 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_sections_if_option_not_set',
+      6 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_fields',
+      7 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_fields_not_set_in_option',
+      8 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_fields_if_option_not_set',
+      9 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_page_slugs',
+      10 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_page_slugs_not_set_in_option',
+      11 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_page_slugs_if_option_not_set',
     ),
     62 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_panels',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_panels_not_set_in_option',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_panels_if_option_not_set',
+      3 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_sections',
+      4 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_sections_not_set_in_option',
+      5 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_sections_if_option_not_set',
+      6 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_fields',
+      7 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_fields_not_set_in_option',
+      8 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_fields_if_option_not_set',
+      9 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_page_slugs',
+      10 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_page_slugs_not_set_in_option',
+      11 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_page_slugs_if_option_not_set',
     ),
     65 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_page_slugs',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_page_slugs_not_set_in_option',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_page_slugs_if_option_not_set',
     ),
     67 => 
     array (
+      0 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_page_slugs',
+      1 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_page_slugs_not_set_in_option',
+      2 => 'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_page_slugs_if_option_not_set',
     ),
     68 => NULL,
   ),
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Filesystem/DirectFilesystem.php' => 
-  array (
-    13 => 
-    array (
-    ),
-    14 => NULL,
-    22 => 
-    array (
-    ),
-    23 => NULL,
-  ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Output/TemplateTags.php' => 
   array (
-    7 => 
+    9 => 
     array (
+      0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #0',
+      1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
+      2 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #2',
+      3 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #3',
     ),
-    8 => NULL,
-  ),
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/ServiceProviders/ThemeCustomizerSetup.php' => 
-  array (
     10 => 
     array (
+      0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #0',
     ),
     11 => 
     array (
+      0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
+      1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #2',
+      2 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #3',
     ),
     12 => 
     array (
+      0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
+    ),
+    13 => NULL,
+    15 => 
+    array (
+      0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #2',
+      1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #3',
+    ),
+    16 => NULL,
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/DOMNodeInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/DOMNode.php' => 
+  array (
+    27 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_be_instantiatable',
+      1 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_the_node_node_value',
+      2 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_empty_string_if_node_node_value_is_empty',
+      3 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_tryng_to_get_attr_on_node_with_no_attributes',
+      4 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_trying_to_get_missing_node_attr',
+      5 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_node_attribute',
+      6 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      7 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      8 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      9 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
+    ),
+    28 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_be_instantiatable',
+      1 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_the_node_node_value',
+      2 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_empty_string_if_node_node_value_is_empty',
+      3 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_tryng_to_get_attr_on_node_with_no_attributes',
+      4 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_trying_to_get_missing_node_attr',
+      5 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_node_attribute',
+      6 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      7 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      8 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      9 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
+    ),
+    31 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_the_node_node_value',
+      1 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_empty_string_if_node_node_value_is_empty',
+    ),
+    32 => NULL,
+    35 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_tryng_to_get_attr_on_node_with_no_attributes',
+      1 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_trying_to_get_missing_node_attr',
+      2 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_node_attribute',
+    ),
+    37 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_tryng_to_get_attr_on_node_with_no_attributes',
+      1 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_trying_to_get_missing_node_attr',
+      2 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_node_attribute',
+    ),
+    38 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_tryng_to_get_attr_on_node_with_no_attributes',
+    ),
+    39 => NULL,
+    41 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_trying_to_get_missing_node_attr',
+      1 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_node_attribute',
+    ),
+    43 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_trying_to_get_missing_node_attr',
+      1 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_node_attribute',
+    ),
+    44 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_trying_to_get_missing_node_attr',
+    ),
+    45 => NULL,
+    47 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_node_attribute',
+    ),
+    49 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_node_attribute',
+    ),
+    50 => NULL,
+    56 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_tryng_to_get_attr_on_node_with_no_attributes',
+      1 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_trying_to_get_missing_node_attr',
+      2 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_node_attribute',
+    ),
+    57 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_tryng_to_get_attr_on_node_with_no_attributes',
+      1 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_trying_to_get_missing_node_attr',
+      2 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_node_attribute',
+    ),
+    58 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_tryng_to_get_attr_on_node_with_no_attributes',
+      1 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_trying_to_get_missing_node_attr',
+      2 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_node_attribute',
+    ),
+    59 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_tryng_to_get_attr_on_node_with_no_attributes',
+      1 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_trying_to_get_missing_node_attr',
+      2 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_node_attribute',
+    ),
+    60 => 
+    array (
+      0 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_tryng_to_get_attr_on_node_with_no_attributes',
+      1 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_trying_to_get_missing_node_attr',
+      2 => 'FTB\\Nodes\\DOMNodeTest::it_should_return_node_attribute',
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/ProcessorInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/AbstractNodeProcessor.php' => 
+  array (
+    30 => 
+    array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
+      4 => 'FTB\\Nodes\\TitleProcessorTest::it_should_be_instantiatable',
+      5 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      6 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    31 => 
+    array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
+      4 => 'FTB\\Nodes\\TitleProcessorTest::it_should_be_instantiatable',
+      5 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      6 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    32 => 
+    array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
+      4 => 'FTB\\Nodes\\TitleProcessorTest::it_should_be_instantiatable',
+      5 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      6 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    33 => 
+    array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
+      4 => 'FTB\\Nodes\\TitleProcessorTest::it_should_be_instantiatable',
+      5 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      6 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    36 => 
+    array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+    ),
+    37 => NULL,
+    40 => 
+    array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+    ),
+    41 => NULL,
+    44 => 
+    array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
+    ),
+    45 => NULL,
+    50 => 
+    array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    51 => 
+    array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    54 => 
+    array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    55 => 
+    array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/TitleProcessor.php' => 
+  array (
+    8 => 
+    array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    9 => 
+    array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    10 => 
+    array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    11 => 
+    array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    12 => 
+    array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
     ),
     13 => 
     array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
     ),
-    14 => 
+    15 => 
     array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
     ),
-    16 => 
+    17 => 
     array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
     ),
     18 => 
     array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
     ),
     20 => 
     array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
     ),
-    21 => 
-    array (
-    ),
+    21 => NULL,
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/TemplateInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Template.php' => 
+  array (
     22 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
+      1 => 'FTB\\Templates\\TemplateTest::it_should_be_instantiatable',
+      2 => 'FTB\\Templates\\TemplateTest::it_should_return_the_file_contents',
+      3 => 'FTB\\Templates\\TemplateTest::it_should_return_the_template_file_name',
     ),
-    29 => 
+    23 => 
     array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
+      1 => 'FTB\\Templates\\TemplateTest::it_should_be_instantiatable',
+      2 => 'FTB\\Templates\\TemplateTest::it_should_return_the_file_contents',
+      3 => 'FTB\\Templates\\TemplateTest::it_should_return_the_template_file_name',
     ),
+    24 => 
+    array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
+      1 => 'FTB\\Templates\\TemplateTest::it_should_be_instantiatable',
+      2 => 'FTB\\Templates\\TemplateTest::it_should_return_the_file_contents',
+      3 => 'FTB\\Templates\\TemplateTest::it_should_return_the_template_file_name',
+    ),
+    25 => 
+    array (
+      0 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
+      1 => 'FTB\\Templates\\TemplateTest::it_should_be_instantiatable',
+      2 => 'FTB\\Templates\\TemplateTest::it_should_return_the_file_contents',
+      3 => 'FTB\\Templates\\TemplateTest::it_should_return_the_template_file_name',
+    ),
+    31 => 
+    array (
+      0 => 'FTB\\Templates\\TemplateTest::it_should_return_the_file_contents',
+    ),
+    32 => NULL,
+    38 => 
+    array (
+      0 => 'FTB\\Templates\\TemplateTest::it_should_return_the_template_file_name',
+    ),
+    39 => NULL,
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Customizer/ControlsConfigInterface.php' => 
   array (
@@ -1477,161 +2978,8 @@ $coverage->setData(array (
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Locators/PageInterface.php' => 
   array (
   ),
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/AbstractNodeProcessor.php' => 
-  array (
-    30 => 
-    array (
-    ),
-    31 => 
-    array (
-    ),
-    32 => 
-    array (
-    ),
-    33 => 
-    array (
-    ),
-    36 => 
-    array (
-    ),
-    37 => 
-    array (
-    ),
-    40 => 
-    array (
-    ),
-    41 => 
-    array (
-    ),
-    44 => 
-    array (
-    ),
-    45 => 
-    array (
-    ),
-    50 => 
-    array (
-    ),
-    51 => 
-    array (
-    ),
-    54 => 
-    array (
-    ),
-    55 => 
-    array (
-    ),
-  ),
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/DOMNode.php' => 
-  array (
-    27 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-    31 => 
-    array (
-    ),
-    32 => 
-    array (
-    ),
-    35 => 
-    array (
-    ),
-    37 => 
-    array (
-    ),
-    38 => 
-    array (
-    ),
-    39 => 
-    array (
-    ),
-    41 => 
-    array (
-    ),
-    43 => 
-    array (
-    ),
-    44 => 
-    array (
-    ),
-    45 => 
-    array (
-    ),
-    47 => 
-    array (
-    ),
-    49 => 
-    array (
-    ),
-    50 => 
-    array (
-    ),
-    56 => 
-    array (
-    ),
-    57 => 
-    array (
-    ),
-    58 => 
-    array (
-    ),
-    59 => 
-    array (
-    ),
-    60 => 
-    array (
-    ),
-  ),
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/DOMNodeInterface.php' => 
-  array (
-  ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/ProcessorFactoryInterface.php' => 
   array (
-  ),
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/ProcessorInterface.php' => 
-  array (
-  ),
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/TitleProcessor.php' => 
-  array (
-    7 => 
-    array (
-    ),
-    8 => 
-    array (
-    ),
-    9 => 
-    array (
-    ),
-    10 => 
-    array (
-    ),
-    11 => 
-    array (
-    ),
-    12 => 
-    array (
-    ),
-    13 => 
-    array (
-    ),
-    15 => 
-    array (
-    ),
-    17 => 
-    array (
-    ),
-    18 => 
-    array (
-    ),
-    20 => 
-    array (
-    ),
-    21 => 
-    array (
-    ),
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Output/TemplateTagsInterface.php' => 
   array (
@@ -1651,80 +2999,76 @@ $coverage->setData(array (
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/RepositoryInterface.php' => 
   array (
   ),
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Template.php' => 
-  array (
-    22 => 
-    array (
-    ),
-    23 => 
-    array (
-    ),
-    24 => 
-    array (
-    ),
-    25 => 
-    array (
-    ),
-    31 => 
-    array (
-    ),
-    32 => 
-    array (
-    ),
-    38 => 
-    array (
-    ),
-    39 => 
-    array (
-    ),
-  ),
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/TemplateInterface.php' => 
-  array (
-  ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/UI/GeneratorControlInterface.php' => 
   array (
   ),
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Utils/DOMNodeRecursiveIterator.php' => 
-  array (
-    12 => 
-    array (
-    ),
-    13 => 
-    array (
-    ),
-    14 => 
-    array (
-    ),
-    15 => 
-    array (
-    ),
-    17 => 
-    array (
-    ),
-    19 => 
-    array (
-    ),
-    22 => 
-    array (
-    ),
-    23 => 
-    array (
-    ),
-    26 => 
-    array (
-    ),
-    27 => 
-    array (
-    ),
-    31 => 
-    array (
-    ),
-    32 => 
-    array (
-    ),
-  ),
 ));
 $coverage->setTests(array (
+  'FTB\\Customizer\\ControlsConfigTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsConfigTest::it_should_return_panels' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_panels_not_set_in_option' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_panels_if_option_not_set' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsConfigTest::it_should_return_sections' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_sections_not_set_in_option' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_sections_if_option_not_set' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsConfigTest::it_should_return_fields' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_fields_not_set_in_option' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_fields_if_option_not_set' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsConfigTest::it_should_return_page_slugs' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_if_page_slugs_not_set_in_option' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Customizer\\ControlsConfigTest::it_should_return_empty_array_for_page_slugs_if_option_not_set' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
   'FTB\\Customizer\\ControlsTest::it_should_be_instantiatable' => 
   array (
     'size' => 'unknown',
@@ -1755,6 +3099,516 @@ $coverage->setTests(array (
     'size' => 'unknown',
     'status' => 0,
   ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_write_the_config_to_the_database' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_panels' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_id_is_not_string' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_panel_config_does_not_contain_a_title' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_panel' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_sections' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_id_is_not_string' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_section_config_does_not_contain_a_title' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_section' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_fields' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_id_is_not_string' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_title' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_throw_if_field_config_does_not_contain_a_section' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_allow_removing_a_field' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\ConfigDumperTest::it_should_allow_adding_the_page_content_section' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\KirkiConfigTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\KirkiConfigTest::it_should_add_the_section_when_constructing' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_existing_page' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_post_for_non_page_page' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_post_if_trying_to_get_post_for_existing_post_page' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_wp_query_empty' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_query_for_archive' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_does_not_exist' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_assert_is_page_and_page_is_not_page' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_true_if_trying_to_assert_is_page_and_page_is_page' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_false_is_trying_to_update_page_and_page_does_not_exist' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_update_page_and_page_is_not_page' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_wp_update_post_exit_status_if_trying_to_update_page' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_false_if_trying_to_get_queried_post_and_global_wp_query_is_not_set' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_false_if_global_wp_query_has_no_posts' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_false_if_global_wp_query_has_more_than_one_post' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_return_the_post_if_global_wp_query_has_one' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Locators\\PageTest::it_should_throw_for_non_supported_operations' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\DOMNodeTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\DOMNodeTest::it_should_return_the_node_node_value' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\DOMNodeTest::it_should_return_empty_string_if_node_node_value_is_empty' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_tryng_to_get_attr_on_node_with_no_attributes' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\DOMNodeTest::it_should_return_default_if_trying_to_get_missing_node_attr' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\DOMNodeTest::it_should_return_node_attribute' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\ProcessorFactoryTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_false_if_trying_to_get_processor_for_unsupported_type' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\ProcessorFactoryTest::it_should_throw_if_trying_to_associate_a_class_not_implementing_the_processor_interface_with_a_type' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\TitleProcessorTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Output\\TemplateTagsTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #0' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #2' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #3' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one_with_global_post' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one_with_global_post' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one_with_global_post' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one_with_global_post' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_not_filter_the_title_if_the_page_is_not_the_target_one' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_filter_the_title_if_the_page_is_the_target_one' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_not_filter_the_content_if_the_page_is_not_the_target_one' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_filter_the_content_if_the_page_is_the_target_one' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_not_filter_the_post_meta_data_if_the_page_is_not_the_target_one' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_filter_the_metadata_if_the_page_is_the_target_one' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_filter_the_thumbnail_id_with_an_attachment_id' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_return_the_original_title_if_post_and_global_post_are_not_set' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_return_the_orginal_content_if_post_and_global_post_are_not_set' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_update_the_title_when_saving' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_update_the_content_when_saving' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_update_the_post_thumbnail_when_saving' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\FiltersTest::it_should_update_a_post_custom_field_when_saving' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\PreviewFiltersTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\PreviewFiltersTest::it_should_not_make_any_filter_if_page_slugs_are_empty' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\PreviewFiltersTest::it_should_make_a_filter_for_each_page' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_title_filter' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_the_content_filter' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\PreviewFiltersTest::it_should_hook_each_filter_to_get_post_metadata_filter' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Pages\\PreviewFiltersTest::it_should_hook_the_each_filter_to_the_save_operations' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\GeneratorTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\GeneratorTest::it_should_not_genereate_templates_if_get_not_set' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_set' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\GeneratorTest::it_should_not_generate_templates_if_get_var_not_truthy' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\GeneratorTest::it_should_genereate_templates_if_get_var_set_and_truthy' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\GeneratorTest::it_should_generate_a_template_for_each_found_template' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\ReaderTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\ReaderTest::it_should_return_the_original_template_content_if_there_are_no_ftb_tags_in_it' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\ReaderTest::it_should_replace_the_ftb_title_tag_with_wp_title_template_tag' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\RepositoryTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_theme_templates_folder_is_missing' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\RepositoryTest::it_should_not_have_templates_if_templates_folder_contains_no_templates' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\RepositoryTest::it_should_have_templates_if_templates_folder_contains_one_template' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\RepositoryTest::it_should_not_return_any_template_if_has_no_templates' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\RepositoryTest::it_should_write_the_template_to_the_theme_root_directory' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\TemplateTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\TemplateTest::it_should_return_the_file_contents' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Templates\\TemplateTest::it_should_return_the_template_file_name' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
   'UNCOVERED_FILES_FROM_WHITELIST' => 
   array (
     'size' => 'unknown',
@@ -1774,7 +3628,6 @@ $filter->setWhitelistedFiles(array (
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/ConfigInterface.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/KirkiConfig.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/KirkiConfigDumper.php' => true,
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Filesystem/DirectFilesystem.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Filesystem/FilesystemInterface.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Locators/Page.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Locators/PageInterface.php' => true,
@@ -1791,9 +3644,6 @@ $filter->setWhitelistedFiles(array (
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Pages/FiltersInterface.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Pages/PreviewFilters.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Pages/PreviewFiltersInterface.php' => true,
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/ServiceProviders/TemplateOperations.php' => true,
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/ServiceProviders/ThemeCustomizerSetup.php' => true,
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/ServiceProviders/UIControls.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Generator.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/GeneratorInterface.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Reader.php' => true,
@@ -1802,9 +3652,7 @@ $filter->setWhitelistedFiles(array (
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/RepositoryInterface.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Template.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/TemplateInterface.php' => true,
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/UI/GeneratorControl.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/UI/GeneratorControlInterface.php' => true,
-  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Utils/DOMNodeRecursiveIterator.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/functions.php' => true,
 ));
 

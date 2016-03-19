@@ -42,10 +42,9 @@ class FTB_Locators_Page implements FTB_Locators_PageInterface {
 					break;
 				case'update':
 					return wp_update_post( array_merge( array( 'ID' => $found->ID ), $args[0] ) );
-				default:
-					$out = false;
-					break;
 			}
+		} else {
+			throw new BadMethodCallException( "Method [$name] is not supported" );
 		}
 
 		$this->cache[ $name ] = $out;
@@ -59,7 +58,7 @@ class FTB_Locators_Page implements FTB_Locators_PageInterface {
 		if ( empty( $wp_query ) ) {
 			return false;
 		}
-       
+
 		$posts = $wp_query->get_posts();
 
 		// nothing to match against, bail

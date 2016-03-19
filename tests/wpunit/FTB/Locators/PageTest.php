@@ -245,4 +245,16 @@ class PageTest extends \Codeception\TestCase\WPTestCase {
 
 		$this->assertEquals( $post, $sut->get_queried_post() );
 	}
+
+	/**
+	 * @test
+	 * it should throw for non supported operations
+	 */
+	public function it_should_throw_for_non_supported_operations() {
+		$this->setExpectedException('BadMethodCallException');
+		
+		$sut = $this->make_instance();
+		
+		$sut->non_supported_method();
+	}
 }
