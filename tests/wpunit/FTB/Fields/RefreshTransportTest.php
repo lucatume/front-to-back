@@ -29,18 +29,6 @@ class RefreshTransportTest extends \Codeception\TestCase\WPTestCase {
 
 	/**
 	 * @test
-	 * it should not require field additions
-	 */
-	public function it_should_not_require_field_additions() {
-		$field_args = $this->make_field_args();
-
-		$sut = $this->make_instance();
-
-		$this->assertFalse( $sut->should_add_args( $field_args ) );
-	}
-
-	/**
-	 * @test
 	 * it should not add or modify field args
 	 */
 	public function it_should_not_add_or_modify_field_args() {
@@ -48,7 +36,19 @@ class RefreshTransportTest extends \Codeception\TestCase\WPTestCase {
 
 		$sut = $this->make_instance();
 
-		$this->assertEquals( $field_args, $sut->add_field_args( $field_args ) );
+		$this->assertEquals( $field_args, $sut->add_field_args( 'some-tag', $field_args ) );
+	}
+
+	/**
+	 * @test
+	 * it should not modify the markup
+	 */
+	public function it_should_not_modify_the_markup() {
+		$field_args = $this->make_field_args();
+
+		$sut = $this->make_instance();
+
+		$this->assertEquals( 'some-markup', $sut->modify_output( 'some-tag', $field_args, 'some-markup' ) );
 	}
 
 	private function make_instance() {

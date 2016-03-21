@@ -35,7 +35,6 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 		$this->template_tags = $this->prophesize( 'FTB_Output_TemplateTagsInterface' );
 		$this->config        = $this->prophesize( 'FTB_Fields_ConfigDumperInterface' );
 		$this->transport     = $this->prophesize( 'FTB_Fields_TransportInterface' );
-		$this->transport->should_add_args( Argument::type( 'array' ) )->willReturn( false );
 	}
 
 	public function tearDown() {
@@ -63,6 +62,15 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 		$this->node->attr( 'before', '' )->willReturn( '' );
 		$this->node->attr( 'after', '' )->willReturn( '' );
 		$this->template_tags->the_title( '', '' )->willReturn( 'foo' );
+		$field_args = [
+			'settings' => 'ftb-page-some_page-title',
+			'section'  => 'some-section',
+			'label'    => 'Title',
+			'type'     => 'text',
+			'default'  => 'Some Title',
+		];
+		$this->transport->add_field_args( 'title', Argument::type( 'array' ) )->willReturn( $field_args );
+		$this->transport->modify_output( 'title', Argument::type( 'array' ), 'foo' )->willReturn( 'foo' );
 
 		$sut = $this->make_instance();
 		$this->assertEquals( 'foo', $sut->process() );
@@ -76,15 +84,18 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 		$this->node->nodeValue()->willReturn( 'Some Title' );
 		$this->node->attr( 'before', '' )->willReturn( 'before' );
 		$this->node->attr( 'after', '' )->willReturn( 'after' );
+		$field_args = [
+			'settings' => 'ftb-page-some_page-title',
+			'section'  => 'some-section',
+			'label'    => 'Title',
+			'type'     => 'text',
+			'default'  => 'Some Title',
+		];
 		$this->config->add_field( 'some-section-post_title',
-			[
-				'settings' => 'ftb-page-some_page-title',
-				'section'  => 'some-section',
-				'label'    => 'Title',
-				'type'     => 'text',
-				'default'  => 'Some Title',
-			] )->shouldBeCalled();
+			$field_args )->shouldBeCalled();
 		$this->template_tags->the_title( 'before', 'after' )->willReturn( 'foo' );
+		$this->transport->add_field_args( 'title', Argument::type( 'array' ) )->willReturn( $field_args );
+		$this->transport->modify_output( 'title', Argument::type( 'array' ), 'foo' )->willReturn( 'foo' );
 
 		$sut = $this->make_instance();
 		$sut->set_section( 'some-section' );

@@ -12,15 +12,15 @@ class FTB_Nodes_TitleProcessor extends FTB_Nodes_AbstractNodeProcessor implement
 			'default'  => $this->node->nodeValue(),
 		);
 
-		if ( $this->transport->should_add_args($field_args) ) {
-			$field_args = $this->transport->add_field_args( $field_args );
-		}
+		$field_args = $this->transport->add_field_args( 'title', $field_args );
 
 		$this->config->add_field( $this->section . '-post_title', $field_args );
 
 		$before = $this->node->attr( 'before', '' );
 		$after  = $this->node->attr( 'after', '' );
 
-		return $this->template_tags->the_title( $before, $after );
+		$output =  $this->template_tags->the_title( $before, $after );
+
+		return $this->transport->modify_output('title', $field_args, $output);
 	}
 }

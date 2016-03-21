@@ -102,7 +102,7 @@ $coverage->setData(array (
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/ProcessorFactory.php' => 
   array (
-    17 => 
+    22 => 
     array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_be_instantiatable',
       1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_false_if_trying_to_get_processor_for_unsupported_type',
@@ -113,7 +113,7 @@ $coverage->setData(array (
       6 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
       7 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
-    18 => 
+    23 => 
     array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_be_instantiatable',
       1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_false_if_trying_to_get_processor_for_unsupported_type',
@@ -124,7 +124,7 @@ $coverage->setData(array (
       6 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
       7 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
-    19 => 
+    24 => 
     array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_be_instantiatable',
       1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_false_if_trying_to_get_processor_for_unsupported_type',
@@ -135,7 +135,18 @@ $coverage->setData(array (
       6 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
       7 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
-    29 => 
+    25 => 
+    array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_be_instantiatable',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_false_if_trying_to_get_processor_for_unsupported_type',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
+      4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_throw_if_trying_to_associate_a_class_not_implementing_the_processor_interface_with_a_type',
+      5 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      6 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      7 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
+    ),
+    35 => 
     array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_false_if_trying_to_get_processor_for_unsupported_type',
       1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
@@ -144,44 +155,18 @@ $coverage->setData(array (
       4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
       5 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
-    30 => 
+    36 => 
     array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_false_if_trying_to_get_processor_for_unsupported_type',
     ),
-    31 => NULL,
-    33 => 
+    37 => NULL,
+    39 => 
     array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
       1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
       2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
       3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
       4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
-    ),
-    34 => 
-    array (
-      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
-      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
-      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
-      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
-      4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
-    ),
-    35 => 
-    array (
-      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
-      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
-      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
-      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
-    ),
-    36 => 
-    array (
-      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
-      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
-      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
-      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
-    ),
-    37 => 
-    array (
-      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
     ),
     40 => 
     array (
@@ -191,8 +176,34 @@ $coverage->setData(array (
       3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
       4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
-    41 => NULL,
-    44 => 
+    41 => 
+    array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
+    ),
+    42 => 
+    array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
+    ),
+    43 => 
+    array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
+    ),
+    46 => 
+    array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
+    ),
+    47 => NULL,
+    50 => 
     array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
       1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
@@ -201,12 +212,12 @@ $coverage->setData(array (
       4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
       5 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
-    45 => 
+    51 => 
     array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_throw_if_trying_to_associate_a_class_not_implementing_the_processor_interface_with_a_type',
     ),
-    46 => NULL,
-    47 => 
+    52 => NULL,
+    53 => 
     array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
       1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
@@ -214,7 +225,7 @@ $coverage->setData(array (
       3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
       4 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
-    48 => 
+    54 => 
     array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
       1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_allow_associating_an_instance_to_a_type',
@@ -1310,6 +1321,59 @@ $coverage->setData(array (
     array (
     ),
     15 => NULL,
+    18 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    19 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    20 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    21 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    23 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    24 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    25 => 
+    array (
+    ),
+    26 => NULL,
+    28 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    29 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    30 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    31 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    32 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    34 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    35 => NULL,
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Repository.php' => 
   array (
@@ -1429,6 +1493,199 @@ $coverage->setData(array (
       0 => 'FTB\\Templates\\RepositoryTest::it_should_return_a_template_object_for_each_template_in_the_templates_folder',
     ),
     98 => NULL,
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/PostMessageTransport.php' => 
+  array (
+    12 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    13 => 
+    array (
+    ),
+    14 => NULL,
+    16 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    18 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    19 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    20 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    21 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    22 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    23 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    25 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    27 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    28 => NULL,
+    31 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    32 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    33 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    34 => NULL,
+    36 => 
+    array (
+    ),
+    37 => NULL,
+    40 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    41 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    42 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    43 => NULL,
+    45 => 
+    array (
+    ),
+    46 => NULL,
+    49 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+      1 => 'FTB\\Fields\\PostMessageTransportTest::it_should_modify_markup_for_fields with data set #0',
+    ),
+    50 => NULL,
+    53 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    54 => NULL,
+    57 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    58 => NULL,
+    61 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_modify_markup_for_fields with data set #0',
+    ),
+    62 => 
+    array (
+    ),
+    63 => NULL,
+    65 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_modify_markup_for_fields with data set #0',
+    ),
+    66 => NULL,
+    69 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_modify_markup_for_fields with data set #0',
+    ),
+    70 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_modify_markup_for_fields with data set #0',
+    ),
+    71 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_modify_markup_for_fields with data set #0',
+    ),
+    72 => NULL,
+    74 => 
+    array (
+    ),
+    75 => 
+    array (
+    ),
+    76 => NULL,
+    77 => 
+    array (
+    ),
+    79 => NULL,
+    82 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_modify_markup_for_fields with data set #0',
+    ),
+    83 => NULL,
+    86 => 
+    array (
+    ),
+    87 => NULL,
+    90 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    92 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    93 => NULL,
+    96 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    98 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    99 => NULL,
+    103 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    104 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    105 => NULL,
+    109 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    110 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    111 => NULL,
+    114 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    115 => NULL,
+    118 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
+    119 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0',
+    ),
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Customizer/Controls.php' => 
   array (
@@ -2676,6 +2933,21 @@ $coverage->setData(array (
     ),
     16 => NULL,
   ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/RefreshTransport.php' => 
+  array (
+    7 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_not_add_or_modify_field_args',
+      1 => 'FTB\\Fields\\RefreshTransportTest::it_should_not_add_or_modify_field_args',
+    ),
+    8 => NULL,
+    11 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_not_modify_the_markup',
+      1 => 'FTB\\Fields\\RefreshTransportTest::it_should_not_modify_the_markup',
+    ),
+    12 => NULL,
+  ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/DOMNodeInterface.php' => 
   array (
   ),
@@ -2790,7 +3062,7 @@ $coverage->setData(array (
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/AbstractNodeProcessor.php' => 
   array (
-    30 => 
+    34 => 
     array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
       1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
@@ -2800,27 +3072,7 @@ $coverage->setData(array (
       5 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
       6 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
     ),
-    31 => 
-    array (
-      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
-      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
-      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
-      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
-      4 => 'FTB\\Nodes\\TitleProcessorTest::it_should_be_instantiatable',
-      5 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
-      6 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
-    ),
-    32 => 
-    array (
-      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
-      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
-      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
-      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
-      4 => 'FTB\\Nodes\\TitleProcessorTest::it_should_be_instantiatable',
-      5 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
-      6 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
-    ),
-    33 => 
+    35 => 
     array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
       1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
@@ -2832,32 +3084,62 @@ $coverage->setData(array (
     ),
     36 => 
     array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
+      4 => 'FTB\\Nodes\\TitleProcessorTest::it_should_be_instantiatable',
+      5 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      6 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    37 => 
+    array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
+      4 => 'FTB\\Nodes\\TitleProcessorTest::it_should_be_instantiatable',
+      5 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      6 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    38 => 
+    array (
+      0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_return_instance_of_processor_associated_to_type',
+      1 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
+      2 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
+      3 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
+      4 => 'FTB\\Nodes\\TitleProcessorTest::it_should_be_instantiatable',
+      5 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      6 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    41 => 
+    array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_node_on_the_processor',
     ),
-    37 => NULL,
-    40 => 
+    42 => NULL,
+    45 => 
     array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_template_tags_on_the_processor',
     ),
-    41 => NULL,
-    44 => 
+    46 => NULL,
+    49 => 
     array (
       0 => 'FTB\\Nodes\\ProcessorFactoryTest::it_should_set_the_config_on_the_processor',
     ),
-    45 => NULL,
-    50 => 
-    array (
-      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
-    ),
-    51 => 
-    array (
-      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
-    ),
-    54 => 
-    array (
-      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
-    ),
+    50 => NULL,
     55 => 
+    array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    56 => 
+    array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    59 => 
+    array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    60 => 
     array (
       0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
     ),
@@ -2904,7 +3186,7 @@ $coverage->setData(array (
       0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
       1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
     ),
-    18 => 
+    19 => 
     array (
       0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
       1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
@@ -2914,7 +3196,17 @@ $coverage->setData(array (
       0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
       1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
     ),
-    21 => NULL,
+    22 => 
+    array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    24 => 
+    array (
+      0 => 'FTB\\Nodes\\TitleProcessorTest::it_should_return_the_title_template_tag_markup_when_processing',
+      1 => 'FTB\\Nodes\\TitleProcessorTest::it_should_add_title_theme_mod_to_the_current_section',
+    ),
+    25 => NULL,
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/TemplateInterface.php' => 
   array (
@@ -2970,6 +3262,9 @@ $coverage->setData(array (
   array (
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/ConfigInterface.php' => 
+  array (
+  ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/TransportInterface.php' => 
   array (
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Filesystem/FilesystemInterface.php' => 
@@ -3190,6 +3485,46 @@ $coverage->setTests(array (
     'status' => 0,
   ),
   'FTB\\Fields\\KirkiConfigTest::it_should_default_the_field_settings' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\PostMessageTransportTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\PostMessageTransportTest::it_should_add_right_fields_for_tag with data set #0' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\PostMessageTransportTest::it_should_modify_markup_for_fields with data set #0' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\PostMessageTransportTest::it_should_not_add_or_modify_field_args' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\PostMessageTransportTest::it_should_not_modify_the_markup' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\RefreshTransportTest::it_should_be_instantiatable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\RefreshTransportTest::it_should_not_add_or_modify_field_args' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'FTB\\Fields\\RefreshTransportTest::it_should_not_modify_the_markup' => 
   array (
     'size' => 'unknown',
     'status' => 0,
@@ -3617,8 +3952,6 @@ $coverage->setTests(array (
 ));
 
 $filter = $coverage->filter();
-$filter->setBlacklistedFiles(array (
-));
 $filter->setWhitelistedFiles(array (
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Customizer/Controls.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Customizer/ControlsConfig.php' => true,
@@ -3628,6 +3961,9 @@ $filter->setWhitelistedFiles(array (
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/ConfigInterface.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/KirkiConfig.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/KirkiConfigDumper.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/PostMessageTransport.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/RefreshTransport.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Fields/TransportInterface.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Filesystem/FilesystemInterface.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Locators/Page.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Locators/PageInterface.php' => true,
