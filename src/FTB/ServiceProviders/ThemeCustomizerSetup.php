@@ -15,10 +15,10 @@ class FTB_ServiceProviders_ThemeCustomizerSetup extends tad_DI52_ServiceProvider
 
 		add_action( 'customize_register', array( $this->container->make( 'FTB_Customizer_Controls' ), 'register_controls' ) );
 
-		$customizer_filters = $this->container->make( 'FTB_Pages_PreviewFiltersInterface' );
+		$preview_filters = $this->container->make( 'FTB_Pages_PreviewFiltersInterface' );
 
-		add_action( 'customize_preview_init', array( $customizer_filters, 'add_preview_filters' ) );
-		add_action( 'wp_ajax_customize_save', array( $customizer_filters, 'add_save_filters' ) );
+		add_action( 'customize_preview_init', array( $preview_filters, 'add_preview_filters' ) );
+		add_action( 'wp_ajax_customize_save', array( $preview_filters, 'add_save_filters' ) );
 	}
 
 	/**
