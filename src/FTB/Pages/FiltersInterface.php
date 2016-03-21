@@ -16,4 +16,6 @@ interface FTB_Pages_FiltersInterface {
 	public function filter_get_post_metadata( $value, $object_id, $meta_key );
 
 	public function on_customize_save_after( $wp_customize );
+
+	public function filter_the_excerpt( $excerpt, $post_id = null );
 }

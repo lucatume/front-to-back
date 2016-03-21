@@ -57,6 +57,24 @@ class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 		return $title;
 	}
 
+	public function filter_the_excerpt( $excerpt, $post_id = null ) {
+		if ( empty( $post_id ) ) {
+			global $post;
+			$post = get_post( $post );
+			if ( empty( $post ) ) {
+				return $excerpt;
+			}
+			$post_id = $post->ID;
+		}
+
+		$page_post = $this->page_locator->{"get_{$this->page_name()}"}();
+		if ( $post_id == $page_post->ID ) {
+			return get_theme_mod( "ftb-page-{$this->page_name()}-excerpt", 'Page Excerpt' );
+		}
+
+		return $excerpt;
+	}
+
 	public function filter_the_content( $content, $post_id = null ) {
 		if ( empty( $post_id ) ) {
 			global $post;
@@ -91,18 +109,19 @@ class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 	public function on_customize_save_after( $wp_customize ) {
 		/** @var WP_Customize_Manager $wp_customize */
 		$title   = $wp_customize->get_setting( "ftb-page-{$this->page_name()}-title" );
+		$excerpt = $wp_customize->get_setting( "ftb-page-{$this->page_name()}-excerpt" );
 		$content = $wp_customize->get_setting( "ftb-page-{$this->page_name()}-content" );
 
 		$meta_input = array();
 
-		foreach ( $this->custom_fields as $custom_field => $field_id ) {
-			$setting_id = "ftb-page-{$this->page_name()}-{$field_id}";
-			$setting    = $wp_customize->get_setting( $setting_id );
+		$meta_settings = array_filter( $wp_customize->settings(), array( $this, 'filter_meta_settings' ) );
+		foreach ( $meta_settings as $setting_id => $setting ) {
 			if ( ! empty( $setting ) ) {
-				if ( $custom_field === '_thumbnail_id' ) {
-					$meta_input[ $custom_field ] = $this->wp->get_attachment_id_from_url( $setting->value() );
+				$meta_id = $this->get_meta_setting_name( $setting_id );
+				if ( $meta_id === '_thumbnail_id' ) {
+					$meta_input[ $meta_id ] = $this->wp->get_attachment_id_from_url( $setting->value() );
 				} else {
-					$meta_input[ $custom_field ] = $setting->value();
+					$meta_input[ $meta_id ] = $setting->value();
 				}
 			}
 		}
@@ -111,6 +130,10 @@ class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 
 		if ( ! empty( $title ) ) {
 			$postarr['post_title'] = $title->value();
+		}
+
+		if ( ! empty( $excerpt ) ) {
+			$postarr['post_excerpt'] = $excerpt->value();
 		}
 
 		if ( ! empty( $content ) ) {
@@ -130,5 +153,17 @@ class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 		}
 
 		return false;
+	}
+
+	protected function filter_meta_settings( WP_Customize_Setting $value ) {
+		return preg_match( '/^ftb-page-' . $this->page_name() . '-meta-[a-z0-9_]*$/', $value->id );
+	}
+
+	protected function get_meta_setting_name( $value ) {
+		$matches = array();
+
+		preg_match( '/^ftb-page-' . $this->page_name() . '-meta-([a-z0-9_]*)$/', $value, $matches );
+
+		return isset( $matches[1] ) ? $matches[1] : '';
 	}
 }

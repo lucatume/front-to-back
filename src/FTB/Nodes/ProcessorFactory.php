@@ -28,7 +28,11 @@ class FTB_Nodes_ProcessorFactory implements FTB_Nodes_ProcessorFactoryInterface 
 	 * @var array
 	 */
 	protected $supported_types = array(
-		'title' => 'FTB_Nodes_TitleProcessor',
+		'title'          => 'FTB_Nodes_TitleProcessor',
+		'excerpt'        => 'FTB_Nodes_ExcerptProcessor',
+		'content'        => 'FTB_Nodes_ContentProcessor',
+		'featured-image' => 'FTB_Nodes_FeaturedImageProcessor',
+		'meta'           => 'FTB_Nodes_MetaProcessor',
 	);
 
 	public function make_for_type( $type, DOMNode $node ) {

@@ -43,6 +43,7 @@ class FTB_Pages_PreviewFilters implements FTB_Pages_PreviewFiltersInterface {
 		$filter = $this->get_filter_for_page_slug( $page_slug );
 
 		add_filter( 'the_title', array( $filter, 'filter_the_title' ), 0, 2 );
+		add_filter( 'the_excerpt', array( $filter, 'filter_the_excerpt' ), 0, 2 );
 		add_filter( 'the_content', array( $filter, 'filter_the_content' ), 0, 2 );
 		add_filter( 'get_post_metadata', array( $filter, 'filter_get_post_metadata' ), 0, 3 );
 

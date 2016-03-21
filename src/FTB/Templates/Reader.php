@@ -96,6 +96,10 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 	private function supported_element_tags() {
 		return array(
 			'ftb-title',
+			'ftb-excerpt',
+			'ftb-content',
+			'ftb-featured-image',
+			'ftb-meta',
 		);
 	}
 
