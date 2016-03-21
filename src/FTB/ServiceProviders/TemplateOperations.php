@@ -22,7 +22,7 @@ class FTB_ServiceProviders_TemplateOperations extends tad_DI52_ServiceProvider {
 		$this->container->singleton( 'FTB_Output_TemplateTagsInterface', 'FTB_Output_TemplateTags' );
 		$this->container->singleton( 'FTB_Templates_ReaderInterface', 'FTB_Templates_Reader' );
 		// @todo make this an option?
-		$this->container->singleton( 'FTB_Fields_TransportInterface', 'FTB_Fields_PostMessageTransport' );
+		$this->container->singleton( 'FTB_Fields_TransportInterface', 'FTB_Fields_RefreshTransport' );
 		$this->container->singleton( 'FTB_Nodes_ProcessorFactoryInterface', 'FTB_Nodes_ProcessorFactory' );
 		$this->container->singleton( 'FTB_Locators_PageInterface', 'FTB_Locators_Page' );
 		$this->container->singleton( 'FTB_Adapters_WPInterface', 'FTB_Adapters_WP' );
