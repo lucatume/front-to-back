@@ -11,4 +11,8 @@ class WP_Customize_Manager {
 
 	public function get_setting( $string ) {
 	}
+
+	public function settings() {
+
+	}
 }

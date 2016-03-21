@@ -331,7 +331,7 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 		$wp_customize = Test::replace( 'FTB\Test\WP_Customize_Manager' )->method( 'get_setting',
 			function ( $key ) use ( $setting ) {
 				return $key === 'ftb-page-some_page-title' ? $setting : '';
-			} )->get();
+			} )->method( 'settings', [ $setting ] )->get();
 		$page_locator = Test::replace( 'FTB\Test\PageLocator' )->method( 'update_some_page' );
 
 		$sut = new Filters( $this->wp->reveal(), $page_locator->get() );
@@ -352,7 +352,7 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 		$wp_customize = Test::replace( 'FTB\Test\WP_Customize_Manager' )->method( 'get_setting',
 			function ( $key ) use ( $setting ) {
 				return $key === 'ftb-page-some_page-content' ? $setting : '';
-			} )->get();
+			} )->method( 'settings', [ $setting ] )->get();
 		$page_locator = Test::replace( 'FTB\Test\PageLocator' )->method( 'update_some_page' );
 
 		$sut = new Filters( $this->wp->reveal(), $page_locator->get() );
@@ -373,9 +373,9 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 		$wp_customize = Test::replace( 'FTB\Test\WP_Customize_Manager' )->method( 'get_setting',
 			function ( $key ) use ( $setting ) {
 				return $key === 'ftb-page-some_page-featured_image' ? $setting : '';
-			} )->get();
+			} )->method( 'settings', [ $setting ] )->get();
 		$page_locator = Test::replace( 'FTB\Test\PageLocator' )->method( 'update_some_page' );
-		$this->wp->get_attachment_id_from_url('bar')->willReturn('foo');
+		$this->wp->get_attachment_id_from_url( 'bar' )->willReturn( 'foo' );
 
 		$sut = new Filters( $this->wp->reveal(), $page_locator->get() );
 		$sut->set_page_slug( 'some_page' );
@@ -396,7 +396,7 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 		$wp_customize = Test::replace( 'FTB\Test\WP_Customize_Manager' )->method( 'get_setting',
 			function ( $key ) use ( $setting ) {
 				return $key === 'ftb-page-some_page-some_field' ? $setting : '';
-			} )->get();
+			} )->method( 'settings', [ $setting ] )->get();
 		$page_locator = Test::replace( 'FTB\Test\PageLocator' )->method( 'update_some_page' );
 
 		$sut = new Filters( $this->wp->reveal(), $page_locator->get() );

@@ -95,9 +95,20 @@ class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 	public function filter_get_post_metadata( $value, $object_id, $meta_key ) {
 		$post = $this->page_locator->{"get_{$this->page_name()}"}();
 		if ( $post && $object_id == $post->ID ) {
-			$custom_field_id = $this->custom_field_id( $meta_key );
+			$wp_customize = $this->wp->get_wp_customize();
 
-			$value = empty( $custom_field_id ) ? $value : get_theme_mod( "ftb-page-{$this->page_name()}-{$custom_field_id}", '' );
+			if ( empty( $wp_customize ) ) {
+				return $value;
+			}
+
+			$meta_settings        = array_filter( $wp_customize->settings(), array( $this, 'filter_meta_settings' ) );
+			$theme_mod_setting_id = $this->get_theme_mod_setting_id( $meta_key );
+
+			if ( ! isset( $meta_settings[ $theme_mod_setting_id ] ) ) {
+				return $value;
+			}
+
+			$value = get_theme_mod( $theme_mod_setting_id, '' );
 			if ( $meta_key === '_thumbnail_id' ) {
 				$value = $this->wp->get_attachment_id_from_url( $value );
 			}
@@ -155,8 +166,9 @@ class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 		return false;
 	}
 
-	protected function filter_meta_settings( WP_Customize_Setting $value ) {
-		return preg_match( '/^ftb-page-' . $this->page_name() . '-meta-[a-z0-9_]*$/', $value->id );
+	protected function filter_meta_settings( $value ) {
+		/** @var WP_Customize_Setting $value */
+		return preg_match( '/^ftb-page-' . $this->page_name() . '-meta-[a-z0-9_]*$/', $value->id_data()['base'] );
 	}
 
 	protected function get_meta_setting_name( $value ) {
@@ -165,5 +177,14 @@ class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 		preg_match( '/^ftb-page-' . $this->page_name() . '-meta-([a-z0-9_]*)$/', $value, $matches );
 
 		return isset( $matches[1] ) ? $matches[1] : '';
+	}
+
+	/**
+	 * @param $custom_field_id
+	 *
+	 * @return string
+	 */
+	private function get_theme_mod_setting_id( $custom_field_id ) {
+		return "ftb-page-{$this->page_name()}-meta-{$custom_field_id}";
 	}
 }

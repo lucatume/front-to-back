@@ -85,8 +85,10 @@ class FiltersFunctionalTest extends \Codeception\TestCase\WPTestCase {
 		/** @var \FTB\Test\WP_Customize_Setting $setting */
 		$setting = $this->prophesize( '\FTB\Test\WP_Customize_Setting' );
 		$setting->value()->willReturn( 'Some title' );
+		$setting->id_data()->willReturn( [ 'base' => 'ftb-page-some_page-featured_image' ] );
 		/** @var \FTB\Test\WP_Customize_Manager $wp_customize */
 		$wp_customize = $this->prophesize( '\FTB\Test\WP_Customize_Manager' );
+		$wp_customize->settings()->willReturn( [ $setting->reveal() ] );
 		$wp_customize->get_setting( Argument::not( 'ftb-page-some_page-title' ) )->willReturn( null );
 		$wp_customize->get_setting( 'ftb-page-some_page-title' )->willReturn( $setting->reveal() );
 
@@ -107,8 +109,10 @@ class FiltersFunctionalTest extends \Codeception\TestCase\WPTestCase {
 		/** @var \FTB\Test\WP_Customize_Setting $setting */
 		$setting = $this->prophesize( '\FTB\Test\WP_Customize_Setting' );
 		$setting->value()->willReturn( 'Some post content' );
+		$setting->id_data()->willReturn( [ 'base' => 'ftb-page-some_page-featured_image' ] );
 		/** @var \FTB\Test\WP_Customize_Manager $wp_customize */
 		$wp_customize = $this->prophesize( '\FTB\Test\WP_Customize_Manager' );
+		$wp_customize->settings()->willReturn( [ $setting->reveal() ] );
 		$wp_customize->get_setting( Argument::not( 'ftb-page-some_page-content' ) )->willReturn( null );
 		$wp_customize->get_setting( 'ftb-page-some_page-content' )->willReturn( $setting->reveal() );
 
@@ -129,8 +133,10 @@ class FiltersFunctionalTest extends \Codeception\TestCase\WPTestCase {
 		/** @var \FTB\Test\WP_Customize_Setting $setting */
 		$setting = $this->prophesize( '\FTB\Test\WP_Customize_Setting' );
 		$setting->value()->willReturn( 'some_value' );
+		$setting->id_data()->willReturn( [ 'base' => 'ftb-page-some_page-some_field' ] );
 		/** @var \FTB\Test\WP_Customize_Manager $wp_customize */
 		$wp_customize = $this->prophesize( '\FTB\Test\WP_Customize_Manager' );
+		$wp_customize->settings()->willReturn( [ $setting->reveal() ] );
 		$wp_customize->get_setting( Argument::not( 'ftb-page-some_page-some_field' ) )->willReturn( null );
 		$wp_customize->get_setting( 'ftb-page-some_page-some_field' )->willReturn( $setting->reveal() );
 
@@ -154,8 +160,10 @@ class FiltersFunctionalTest extends \Codeception\TestCase\WPTestCase {
 		/** @var \FTB\Test\WP_Customize_Setting $setting */
 		$setting = $this->prophesize( '\FTB\Test\WP_Customize_Setting' );
 		$setting->value()->willReturn( $attachment_url );
+		$setting->id_data()->willReturn( [ 'base' => 'ftb-page-some_page-featured_image' ] );
 		/** @var \FTB\Test\WP_Customize_Manager $wp_customize */
 		$wp_customize = $this->prophesize( '\FTB\Test\WP_Customize_Manager' );
+		$wp_customize->settings()->willReturn( [ $setting->reveal() ] );
 		$wp_customize->get_setting( Argument::not( 'ftb-page-some_page-featured_image' ) )->willReturn( null );
 		$wp_customize->get_setting( 'ftb-page-some_page-featured_image' )->willReturn( $setting->reveal() );
 		$this->wp->get_attachment_id_from_url( $attachment_url )->willReturn( $attachment_id );

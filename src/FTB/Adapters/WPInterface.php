@@ -8,4 +8,9 @@ interface FTB_Adapters_WPInterface {
 	public function save_configuration( $config );
 
 	public function get_json_decoded_option($name,array $default = array());
+
+	/**
+	 * @return WP_Customize_Manager
+	 */
+	public function get_wp_customize(  );
 }

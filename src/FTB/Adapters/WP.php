@@ -19,4 +19,10 @@ class FTB_Adapters_WP implements FTB_Adapters_WPInterface {
 	public function get_json_decoded_option( $name, array $default = array() ) {
 		return json_decode( get_option( $name, $default ), true );
 	}
+
+	public function get_wp_customize() {
+		global $wp_customize;
+
+		return $wp_customize ? $wp_customize : null;
+	}
 }
