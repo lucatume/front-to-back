@@ -106,10 +106,24 @@ wp.customize.controlConstructor['repeater'] = wp.customize.Control.extend({
         // Save the rows objects
         this.rows = [];
 
+        // Default limit choice
+        if ( this.params.choices.limit !== undefined ) {
+            if ( this.params.choices.limit <= 0 ) {
+                var limit = false;
+            } else {
+                var limit = parseInt(this.params.choices.limit);
+            }
+        } else {
+            var limit = false;
+        }
 
         this.container.on('click', 'button.repeater-add', function (e) {
             e.preventDefault();
-            control.addRow();
+            if ( !limit || control.currentIndex < limit ) {
+                control.addRow();
+            } else {
+                jQuery( control.selector + ' .limit' ).toggleClass( 'highlight' );
+            }
         });
 
         this.container.on('click keypress', '.repeater-field-image .upload-button', function (e) {
@@ -213,7 +227,7 @@ wp.customize.controlConstructor['repeater'] = wp.customize.Control.extend({
         $targetDiv.find('.remove-button').show();
 
         //This will activate the save button
-        $targetDiv.find('input, textarea').trigger('change');
+        $targetDiv.find('input, textarea, select').trigger('change');
     },
 
     removeImage : function( event )
@@ -224,11 +238,13 @@ wp.customize.controlConstructor['repeater'] = wp.customize.Control.extend({
         var $uploadButton = $targetDiv.find('.upload-button');
 
         $targetDiv.find('.kirki-image-attachment').slideUp( 'fast', function(){
-            jQuery(this).html('');
+            jQuery(this).show().html( jQuery(this).data('placeholder') );
         });
         $targetDiv.find('.hidden-field').val('');
         $uploadButton.text($uploadButton.data('label'));
         this.$thisButton.hide();
+
+        $targetDiv.find('input, textarea, select').trigger('change');
     },
 
 

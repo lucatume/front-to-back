@@ -14,7 +14,8 @@
         "composer/installers": "~1.0",
         "xrstf/composer-php52": "^1.0",
         "aristath/kirki": "~2.1",
-        "lucatume/di52": "^1.2"
+        "lucatume/di52": "^1.2",
+        "lucatume/args": "^1.0"
     },
     "extra": {
         "installer-paths": {
@@ -42,8 +43,8 @@
         ]
     },
     "require-dev": {
-        "lucatume/wp-browser": "^1.10",
-        "lucatume/function-mocker": "^1.0",
+        "lucatume/wp-browser": "dev-master",
+        "lucatume/function-mocker": "dev-master",
         "mikey179/vfsStream": "^1.6"
     }
 }
