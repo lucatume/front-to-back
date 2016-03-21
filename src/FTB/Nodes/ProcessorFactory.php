@@ -13,9 +13,15 @@ class FTB_Nodes_ProcessorFactory implements FTB_Nodes_ProcessorFactoryInterface 
 	 */
 	protected $config;
 
-	public function __construct( FTB_Output_TemplateTagsInterface $template_tags, FTB_Fields_ConfigDumperInterface $config ) {
+	/**
+	 * @var FTB_Fields_TransportInterface
+	 */
+	protected $transport;
+
+	public function __construct( FTB_Output_TemplateTagsInterface $template_tags, FTB_Fields_ConfigDumperInterface $config, FTB_Fields_TransportInterface $transport ) {
 		$this->template_tags = $template_tags;
 		$this->config        = $config;
+		$this->transport     = $transport;
 	}
 
 	/**
@@ -32,7 +38,7 @@ class FTB_Nodes_ProcessorFactory implements FTB_Nodes_ProcessorFactoryInterface 
 
 		$instance = null;
 		if ( is_string( $this->supported_types[ $type ] ) ) {
-			$instance = new $this->supported_types[$type]( new FTB_Nodes_DOMNode( $node ), $this->template_tags, $this->config );
+			$instance = new $this->supported_types[$type]( new FTB_Nodes_DOMNode( $node ), $this->template_tags, $this->config, $this->transport );
 		} else {
 			$instance = $this->supported_types[ $type ];
 		}

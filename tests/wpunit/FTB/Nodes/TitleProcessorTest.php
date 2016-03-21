@@ -21,6 +21,11 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 	protected $config;
 	protected $node_value = 'The title';
 
+	/**
+	 * @var \FTB_Fields_TransportInterface
+	 */
+	protected $transport;
+
 	public function setUp() {
 		// before
 		parent::setUp();
@@ -29,6 +34,8 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 		$this->node          = $this->prophesize( 'FTB_Nodes_DOMNodeInterface' );
 		$this->template_tags = $this->prophesize( 'FTB_Output_TemplateTagsInterface' );
 		$this->config        = $this->prophesize( 'FTB_Fields_ConfigDumperInterface' );
+		$this->transport     = $this->prophesize( 'FTB_Fields_TransportInterface' );
+		$this->transport->should_add_args( Argument::type( 'array' ) )->willReturn( false );
 	}
 
 	public function tearDown() {
@@ -52,7 +59,7 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 	 */
 	public function it_should_return_the_title_template_tag_markup_when_processing() {
 		$this->config->add_field( Argument::type( 'string' ), Argument::any() )->willReturn( true );
-		$this->node->nodeValue()->willReturn('Something');
+		$this->node->nodeValue()->willReturn( 'Something' );
 		$this->node->attr( 'before', '' )->willReturn( '' );
 		$this->node->attr( 'after', '' )->willReturn( '' );
 		$this->template_tags->the_title( '', '' )->willReturn( 'foo' );
@@ -86,7 +93,7 @@ class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
 	}
 
 	private function make_instance() {
-		return new TitleProcessor( $this->node->reveal(), $this->template_tags->reveal(), $this->config->reveal() );
+		return new TitleProcessor( $this->node->reveal(), $this->template_tags->reveal(), $this->config->reveal(), $this->transport->reveal() );
 	}
 
 }

@@ -25,11 +25,16 @@ abstract class FTB_Nodes_AbstractNodeProcessor implements FTB_Nodes_ProcessorInt
 	 * @var string
 	 */
 	protected $page_slug;
+	/**
+	 * @var FTB_Fields_TransportInterface
+	 */
+	protected $transport;
 
-	public function __construct( FTB_Nodes_DOMNodeInterface $node, FTB_Output_TemplateTagsInterface $template_tags, FTB_Fields_ConfigDumperInterface $config ) {
+	public function __construct( FTB_Nodes_DOMNodeInterface $node, FTB_Output_TemplateTagsInterface $template_tags, FTB_Fields_ConfigDumperInterface $config, FTB_Fields_TransportInterface $transport ) {
 		$this->node          = $node;
 		$this->template_tags = $template_tags;
 		$this->config        = $config;
+		$this->transport     = $transport;
 	}
 
 	public function get_node() {

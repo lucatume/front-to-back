@@ -16,6 +16,11 @@ class ProcessorFactoryTest extends \Codeception\TestCase\WPTestCase {
 	 */
 	protected $config;
 
+	/**
+	 * @var \FTB_Fields_TransportInterface
+	 */
+	protected $transport;
+
 	public function setUp() {
 		// before
 		parent::setUp();
@@ -23,6 +28,7 @@ class ProcessorFactoryTest extends \Codeception\TestCase\WPTestCase {
 		// your set up methods here
 		$this->template_tags = $this->prophesize( 'FTB_Output_TemplateTagsInterface' );
 		$this->config        = $this->prophesize( 'FTB_Fields_ConfigDumperInterface' );
+		$this->transport     = $this->prophesize( 'FTB_Fields_TransportInterface' );
 	}
 
 	public function tearDown() {
@@ -76,8 +82,8 @@ class ProcessorFactoryTest extends \Codeception\TestCase\WPTestCase {
 	public function it_should_allow_associating_an_instance_to_a_type() {
 		$sut = $this->make_instance();
 
-		$node      = new \DOMNode();
-		$processor = $this->prophesize( 'FTB_Nodes_ProcessorInterface' );
+		$node               = new \DOMNode();
+		$processor          = $this->prophesize( 'FTB_Nodes_ProcessorInterface' );
 		$revealed_processor = $processor->reveal();
 
 		$sut->set_class_for_type( $revealed_processor, 'some-type' );
@@ -147,6 +153,6 @@ class ProcessorFactoryTest extends \Codeception\TestCase\WPTestCase {
 	}
 
 	private function make_instance() {
-		return new Factory( $this->template_tags->reveal(), $this->config->reveal() );
+		return new Factory( $this->template_tags->reveal(), $this->config->reveal(), $this->transport->reveal() );
 	}
 }
