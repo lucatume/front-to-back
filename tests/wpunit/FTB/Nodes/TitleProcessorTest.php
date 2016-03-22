@@ -1,48 +1,11 @@
 <?php
 namespace FTB\Nodes;
-
+require_once 'ProcessorTestCase.php';
 use FTB_Nodes_TitleProcessor as TitleProcessor;
 use Prophecy\Argument;
 
-class TitleProcessorTest extends \Codeception\TestCase\WPTestCase {
+class TitleProcessorTest extends ProcessorTestCase {
 
-	/**
-	 * @var \FTB_Nodes_DOMNodeInterface
-	 */
-	protected $node;
-	/**
-	 * @var \FTB_Output_TemplateTagsInterface
-	 */
-	protected $template_tags;
-
-	/**
-	 * @var \FTB_Fields_ConfigDumperInterface
-	 */
-	protected $config;
-	protected $node_value = 'The title';
-
-	/**
-	 * @var \FTB_Fields_TransportInterface
-	 */
-	protected $transport;
-
-	public function setUp() {
-		// before
-		parent::setUp();
-
-		// your set up methods here
-		$this->node          = $this->prophesize( 'FTB_Nodes_DOMNodeInterface' );
-		$this->template_tags = $this->prophesize( 'FTB_Output_TemplateTagsInterface' );
-		$this->config        = $this->prophesize( 'FTB_Fields_ConfigDumperInterface' );
-		$this->transport     = $this->prophesize( 'FTB_Fields_TransportInterface' );
-	}
-
-	public function tearDown() {
-		// your tear down methods here
-
-		// then
-		parent::tearDown();
-	}
 
 	/**
 	 * @test
