@@ -65,9 +65,6 @@ class FTB_Pages_PreviewFilters implements FTB_Pages_PreviewFiltersInterface {
 			$filter = $this->container->make( 'FTB_Pages_FiltersInterface' );
 			$filter->set_page_slug( $page_slug );
 			$filter->set_page_name( str_replace( '_', '-', $page_slug ) );
-			$filter->set_custom_fields( array(
-				'_thumbnail_id' => 'featured_image',
-			) );
 
 			$this->page_filters[ $page_slug ] = $filter;
 		}

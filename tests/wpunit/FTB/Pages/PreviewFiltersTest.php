@@ -69,7 +69,6 @@ class PreviewFiltersTest extends \Codeception\TestCase\WPTestCase {
 		$filter = $this->prophesize( 'FTB_Pages_FiltersInterface' );
 		$filter->set_page_slug( Argument::type( 'string' ) )->shouldBeCalledTimes( 2 );
 		$filter->set_page_name( Argument::type( 'string' ) )->shouldBeCalledTimes( 2 );
-		$filter->set_custom_fields( Argument::type( 'array' ) )->shouldBeCalledTimes( 2 );
 		$this->container->make( 'FTB_Pages_FiltersInterface' )->shouldBeCalledTimes( 2 )->willReturn( $filter->reveal() );
 
 		$sut = $this->make_instance();

@@ -13,11 +13,6 @@ require_once codecept_data_dir( 'classes/PageLocator.php' );
 class FiltersTest extends \Codeception\TestCase\WPTestCase {
 
 	/**
-	 * @var \WP_Customize_Manager
-	 */
-	protected $wp_customize;
-
-	/**
 	 * @var \FTB_Locators_PageInterface
 	 */
 	protected $page_locator;
@@ -242,7 +237,6 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 		$sut = $this->make_instance();
 		$sut->set_page_slug( 'some_page' );
 		$sut->set_page_name( 'some-page' );
-		$sut->set_custom_fields( [ 'some_field' => 'some_field' ] );
 
 		$not_this_post_id = $this->factory()->post->create( [ 'post_type' => 'page' ] );
 		update_post_meta( $not_this_post_id, 'some_field', 'Original value' );
@@ -258,15 +252,16 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 		$post_id = $this->factory()->post->create( [ 'post_type' => 'page', 'post_name' => 'some-page' ] );
 		Test::replace( 'get_theme_mod',
 			function ( $id, $default ) {
-				return $id === 'ftb-page-some_page-some_field' ? 'Some foo text' : $default;
+				return $id === 'ftb-page-some_page-meta-some_field' ? 'Some foo text' : $default;
 			} );
+		$this->make_wp_customize_with_meta( 'some_field', 'some_page' );
 
 		$sut = $this->make_instance();
 		$sut->set_page_slug( 'some_page' );
 		$sut->set_page_name( 'some-page' );
-		$sut->set_custom_fields( [ 'some_field' => 'some_field' ] );
 
-		$this->assertEquals( 'Some foo text', $sut->filter_get_post_metadata( 23, $post_id, 'some_field' ) );
+		$out = $sut->filter_get_post_metadata( 23, $post_id, 'some_field' );
+		$this->assertEquals( 'Some foo text', $out );
 	}
 
 	/**
@@ -280,16 +275,17 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 
 		Test::replace( 'get_theme_mod',
 			function ( $id, $default ) use ( $attachment_url, $attachment_id ) {
-				return $id === 'ftb-page-some_page-featured_image' ? $attachment_url : $default;
+				return $id === 'ftb-page-some_page-meta-featured_image' ? $attachment_url : $default;
 			} );
 		$this->wp->get_attachment_id_from_url( $attachment_url )->willReturn( $attachment_id );
+		$this->make_wp_customize_with_meta( 'featured_image', 'some_page' );
 
 		$sut = $this->make_instance();
 		$sut->set_page_slug( 'some_page' );
 		$sut->set_page_name( 'some-page' );
-		$sut->set_custom_fields( [ '_thumbnail_id' => 'featured_image' ] );
 
-		$this->assertEquals( $attachment_id, $sut->filter_get_post_metadata( 23, $post_id, '_thumbnail_id' ) );
+		$out = $sut->filter_get_post_metadata( 23, $post_id, '_thumbnail_id' );
+		$this->assertEquals( $attachment_id, $out );
 	}
 
 	/**
@@ -369,18 +365,18 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 	 * it should update the post thumbnail when saving
 	 */
 	public function it_should_update_the_post_thumbnail_when_saving() {
-		$setting      = Test::replace( 'FTB\Test\WP_Customize_Setting' )->method( 'value', 'bar' )->get();
+		$setting_id   = 'ftb-page-some_page-meta-featured_image';
+		$setting      = Test::replace( 'FTB\Test\WP_Customize_Setting' )->method( 'id_data', [ 'base' => $setting_id ] )->method( 'value', 'bar' )->get();
 		$wp_customize = Test::replace( 'FTB\Test\WP_Customize_Manager' )->method( 'get_setting',
 			function ( $key ) use ( $setting ) {
-				return $key === 'ftb-page-some_page-featured_image' ? $setting : '';
-			} )->method( 'settings', [ $setting ] )->get();
+				return $key === 'ftb-page-some_page-meta-featured_image' ? $setting : '';
+			} )->method( 'settings', [ $setting_id => $setting ] )->get();
 		$page_locator = Test::replace( 'FTB\Test\PageLocator' )->method( 'update_some_page' );
 		$this->wp->get_attachment_id_from_url( 'bar' )->willReturn( 'foo' );
 
 		$sut = new Filters( $this->wp->reveal(), $page_locator->get() );
 		$sut->set_page_slug( 'some_page' );
 		$sut->set_page_name( 'some-page' );
-		$sut->set_custom_fields( [ '_thumbnail_id' => 'featured_image' ] );
 
 		$sut->on_customize_save_after( $wp_customize );
 
@@ -392,17 +388,17 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 	 * it should update a post custom field when saving
 	 */
 	public function it_should_update_a_post_custom_field_when_saving() {
-		$setting      = Test::replace( 'FTB\Test\WP_Customize_Setting' )->method( 'value', 'foo' )->get();
+		$setting_id   = 'ftb-page-some_page-meta-some_field';
+		$setting      = Test::replace( 'FTB\Test\WP_Customize_Setting' )->method( 'id_data', [ 'base' => $setting_id ] )->method( 'value', 'foo' )->get();
 		$wp_customize = Test::replace( 'FTB\Test\WP_Customize_Manager' )->method( 'get_setting',
 			function ( $key ) use ( $setting ) {
-				return $key === 'ftb-page-some_page-some_field' ? $setting : '';
-			} )->method( 'settings', [ $setting ] )->get();
+				return $key === 'ftb-page-some_page-meta-some_field' ? $setting : '';
+			} )->method( 'settings', [ $setting_id => $setting ] )->get();
 		$page_locator = Test::replace( 'FTB\Test\PageLocator' )->method( 'update_some_page' );
 
 		$sut = new Filters( $this->wp->reveal(), $page_locator->get() );
 		$sut->set_page_slug( 'some_page' );
 		$sut->set_page_name( 'some-page' );
-		$sut->set_custom_fields( [ 'some_field' => 'some_field' ] );
 
 		$sut->on_customize_save_after( $wp_customize );
 
@@ -411,5 +407,14 @@ class FiltersTest extends \Codeception\TestCase\WPTestCase {
 
 	private function make_instance() {
 		return new Filters( $this->wp->reveal(), $this->page_locator );
+	}
+
+	private function make_wp_customize_with_meta( $setting_id, $page = 'some_page' ) {
+		$setting = $this->prophesize( 'FTB\Test\WP_Customize_Setting' );
+		$base    = 'ftb-page-' . $page . '-meta-' . $setting_id;
+		$setting->id_data()->willReturn( [ 'base' => $base ] );
+		$wp_customize = $this->prophesize( 'FTB\Test\WP_Customize_Manager' );
+		$wp_customize->settings()->willReturn( [ $base => $setting->reveal() ] );
+		$this->wp->get_wp_customize()->willReturn( $wp_customize->reveal() );
 	}
 }

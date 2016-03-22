@@ -30,10 +30,6 @@ class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 		$this->page_slug = $page_slug;
 	}
 
-	public function set_custom_fields( $custom_fields ) {
-		$this->custom_fields = $custom_fields;
-	}
-
 	public function __construct( FTB_Adapters_WPInterface $wp, FTB_Locators_PageInterface $page_locator ) {
 		$this->wp           = $wp;
 		$this->page_locator = $page_locator;
@@ -129,8 +125,8 @@ class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 		foreach ( $meta_settings as $setting_id => $setting ) {
 			if ( ! empty( $setting ) ) {
 				$meta_id = $this->get_meta_setting_name( $setting_id );
-				if ( $meta_id === '_thumbnail_id' ) {
-					$meta_input[ $meta_id ] = $this->wp->get_attachment_id_from_url( $setting->value() );
+				if ( $meta_id === 'featured_image' ) {
+					$meta_input[ '_thumbnail_id' ] = $this->wp->get_attachment_id_from_url( $setting->value() );
 				} else {
 					$meta_input[ $meta_id ] = $setting->value();
 				}
@@ -185,6 +181,15 @@ class FTB_Pages_Filters implements FTB_Pages_FiltersInterface {
 	 * @return string
 	 */
 	private function get_theme_mod_setting_id( $custom_field_id ) {
+		$meta_key_aliases = $this->meta_key_aliases();
+		$custom_field_id  = isset( $meta_key_aliases[ $custom_field_id ] ) ? $meta_key_aliases[ $custom_field_id ] : $custom_field_id;
+
 		return "ftb-page-{$this->page_name()}-meta-{$custom_field_id}";
+	}
+
+	protected function meta_key_aliases() {
+		return array(
+			'_thumbnail_id' => 'featured_image',
+		);
 	}
 }

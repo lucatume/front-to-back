@@ -7,8 +7,6 @@ interface FTB_Pages_FiltersInterface {
 
 	public function set_page_name( $page_slug );
 
-	public function set_custom_fields( $custom_fields );
-
 	public function filter_the_title( $title, $post_id = null );
 
 	public function filter_the_content( $content, $post_id = null );
