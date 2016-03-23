@@ -63,4 +63,34 @@ class functionsTest extends \Codeception\TestCase\WPTestCase {
 	public function test_ftb_template( $template, $data, $expected ) {
 		$this->assertEquals( $expected, ftb_template( $template, $data ) );
 	}
+
+	public function args_and_strings() {
+		return [
+			[ '', '' ],
+			[ '', array() ],
+			[ '', null ],
+			[ '', false ],
+			[ " 'foo' ", 'foo' ],
+			[ " 'foo' ", array( 'foo' ) ],
+			[ " 'foo', 'bar' ", array( 'foo', 'bar' ) ],
+			[ " 'foo', 'bar', 'baz' ", array( 'foo', 'bar', 'baz' ) ],
+			[ " 'foo', '', 'baz' ", array( 'foo', '', 'baz' ) ],
+			[ " '', '', 'baz' ", array( '', '', 'baz' ) ],
+			[ "", array( '', '', '' ) ],
+			[ " 'foo' ", array( 'foo', '', '' ) ],
+			[ " 'foo', 'bar' ", array( 'foo', 'bar', '' ) ],
+			[ " 'foo', 'bar' ", array( 'foo', 'bar' ) ],
+			[ " '', 'bar' ", array( '', 'bar' ) ],
+		];
+
+	}
+
+	/**
+	 * ftb_args_string
+	 *
+	 * @dataProvider args_and_strings
+	 */
+	public function test_ftb_args_string( $expected, $args ) {
+		$this->assertEquals( $expected, ftb_args_string( $args ) );
+	}
 }

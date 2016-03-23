@@ -9,6 +9,8 @@
  * @return string
  */
 function ftb_template_path( $path ) {
+	Arg::_( $path, "Template path frag" )->is_string();
+
 	$cached = wp_cache_get( $path, 'ftb_template_path' );
 	if ( ! $cached ) {
 		$root = get_stylesheet_directory() . DIRECTORY_SEPARATOR . 'ftb-templates';
@@ -28,7 +30,9 @@ function ftb_template_path( $path ) {
 	return $cached;
 }
 
-function ftb_template( $template, $data ) {
+function ftb_template( $template, array $data ) {
+	Arg::_( $template, 'Template' )->is_string();
+
 	$cache_key = $template . serialize( $data );
 	$cached    = wp_cache_get( $cache_key, 'ftb_template' );
 	if ( $cached === false ) {
@@ -46,5 +50,29 @@ function ftb_template( $template, $data ) {
 	}
 
 	return $cached;
+}
+
+function ftb_args_string( $args = '' ) {
+	if ( empty( $args ) ) {
+		return '';
+	}
+
+	Arg::_( $args, 'Args' )->is_array()->_or()->is_string();
+
+	$args = is_array( $args ) ? $args : array( $args );
+
+	$args = array_slice( $args, 0, key( array_reverse( array_diff( $args, array( "" ) ), 1 ) ) + 1 );
+	if ( count( array_filter( $args ) ) > 0 ) {
+		$args = array_map( 'ftb_quote_wrap', $args );
+	}
+	$args = join( ', ', $args );
+
+	return empty( $args ) ? $args : ' ' . $args . ' ';
+}
+
+function ftb_quote_wrap( $string ) {
+	Arg::_( $string, 'String' )->is_string();
+
+	return "'$string'";
 }
 

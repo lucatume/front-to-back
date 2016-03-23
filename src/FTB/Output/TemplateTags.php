@@ -6,13 +6,9 @@ use Codeception\PHPUnit\Constraint\Page;
 class FTB_Output_TemplateTags implements FTB_Output_TemplateTagsInterface {
 
 	public function the_title( $before = '', $after = '' ) {
-		if ( empty( $before ) && empty( $after ) ) {
-			return '<?php the_title(); ?>';
-		} elseif ( empty( $after ) ) {
-			return "<?php the_title( '$before' ); ?>";
-		}
+		$args = ftb_args_string( array( $before, $after ) );
 
-		return "<?php the_title( '$before', '$after' ); ?>";
+		return sprintf( '<?php the_title(%s); ?>', $args );
 	}
 
 	public function the_excerpt() {
@@ -20,23 +16,15 @@ class FTB_Output_TemplateTags implements FTB_Output_TemplateTagsInterface {
 	}
 
 	public function the_content( $more_link_text = '', $strip_teaser = '' ) {
-		if ( empty( $more_link_text ) && empty( $strip_teaser ) ) {
-			return '<?php the_content(); ?>';
-		} elseif ( empty( $after ) ) {
-			return "<?php the_content( '$more_link_text' ); ?>";
-		}
+		$args = ftb_args_string( array( $more_link_text, $strip_teaser ) );
 
-		return "<?php the_content( '$more_link_text', '$strip_teaser' ); ?>";
+		return sprintf( '<?php the_content(%s); ?>', $args );
 	}
 
 	public function the_post_thumbnail( $size, $attr ) {
-		if ( empty( $size ) && empty( $attr ) ) {
-			return '<?php the_post_thumbnail(); ?>';
-		} elseif ( empty( $after ) ) {
-			return "<?php the_post_thumbnail( '$size' ); ?>";
-		}
+		$args = ftb_args_string( array( $size, $attr ) );
 
-		return "<?php the_post_thumbnail( '$size', '$attr' ); ?>";
+		return sprintf( '<?php the_post_thumbnail(%s); ?>', $args );
 	}
 
 	public function the_var( $var ) {
