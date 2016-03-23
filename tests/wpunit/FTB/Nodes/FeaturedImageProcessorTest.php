@@ -49,13 +49,13 @@ class FeaturedImageProcessorTest extends ProcessorTestCase {
 		$this->node->attr( 'attr', '' )->willReturn( 'bar' );
 		$this->template_tags->the_post_thumbnail( 'foo', 'bar' )->willReturn( 'foo' );
 		$field_args = [
-			'settings' => 'ftb-page-some_page-featured_image',
+			'settings' => 'ftb-page-some_page-meta-featured_image',
 			'section'  => 'some-section',
 			'label'    => 'FeaturedImage',
 			'type'     => 'text',
 			'default'  => 'Some FeaturedImage',
 		];
-		$this->config->add_field( 'some-section-featured_image', $field_args )->shouldBeCalled();
+		$this->config->add_field( 'some-section-meta-featured_image', $field_args )->shouldBeCalled();
 		$this->transport->add_field_args( 'featured_image', Argument::type( 'array' ) )->willReturn( $field_args );
 		$this->transport->modify_output( 'featured_image', Argument::type( 'array' ), 'foo' )->willReturn( 'foo' );
 

@@ -8,7 +8,7 @@ class FTB_Nodes_FeaturedImageProcessor extends FTB_Nodes_AbstractNodeProcessor i
 	 */
 	public function process() {
 		$field_args = array(
-			'settings' => 'ftb-page-' . $this->page_slug . '-featured_image',
+			'settings' => 'ftb-page-' . $this->page_slug . '-meta-featured_image',
 			'section'  => $this->section,
 			'label'    => _x( 'Featured Image', 'The label of the field in the Theme Customizer', 'ftb' ),
 			'type'     => 'image',
@@ -17,7 +17,7 @@ class FTB_Nodes_FeaturedImageProcessor extends FTB_Nodes_AbstractNodeProcessor i
 
 		$field_args = $this->transport->add_field_args( 'featured_image', $field_args );
 
-		$this->config->add_field( $this->section . '-featured_image', $field_args );
+		$this->config->add_field( $this->section . '-meta-featured_image', $field_args );
 
 		$size = $this->node->attr( 'size', '' );
 		$attr = $this->node->attr( 'attr', '' );
