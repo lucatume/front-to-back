@@ -32,8 +32,8 @@ class MetaProcessorTest extends ProcessorTestCase {
 			'type'     => 'text',
 			'default'  => 'Some Meta',
 		];
-		$this->transport->add_field_args( 'meta', Argument::type( 'array' ) )->willReturn( $field_args );
-		$this->transport->modify_output( 'meta', Argument::type( 'array' ), 'foo' )->willReturn( 'foo' );
+		$this->transport->add_field_args( 'meta', Argument::type( 'array' ), $this->node->reveal() )->willReturn( $field_args );
+		$this->transport->modify_output( 'meta', Argument::type( 'array' ), 'foo', $this->node->reveal() )->willReturn( 'foo' );
 
 		$sut = $this->make_instance();
 		$this->assertEquals( 'foo', $sut->process() );
@@ -56,8 +56,8 @@ class MetaProcessorTest extends ProcessorTestCase {
 			'default'  => 'Some Meta',
 		];
 		$this->config->add_field( 'some-section-meta-foo', $field_args )->shouldBeCalled();
-		$this->transport->add_field_args( 'meta', Argument::type( 'array' ) )->willReturn( $field_args );
-		$this->transport->modify_output( 'meta', Argument::type( 'array' ), 'foo' )->willReturn( 'foo' );
+		$this->transport->add_field_args( 'meta', Argument::type( 'array' ), $this->node->reveal() )->willReturn( $field_args );
+		$this->transport->modify_output( 'meta', Argument::type( 'array' ), 'foo', $this->node->reveal() )->willReturn( 'foo' );
 
 		$sut = $this->make_instance();
 		$sut->set_section( 'some-section' );

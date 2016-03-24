@@ -3,11 +3,17 @@ namespace FTB\Fields;
 
 class RefreshTransportTest extends \Codeception\TestCase\WPTestCase {
 
+	/**
+	 * @var \FTB_Nodes_DOMNodeInterface
+	 */
+	protected $node;
+
 	public function setUp() {
 		// before
 		parent::setUp();
 
 		// your set up methods here
+		$this->node = $this->prophesize( 'FTB_Nodes_DOMNodeInterface' );
 	}
 
 	public function tearDown() {
@@ -36,7 +42,7 @@ class RefreshTransportTest extends \Codeception\TestCase\WPTestCase {
 
 		$sut = $this->make_instance();
 
-		$this->assertEquals( $field_args, $sut->add_field_args( 'some-tag', $field_args ) );
+		$this->assertEquals( $field_args, $sut->add_field_args( 'some-tag', $field_args, $this->node->reveal() ) );
 	}
 
 	/**
@@ -48,7 +54,7 @@ class RefreshTransportTest extends \Codeception\TestCase\WPTestCase {
 
 		$sut = $this->make_instance();
 
-		$this->assertEquals( 'some-markup', $sut->modify_output( 'some-tag', $field_args, 'some-markup' ) );
+		$this->assertEquals( 'some-markup', $sut->modify_output( 'some-tag', $field_args, 'some-markup', $this->node->reveal() ) );
 	}
 
 	private function make_instance() {

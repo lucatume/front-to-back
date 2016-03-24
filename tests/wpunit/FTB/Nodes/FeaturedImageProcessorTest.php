@@ -32,8 +32,8 @@ class FeaturedImageProcessorTest extends ProcessorTestCase {
 			'type'     => 'text',
 			'default'  => 'Some FeaturedImage',
 		];
-		$this->transport->add_field_args( 'featured_image', Argument::type( 'array' ) )->willReturn( $field_args );
-		$this->transport->modify_output( 'featured_image', Argument::type( 'array' ), 'foo' )->willReturn( 'foo' );
+		$this->transport->add_field_args( 'featured_image', Argument::type( 'array' ), $this->node->reveal() )->willReturn( $field_args );
+		$this->transport->modify_output( 'featured_image', Argument::type( 'array' ), 'foo',$this->node->reveal() )->willReturn( 'foo' );
 
 		$sut = $this->make_instance();
 		$this->assertEquals( 'foo', $sut->process() );
@@ -56,8 +56,8 @@ class FeaturedImageProcessorTest extends ProcessorTestCase {
 			'default'  => 'Some FeaturedImage',
 		];
 		$this->config->add_field( 'some-section-meta-featured_image', $field_args )->shouldBeCalled();
-		$this->transport->add_field_args( 'featured_image', Argument::type( 'array' ) )->willReturn( $field_args );
-		$this->transport->modify_output( 'featured_image', Argument::type( 'array' ), 'foo' )->willReturn( 'foo' );
+		$this->transport->add_field_args( 'featured_image', Argument::type( 'array' ),$this->node->reveal() )->willReturn( $field_args );
+		$this->transport->modify_output( 'featured_image', Argument::type( 'array' ), 'foo' , $this->node->reveal())->willReturn( 'foo' );
 
 		$sut = $this->make_instance();
 		$sut->set_section( 'some-section' );

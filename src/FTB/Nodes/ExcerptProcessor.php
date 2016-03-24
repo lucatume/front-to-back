@@ -12,12 +12,12 @@ class FTB_Nodes_ExcerptProcessor extends FTB_Nodes_AbstractNodeProcessor impleme
 			'default'  => $this->node->nodeValue(),
 		);
 
-		$field_args = $this->transport->add_field_args( 'excerpt', $field_args );
+		$field_args = $this->transport->add_field_args( 'excerpt', $field_args, $this->node );
 
 		$this->config->add_field( $this->section . '-post_excerpt', $field_args );
 
 		$output = $this->template_tags->the_excerpt();
 
-		return $this->transport->modify_output( 'excerpt', $field_args, $output );
+		return $this->transport->modify_output( 'excerpt', $field_args, $output, $this->node );
 	}
 }

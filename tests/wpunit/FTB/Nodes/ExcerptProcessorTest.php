@@ -30,8 +30,8 @@ class ExcerptProcessorTest extends ProcessorTestCase {
 			'type'     => 'text',
 			'default'  => 'Some Excerpt',
 		];
-		$this->transport->add_field_args( 'excerpt', Argument::type( 'array' ) )->willReturn( $field_args );
-		$this->transport->modify_output( 'excerpt', Argument::type( 'array' ), 'foo' )->willReturn( 'foo' );
+		$this->transport->add_field_args( 'excerpt', Argument::type( 'array' ),$this->node->reveal() )->willReturn( $field_args );
+		$this->transport->modify_output( 'excerpt', Argument::type( 'array' ), 'foo',$this->node->reveal())->willReturn( 'foo' );
 
 		$sut = $this->make_instance();
 		$this->assertEquals( 'foo', $sut->process() );
@@ -53,8 +53,8 @@ class ExcerptProcessorTest extends ProcessorTestCase {
 		$this->config->add_field( 'some-section-post_excerpt',
 			$field_args )->shouldBeCalled();
 		$this->template_tags->the_excerpt()->willReturn( 'foo' );
-		$this->transport->add_field_args( 'excerpt', Argument::type( 'array' ) )->willReturn( $field_args );
-		$this->transport->modify_output( 'excerpt', Argument::type( 'array' ), 'foo' )->willReturn( 'foo' );
+		$this->transport->add_field_args( 'excerpt', Argument::type( 'array' ), $this->node->reveal() )->willReturn( $field_args );
+		$this->transport->modify_output( 'excerpt', Argument::type( 'array' ), 'foo',$this->node->reveal() )->willReturn( 'foo' );
 
 		$sut = $this->make_instance();
 		$sut->set_section( 'some-section' );

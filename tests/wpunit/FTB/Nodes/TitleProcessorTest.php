@@ -32,8 +32,8 @@ class TitleProcessorTest extends ProcessorTestCase {
 			'type'     => 'text',
 			'default'  => 'Some Title',
 		];
-		$this->transport->add_field_args( 'title', Argument::type( 'array' ) )->willReturn( $field_args );
-		$this->transport->modify_output( 'title', Argument::type( 'array' ), 'foo' )->willReturn( 'foo' );
+		$this->transport->add_field_args( 'title', Argument::type( 'array' ), $this->node->reveal() )->willReturn( $field_args );
+		$this->transport->modify_output( 'title', Argument::type( 'array' ), 'foo', $this->node->reveal() )->willReturn( 'foo' );
 
 		$sut = $this->make_instance();
 		$this->assertEquals( 'foo', $sut->process() );
@@ -57,8 +57,8 @@ class TitleProcessorTest extends ProcessorTestCase {
 		$this->config->add_field( 'some-section-post_title',
 			$field_args )->shouldBeCalled();
 		$this->template_tags->the_title( 'before', 'after' )->willReturn( 'foo' );
-		$this->transport->add_field_args( 'title', Argument::type( 'array' ) )->willReturn( $field_args );
-		$this->transport->modify_output( 'title', Argument::type( 'array' ), 'foo' )->willReturn( 'foo' );
+		$this->transport->add_field_args( 'title', Argument::type( 'array' ), $this->node->reveal() )->willReturn( $field_args );
+		$this->transport->modify_output( 'title', Argument::type( 'array' ), 'foo', $this->node->reveal() )->willReturn( 'foo' );
 
 		$sut = $this->make_instance();
 		$sut->set_section( 'some-section' );

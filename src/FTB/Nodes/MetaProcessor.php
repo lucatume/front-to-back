@@ -15,12 +15,12 @@ class FTB_Nodes_MetaProcessor extends FTB_Nodes_AbstractNodeProcessor implements
 			'default'  => $this->node->nodeValue(),
 		);
 
-		$field_args = $this->transport->add_field_args( 'meta', $field_args );
+		$field_args = $this->transport->add_field_args( 'meta', $field_args, $this->node );
 
 		$this->config->add_field( $this->section . '-meta-' . $var, $field_args );
 
 		$output = $this->template_tags->the_var( $var );
 
-		return $this->transport->modify_output( 'meta', $field_args, $output );
+		return $this->transport->modify_output( 'meta', $field_args, $output,$this->node );
 	}
 }

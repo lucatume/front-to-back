@@ -93,4 +93,25 @@ class functionsTest extends \Codeception\TestCase\WPTestCase {
 	public function test_ftb_args_string( $expected, $args ) {
 		$this->assertEquals( $expected, ftb_args_string( $args ) );
 	}
+
+	public function text_vars() {
+		return [
+			[ [ ], '' ],
+			[ 'foo', 'foo' ],
+			[ [ 'foo', 'bar' ], 'foo&bar' ],
+			[ [ 'foo' => 'bar', 'key' => 'value' ], 'foo=bar&key=value' ],
+			[ [ 'foo' => 'bar' ], 'foo=bar' ],
+			[ [ 'foo' => [ 'bar', 'baz' ] ], 'foo[]=bar&foo[]=baz' ],
+			[ [ 'foo' => [ 'bar', 'baz' ], 'key' => 'value' ], 'foo[]=bar&foo[]=baz&key=value' ],
+		];
+	}
+
+	/**
+	 * ftb_parse_text_var
+	 *
+	 * @dataProvider text_vars
+	 */
+	public function test_ftb_parse_text_array( $expected, $in ) {
+		$this->assertEquals( $expected, ftb_parse_text_var( $in ) );
+	}
 }

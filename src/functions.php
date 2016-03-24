@@ -76,3 +76,14 @@ function ftb_quote_wrap( $string ) {
 	return "'$string'";
 }
 
+function ftb_parse_text_var( $text_var ) {
+	Arg::_( $text_var, 'Text array' )->is_string()->_or()->is_array();
+
+	$vars = array();
+	parse_str( $text_var, $vars );
+	$complex_vars = array_filter( $vars );
+
+	$vars = count( $complex_vars ) == count( $vars ) ? $vars : array_keys( $vars );
+
+	return count( $vars ) == 1 && ! is_associative_array( $vars ) ? reset( $vars ) : $vars;
+}
