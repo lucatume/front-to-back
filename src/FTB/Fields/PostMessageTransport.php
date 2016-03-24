@@ -24,12 +24,13 @@ class FTB_Fields_PostMessageTransport implements FTB_Fields_TransportInterface {
 		}
 
 		$field_args['transport'] = 'postMessage';
-		$js_vars                 = array(
+		$field_args['prefix']    = $this->get_prefix( $tag, $field_args, $node );
+		$field_args['suffix']    = $this->get_suffix( $tag, $field_args, $node );
+
+		$js_vars = array(
 			'element'     => $this->parse_element( $node, $field_args ),
 			'function'    => $this->get_function( $tag, $field_args ),
 			'property'    => $this->get_property( $tag, $field_args ),
-			'prefix'      => $this->get_prefix( $tag, $field_args, $node ),
-			'suffix'      => $this->get_suffix( $tag, $field_args, $node ),
 			'js_callback' => $this->get_js_callback( $tag, $field_args ),
 		);
 
@@ -73,7 +74,7 @@ class FTB_Fields_PostMessageTransport implements FTB_Fields_TransportInterface {
 			'title'   => 'html',
 			'excerpt' => 'html',
 			'content' => 'html',
-			'meta' => 'html',
+			'meta'    => 'html',
 		);
 	}
 
@@ -92,7 +93,7 @@ class FTB_Fields_PostMessageTransport implements FTB_Fields_TransportInterface {
 		}
 
 		if ( isset( $markup_mods[ $tag ]['callback'] ) ) {
-			return call_user_func( $markup_mods[ $tag ]['callback'], $tag, $field_args, $output );
+			return call_user_func( $markup_mods[ $tag ]['callback'], $tag, $field_args, $output, $node );
 		} else {
 			return $markup_mods[ $tag ]['before'] . $output . $markup_mods[ $tag ]['after'];
 		}
@@ -123,15 +124,11 @@ class FTB_Fields_PostMessageTransport implements FTB_Fields_TransportInterface {
 	}
 
 	protected function tag_prefixes( array $field_args, FTB_Nodes_DOMNodeInterface $node ) {
-		return array(
-			'meta' => sprintf( '<%s class="%s">', $this->wrapping_tag(), $this->parse_element( $node, $field_args ) ),
-		);
+		return array();
 	}
 
 	protected function tag_suffixes( array $field_args, FTB_Nodes_DOMNodeInterface $node ) {
-		return array(
-			'meta' => "</{$this->wrapping_tag()}>",
-		);
+		return array();
 	}
 
 	protected function wrapping_tag() {
@@ -196,4 +193,24 @@ class FTB_Fields_PostMessageTransport implements FTB_Fields_TransportInterface {
 		);
 	}
 
+	protected function wrap( $tag, array $field_args, $output, FTB_Nodes_DOMNodeInterface $node ) {
+		$parsed_element = $this->parse_element( $node, $field_args );
+		$is_id          = strpos( $parsed_element, '#' ) !== false;
+		$attr           = $is_id ? 'id' : 'class';
+		$matches        = array();
+		$is_id ? preg_match( '/#([a-zA-Z-_]*)/', $parsed_element, $matches ) : preg_match( '/\\.([a-zA-Z-_]*)/', $parsed_element, $matches );
+		$attr_value = isset( $matches[1] ) ? $matches[1] : '';
+
+		$ftb_classes = 'ftbWrapper';
+		if ( $is_id ) {
+			$ftb_classes = ' class="' . $ftb_classes . '"';
+		} else {
+			$attr_value .= ' ' . $ftb_classes;
+			$ftb_classes = '';
+		}
+		$before = sprintf( '<ftb-open-tag%s %s="%s"%sftb-close-tag>', $this->wrapping_tag(), $attr, $attr_value, $ftb_classes );
+		$after  = "<ftb-open-tag/{$this->wrapping_tag()}ftb-close-tag>";
+
+		return sprintf( '%s%s%s', $before, $output, $after );
+	}
 }

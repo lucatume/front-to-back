@@ -57,7 +57,7 @@ function ftb_args_string( $args = '' ) {
 		return '';
 	}
 
-	Arg::_( $args, 'Args' )->is_array()->_or()->is_string();
+	Arg::_( $args, 'Arguments' )->is_array()->_or()->is_string();
 
 	$args = is_array( $args ) ? $args : array( $args );
 
@@ -70,10 +70,40 @@ function ftb_args_string( $args = '' ) {
 	return empty( $args ) ? $args : ' ' . $args . ' ';
 }
 
-function ftb_quote_wrap( $string ) {
-	Arg::_( $string, 'String' )->is_string();
+function ftb_textualize_var( $var ) {
+	if ( empty( $var ) ) {
+		return '';
+	}
 
-	return "'$string'";
+	Arg::_( $var, 'Variable to textualize' )->is_string()->_or()->is_array()->_or()->is_numeric();
+
+
+	if ( is_array( $var ) ) {
+		if ( is_associative_array( $var ) ) {
+			array_walk( $var, 'ftb_key_value_text' );
+
+			return sprintf( 'array( %s )', join( ', ', $var ) );
+		} else {
+			$pieces = array_map( 'ftb_quote_wrap', $var );
+
+			return sprintf( 'array( %s )', join( ', ', $pieces ) );
+		}
+	}
+
+	return is_numeric( $var ) ? $var : ftb_quote_wrap( $var );
+}
+
+function ftb_quote_wrap( $value_to_wrap ) {
+	Arg::_( $value_to_wrap, 'Value to wrap' )->is_string()->_or()->is_numeric();
+
+
+	return preg_match( '/\\s*array\\s*\\(/', $value_to_wrap ) ? $value_to_wrap : "'$value_to_wrap'";
+}
+
+function ftb_key_value_text( &$value, $key ) {
+	$value = is_numeric( $value ) ? $value : "'{$value}'";
+
+	$value = "'{$key}' => {$value}";
 }
 
 function ftb_parse_text_var( $text_var ) {

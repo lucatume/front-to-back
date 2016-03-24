@@ -293,7 +293,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				array_merge( $default_meta_field_args,
 					[
 						'transport' => 'postMessage',
-						'js_vars'   => [ [ 'element' => '.some-setting', 'function' => 'html', 'prefix' => '<span class=".some-setting">', 'suffix' => '</span>' ] ]
+						'js_vars'   => [ [ 'element' => '.some-setting', 'function' => 'html' ] ]
 					] ),
 			],
 			// specified element? use that
@@ -305,7 +305,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				array_merge( $default_meta_field_args,
 					[
 						'transport' => 'postMessage',
-						'js_vars'   => [ [ 'element' => '.some-element', 'function' => 'html', 'prefix' => '<span class=".some-element">', 'suffix' => '</span>' ] ]
+						'js_vars'   => [ [ 'element' => '.some-element', 'function' => 'html' ] ]
 					] ),
 			],
 			[
@@ -316,7 +316,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				array_merge( $default_meta_field_args,
 					[
 						'transport' => 'postMessage',
-						'js_vars'   => [ [ 'element' => '.one.two', 'function' => 'html', 'prefix' => '<span class=".one.two">', 'suffix' => '</span>' ] ]
+						'js_vars'   => [ [ 'element' => '.one.two', 'function' => 'html' ] ]
 					] ),
 			],
 			[
@@ -327,7 +327,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				array_merge( $default_meta_field_args,
 					[
 						'transport' => 'postMessage',
-						'js_vars'   => [ [ 'element' => '#id1.one', 'function' => 'html', 'prefix' => '<span class="#id1.one">', 'suffix' => '</span>' ] ]
+						'js_vars'   => [ [ 'element' => '#id1.one', 'function' => 'html' ] ]
 					] ),
 			],
 		];

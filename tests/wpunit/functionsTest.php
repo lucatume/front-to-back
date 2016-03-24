@@ -81,6 +81,7 @@ class functionsTest extends \Codeception\TestCase\WPTestCase {
 			[ " 'foo', 'bar' ", array( 'foo', 'bar', '' ) ],
 			[ " 'foo', 'bar' ", array( 'foo', 'bar' ) ],
 			[ " '', 'bar' ", array( '', 'bar' ) ],
+			[ " '', array('some'=>'var') ", array( '', "array('some'=>'var')" ) ],
 		];
 
 	}
@@ -113,5 +114,26 @@ class functionsTest extends \Codeception\TestCase\WPTestCase {
 	 */
 	public function test_ftb_parse_text_array( $expected, $in ) {
 		$this->assertEquals( $expected, ftb_parse_text_var( $in ) );
+	}
+
+	public function ftb_textualize_var_inputs() {
+		return [
+			[ '', '' ],
+			[ 'foo', "'foo'" ],
+			[ 23, 23 ],
+			[ array( 'foo' ), "array( 'foo' )" ],
+			[ array( 'foo', 'bar' ), "array( 'foo', 'bar' )" ],
+			[ array( 'foo' => 'bar', 'bar' => 23 ), "array( 'foo' => 'bar', 'bar' => 23 )" ],
+		];
+
+	}
+
+	/**
+	 * ftb_textualize_var
+	 *
+	 * @dataProvider ftb_textualize_var_inputs
+	 */
+	public function test_ftb_textualize_var( $in, $expected ) {
+		$this->assertEquals( $expected, ftb_textualize_var( $in ) );
 	}
 }

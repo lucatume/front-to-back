@@ -86,8 +86,10 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 
 			$exit_markup = str_replace( '&lt;?php', '<?php', $exit_markup );
 			$exit_markup = str_replace( '?&gt;', '?>', $exit_markup );
-
 			$exit_markup = preg_replace( "/(\\<\\?php)([^\\>]*)((?<!\\?)\\>)/um", "<?php$2?>", $exit_markup );
+			$exit_markup = str_replace( '=&gt;', '=>', $exit_markup );
+			$exit_markup = str_replace( '&lt;ftb-open-tag', '<', $exit_markup );
+			$exit_markup = str_replace( 'ftb-close-tag&gt;', '>', $exit_markup );
 		}
 
 		return $exit_markup;
@@ -129,8 +131,7 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 			$parent = $node->parentNode;
 
 			$new = $this->doc->createTextNode( $processed_string );
-			$parent->insertBefore( $new, $node );
-			$parent->removeChild( $node );
+			$parent->replaceChild( $new, $node );
 		}
 	}
 }
