@@ -189,7 +189,7 @@ class FTB_Fields_PostMessageTransport implements FTB_Fields_TransportInterface {
 
 	private function js_callbacks() {
 		return array(
-			'featured_image' => 'ftb_replace_src',
+			'featured_image' => 'ftb_customizer_functions.replace_src',
 		);
 	}
 

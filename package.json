@@ -1,0 +1,39 @@
+{
+  "name": "front-to-back",
+  "version": "1.0.0",
+  "description": "Easy page templating for developers.",
+  "main": "front-to-back.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucatume/front-to-back.git"
+  },
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "customizer"
+  ],
+  "author": "Luca Tumedei",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/lucatume/front-to-back/issues"
+  },
+  "homepage": "https://github.com/lucatume/front-to-back",
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.2",
+    "expose-loader": "^0.7.1",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
+    "webpack": "^1.12.13"
+  },
+  "dependencies": {
+    "exports-loader": "^0.6.3",
+    "script-loader": "^0.6.1"
+  }
+}

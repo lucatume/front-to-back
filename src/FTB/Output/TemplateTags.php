@@ -24,7 +24,7 @@ class FTB_Output_TemplateTags implements FTB_Output_TemplateTagsInterface {
 	public function the_post_thumbnail( $size, $attr ) {
 		$args = ftb_args_string( array( ftb_textualize_var( ftb_parse_text_var( $size ) ), ftb_textualize_var( ftb_parse_text_var( $attr ) ) ) );
 
-		return sprintf( '<?php the_post_thumbnail(%s); ?>', $args );
+		return sprintf( '<?php ftb_the_post_thumbnail(%s); ?>', $args );
 	}
 
 	public function the_var( $var ) {

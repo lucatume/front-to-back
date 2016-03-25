@@ -21,4 +21,11 @@ class FTB_Filesystem_DirectFilesystem implements FTB_Filesystem_FilesystemInterf
 	public function get_contents( $path ) {
 		return file_get_contents( $path );
 	}
+
+	/**
+	 * @return string
+	 */
+	public function root_url( $path ) {
+		return plugins_url( $path, dirname( dirname( dirname( dirname( __FILE__ ) ) ) ) . '/front-to-back.php' );
+	}
 }

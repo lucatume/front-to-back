@@ -18,4 +18,11 @@ interface FTB_Filesystem_FilesystemInterface {
 	 * @return string
 	 */
 	public function get_contents( $file );
+
+	/**
+	 * @param $path
+	 *
+	 * @return string
+	 */
+	public function root_url($path);
 }
