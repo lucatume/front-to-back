@@ -20,7 +20,9 @@ class FTB_ServiceProviders_ThemeCustomizerSetup extends tad_DI52_ServiceProvider
 
 		add_action( 'customize_preview_init', array( $preview_filters, 'add_preview_filters' ) );
 		add_action( 'wp_ajax_customize_save', array( $preview_filters, 'add_save_filters' ) );
-		add_action( 'wp_footer', array( $this->container->make( 'FTB_Scripts_CustomizerInterface' ), 'enqueue' ), 10 );
+
+		$customizer_scripts = $this->container->make( 'FTB_Scripts_CustomizerInterface' );
+		add_action( 'wp_enqueue_scripts', array( $customizer_scripts, 'enqueue' ), 11 );
 	}
 
 	/**

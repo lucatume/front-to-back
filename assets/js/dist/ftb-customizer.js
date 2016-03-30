@@ -45,34 +45,125 @@ var ftb =
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(1);
+	var Events = __webpack_require__(1),
+	    Attachments = __webpack_require__(3);
+
+	window.FTB = {
+		Events: Events,
+		Attachments: new Attachments()
+	};
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(2)(__webpack_require__(3))
+	var Backbone = __webpack_require__(2);
+
+	module.exports = _.extend({}, Backbone.Events);
 
 /***/ },
 /* 2 */
 /***/ function(module, exports) {
 
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	module.exports = function(src) {
-		if (typeof execScript === "function")
-			execScript(src);
-		else
-			eval.call(null, src);
-	}
+	// provided by WordPress
+	module.exports = window.Backbone;
 
 /***/ },
 /* 3 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(4),
+	    Backbone = __webpack_require__(2),
+	    Events = __webpack_require__(1),
+	    Backend = __webpack_require__(5),
+	    utils = __webpack_require__(7);
+
+	module.exports = Backbone.Model.extend({
+
+		events: Events,
+
+		backend: new Backend(),
+
+		replace: function (element, newSrc) {
+			var $element = $(element),
+			    size,
+			    attr,
+			    html,
+			    self = this;
+
+			$element.each(function () {
+				$this = $(this);
+				self.events.trigger('ftb.attachment.replace_src.before', element, newSrc);
+
+				size = $this.data('ftb-size');
+				attr = $this.data('ftb-attr');
+				html = self.backend.get_attachment_image_from(newSrc, size, attr).success(function (html) {
+					if (html === false) {
+						return;
+					}
+
+					//var escaped_html = utils.json_unescape( html );
+					$this.replaceWith(html);
+
+					self.events.trigger('ftb.attachment.replace_src.after', element, newSrc, html);
+				});
+			});
+		}
+	});
+
+/***/ },
+/* 4 */
 /***/ function(module, exports) {
 
-	module.exports = "var ftb_customizer_functions = {\n\n\treplace_src: function (element, newSrc) {\n\t\tthis.replace_attr(element, 'src', newSrc);\n\t},\n\n\treplace_attr: function (element, attr, value) {\n\t\tif (!(element && attr)) {\n\t\t\treturn;\n\t\t}\n\n\t\tvalue = value || '';\n\n\t\tjQuery(element).attr(attr, value);\n\t}\n\n};\n\njQuery(function () {\n\tconsole.log('front to back start');\n});"
+	// provided by WordPress
+	module.exports = window.jQuery;
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(4),
+	    Backbone = __webpack_require__(2),
+	    ftbData = __webpack_require__(6);
+
+	module.exports = Backbone.Model.extend({
+		get_attachment_image_from: function (newSrc, size, attr) {
+			var settings = {
+				beforeSend: function (xhr) {
+					xhr.setRequestHeader('X-WP-NONCE', ftbData.nonce);
+				},
+				url: ftbData.rest_url_prefix + '/ftb/v1/markup/attachment',
+				data: {
+					newSrc: newSrc,
+					size: size,
+					attr: attr
+				},
+				dataType: 'json'
+			};
+
+			return $.get(settings);
+		}
+	});
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	// provided by WordPress
+	module.exports = window.ftbData;
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		json_unescape: function (escaped) {
+			escaped = escaped.replace(/\\"/g, "\"");
+			escaped = escaped.replace(/\\\//g, "/");
+
+			return escaped.replace(/(^")|("$)/g, '');
+		}
+	};
 
 /***/ }
 /******/ ]);

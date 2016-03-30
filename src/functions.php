@@ -97,7 +97,7 @@ function ftb_quote_wrap( $value_to_wrap ) {
 	Arg::_( $value_to_wrap, 'Value to wrap' )->is_string()->_or()->is_numeric();
 
 
-	return preg_match( '/\\s*array\\s*\\(/', $value_to_wrap ) ? $value_to_wrap : "'$value_to_wrap'";
+	return preg_match( '/\\s*array\\s*\\(/', $value_to_wrap ) ? $value_to_wrap : str_replace( '"', '', "'$value_to_wrap'" );
 }
 
 function ftb_key_value_text( &$value, $key ) {
@@ -116,4 +116,45 @@ function ftb_parse_text_var( $text_var ) {
 	$vars = count( $complex_vars ) == count( $vars ) ? $vars : array_keys( $vars );
 
 	return count( $vars ) == 1 && ! is_associative_array( $vars ) ? reset( $vars ) : $vars;
+}
+
+function ftb_merge_query_strings( $original, $add, $merge = true ) {
+	if ( empty( $original ) && empty( $add ) ) {
+		return '';
+	}
+
+	$original_vars = array();
+	if ( is_array( $original ) ) {
+		$original_vars = $original;
+	} else {
+		parse_str( $original, $original_vars );
+		$original_vars = (array) $original_vars;
+	}
+
+	$add_vars = array();
+	if ( is_array( $add ) ) {
+		$add_vars = $add;
+	} else {
+		parse_str( $add, $add_vars );
+		$add_vars = (array) $add_vars;
+	}
+
+	$common_vars = array_intersect( array_keys( $original_vars ), array_keys( $add_vars ) );
+	if ( $merge && $common_vars ) {
+		foreach ( $common_vars as $key ) {
+			$merged                = array_unique( array( $original_vars[ $key ], $add_vars[ $key ] ) );
+			$original_vars[ $key ] = count( $merged ) === 1 ? reset( $merged ) : $merged;
+			unset( $add_vars[ $key ] );
+		}
+	}
+
+	return http_build_query( array_merge( $original_vars, $add_vars ) );
+
+}
+
+function ftb_merge_query_string_to_array( $original, $add, $merge = true ) {
+	$vars = array();
+	parse_str( ftb_merge_query_strings( $original, $add, $merge ), $vars );
+
+	return $vars;
 }

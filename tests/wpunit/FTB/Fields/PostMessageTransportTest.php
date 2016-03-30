@@ -206,7 +206,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				'.' . $default_featured_image_field_args['settings'],
 				'',
 				array_merge( $default_featured_image_field_args,
-					[ 'transport' => 'postMessage', 'js_vars' => [ [ 'element' => '.some-setting', 'js_callback' => 'ftb_replace_src' ] ] ] ),
+					[ 'transport' => 'postMessage', 'js_vars' => [ [ 'element' => '.some-setting', 'js_callback' => 'FTB.Attachments.replace' ] ] ] ),
 			],
 			// specified element? use that
 			[
@@ -215,7 +215,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				'.some-element',
 				'',
 				array_merge( $default_featured_image_field_args,
-					[ 'transport' => 'postMessage', 'js_vars' => [ [ 'element' => '.some-element', 'js_callback' => 'ftb_replace_src' ] ] ] ),
+					[ 'transport' => 'postMessage', 'js_vars' => [ [ 'element' => '.some-element', 'js_callback' => 'FTB.Attachments.replace' ] ] ] ),
 			],
 			// specified a class? use that
 			[
@@ -224,7 +224,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				'',
 				'class=some-class',
 				array_merge( $default_featured_image_field_args,
-					[ 'transport' => 'postMessage', 'js_vars' => [ [ 'element' => '.some-class', 'js_callback' => 'ftb_replace_src' ] ] ] ),
+					[ 'transport' => 'postMessage', 'js_vars' => [ [ 'element' => '.some-class', 'js_callback' => 'FTB.Attachments.replace' ] ] ] ),
 			],
 			// specified 2+ classes? use those
 			[
@@ -233,7 +233,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				'',
 				'class[]=class-one&class[]=class-two&class[]=class-three',
 				array_merge( $default_featured_image_field_args,
-					[ 'transport' => 'postMessage', 'js_vars' => [ [ 'element' => '.class-one.class-two.class-three', 'js_callback' => 'ftb_replace_src' ] ] ] ),
+					[ 'transport' => 'postMessage', 'js_vars' => [ [ 'element' => '.class-one.class-two.class-three', 'js_callback' => 'FTB.Attachments.replace' ] ] ] ),
 			],
 			// specified an id? use that
 			[
@@ -242,7 +242,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				'',
 				'id=some-id',
 				array_merge( $default_featured_image_field_args,
-					[ 'transport' => 'postMessage', 'js_vars' => [ [ 'element' => '#some-id', 'js_callback' => 'ftb_replace_src' ] ] ] ),
+					[ 'transport' => 'postMessage', 'js_vars' => [ [ 'element' => '#some-id', 'js_callback' => 'FTB.Attachments.replace' ] ] ] ),
 			],
 			// specified 2+ ids? use those
 			[
@@ -251,7 +251,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				'',
 				'id[]=some-id&id[]=another-id',
 				array_merge( $default_featured_image_field_args,
-					[ 'transport' => 'postMessage', 'js_vars' => [ [ 'element' => '#some-id#another-id', 'js_callback' => 'ftb_replace_src' ] ] ] ),
+					[ 'transport' => 'postMessage', 'js_vars' => [ [ 'element' => '#some-id#another-id', 'js_callback' => 'FTB.Attachments.replace' ] ] ] ),
 			],
 			// specified ids and classes? use those all
 			[
@@ -260,7 +260,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				'',
 				'class[]=class-one&id[]=some-id&id[]=another-id&class[]=class-two',
 				array_merge( $default_featured_image_field_args,
-					[ 'transport' => 'postMessage', 'js_vars' => [ [ 'element' => '#some-id#another-id.class-one.class-two', 'js_callback' => 'ftb_replace_src' ] ] ] ),
+					[ 'transport' => 'postMessage', 'js_vars' => [ [ 'element' => '#some-id#another-id.class-one.class-two', 'js_callback' => 'FTB.Attachments.replace' ] ] ] ),
 			],
 		];
 	}
@@ -290,8 +290,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				$default_meta_field_args,
 				'.' . $default_meta_field_args['settings'],
 				'',
-				array_merge( $default_meta_field_args,
-					[
+				array_merge( $default_meta_field_args, [
 						'transport' => 'postMessage',
 						'js_vars'   => [ [ 'element' => '.some-setting', 'function' => 'html' ] ]
 					] ),
@@ -302,8 +301,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				$default_meta_field_args,
 				'.some-element',
 				'',
-				array_merge( $default_meta_field_args,
-					[
+				array_merge( $default_meta_field_args, [
 						'transport' => 'postMessage',
 						'js_vars'   => [ [ 'element' => '.some-element', 'function' => 'html' ] ]
 					] ),
@@ -313,8 +311,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				$default_meta_field_args,
 				'.one.two',
 				'',
-				array_merge( $default_meta_field_args,
-					[
+				array_merge( $default_meta_field_args, [
 						'transport' => 'postMessage',
 						'js_vars'   => [ [ 'element' => '.one.two', 'function' => 'html' ] ]
 					] ),
@@ -324,8 +321,7 @@ class PostMessageTransportTest extends RefreshTransportTest {
 				$default_meta_field_args,
 				'#id1.one',
 				'',
-				array_merge( $default_meta_field_args,
-					[
+				array_merge( $default_meta_field_args, [
 						'transport' => 'postMessage',
 						'js_vars'   => [ [ 'element' => '#id1.one', 'function' => 'html' ] ]
 					] ),

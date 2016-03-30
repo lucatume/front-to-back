@@ -124,6 +124,7 @@ class functionsTest extends \Codeception\TestCase\WPTestCase {
 			[ array( 'foo' ), "array( 'foo' )" ],
 			[ array( 'foo', 'bar' ), "array( 'foo', 'bar' )" ],
 			[ array( 'foo' => 'bar', 'bar' => 23 ), "array( 'foo' => 'bar', 'bar' => 23 )" ],
+			[ 'foo', "'foo'" ],
 		];
 
 	}
@@ -135,5 +136,61 @@ class functionsTest extends \Codeception\TestCase\WPTestCase {
 	 */
 	public function test_ftb_textualize_var( $in, $expected ) {
 		$this->assertEquals( $expected, ftb_textualize_var( $in ) );
+	}
+
+	public function query_strings() {
+		return [
+			[ true, '', '', '' ],
+			[ true, array(), '', '' ],
+			[ true, array(), array(), '' ],
+			[ true, array(), 'some=var', 'some=var' ],
+			[ true, array(), 'some=var&foo=bar', 'some=var&foo=bar' ],
+			[ true, array( 'foo' => 'bar' ), 'some=var', 'foo=bar&some=var' ],
+			[ true, array( 'foo' => 'bar', 'bar' => 'baz' ), 'some=var', 'foo=bar&bar=baz&some=var' ],
+			[ true, array( 'foo' => 'bar', 'bar' => 'baz' ), 'some=var&another=one', 'foo=bar&bar=baz&some=var&another=one' ],
+			[ true, array( 'class' => 'one' ), 'class=two', 'class%5B0%5D=one&class%5B1%5D=two' ],
+			[ false, array( 'class' => 'one' ), 'class=two', 'class=two' ],
+			[ false, 'class=one', 'class=two', 'class=two' ],
+			[ false, array( 'class' => 'one' ), array( 'class' => 'two' ), 'class=two' ],
+			[ true, array( 'class' => 'one' ), array( 'class' => 'two' ), 'class%5B0%5D=one&class%5B1%5D=two' ],
+			[ true, array( 'class' => 'one' ), array( 'class' => 'one' ), 'class=one' ],
+		];
+	}
+
+	/**
+	 * ftb_merge_query_strings
+	 *
+	 * @dataProvider query_strings
+	 */
+	public function test_ftb_merge_query_strings( $merge, $original, $add, $expected ) {
+		$this->assertEquals( $expected, ftb_merge_query_strings( $original, $add, $merge ) );
+	}
+
+	public function array_query_strings() {
+		return [
+			[ true, '', '', array() ],
+			[ true, array(), '', [ ] ],
+			[ true, array(), array(), [ ] ],
+			[ true, array(), 'some=var', [ 'some' => 'var' ] ],
+			[ true, array(), 'some=var&foo=bar', [ 'some' => 'var', 'foo' => 'bar' ] ],
+			[ true, array( 'foo' => 'bar' ), 'some=var', [ 'foo' => 'bar', 'some' => 'var' ] ],
+			[ true, array( 'foo' => 'bar', 'bar' => 'baz' ), 'some=var', [ 'foo' => 'bar', 'bar' => 'baz', 'some' => 'var' ] ],
+			[ true, array( 'foo' => 'bar', 'bar' => 'baz' ), 'some=var&another=one', [ 'foo' => 'bar', 'bar' => 'baz', 'some' => 'var', 'another' => 'one' ] ],
+			[ true, array( 'class' => 'one' ), 'class=two', [ 'class' => [ 'one', 'two' ] ] ],
+			[ false, array( 'class' => 'one' ), 'class=two', [ 'class' => 'two' ] ],
+			[ false, 'class=one', 'class=two', [ 'class' => 'two' ] ],
+			[ false, array( 'class' => 'one' ), array( 'class' => 'two' ), [ 'class' => 'two' ] ],
+			[ true, array( 'class' => 'one' ), array( 'class' => 'two' ), [ 'class' => [ 'one', 'two' ] ] ],
+			[ true, array( 'class' => 'one' ), array( 'class' => 'one' ), [ 'class' => 'one' ] ],
+		];
+	}
+
+	/**
+	 * ftb_merge_query_string_to_array
+	 *
+	 * @dataProvider array_query_strings
+	 */
+	public function test_ftb_merge_query_string_to_array( $merge, $original, $add, $expected ) {
+		$this->assertEquals( $expected, ftb_merge_query_string_to_array( $original, $add, $merge ) );
 	}
 }
