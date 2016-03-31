@@ -45,8 +45,8 @@ var ftb =
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Events = __webpack_require__(7),
-	    Attachments = __webpack_require__(9);
+	var Events = __webpack_require__(10),
+	    Attachments = __webpack_require__(12);
 
 	window.FTB = {
 		Events: Events,
@@ -58,42 +58,45 @@ var ftb =
 /* 2 */,
 /* 3 */,
 /* 4 */,
-/* 5 */
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
 /***/ function(module, exports) {
 
 	// provided by WordPress
 	module.exports = window.jQuery;
 
 /***/ },
-/* 6 */
+/* 9 */
 /***/ function(module, exports) {
 
 	// localized by WordPress
 	module.exports = window.ftbData;
 
 /***/ },
-/* 7 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Backbone = __webpack_require__(8);
+	var Backbone = __webpack_require__(11);
 
 	module.exports = _.extend({}, Backbone.Events);
 
 /***/ },
-/* 8 */
+/* 11 */
 /***/ function(module, exports) {
 
 	// provided by WordPress
 	module.exports = window.Backbone;
 
 /***/ },
-/* 9 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $ = __webpack_require__(5),
-	    Backbone = __webpack_require__(8),
-	    Events = __webpack_require__(7),
-	    Backend = __webpack_require__(10);
+	var $ = __webpack_require__(8),
+	    Backbone = __webpack_require__(11),
+	    Events = __webpack_require__(10),
+	    Backend = __webpack_require__(13);
 
 	module.exports = Backbone.Model.extend({
 
@@ -128,12 +131,12 @@ var ftb =
 	});
 
 /***/ },
-/* 10 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $ = __webpack_require__(5),
-	    Backbone = __webpack_require__(8),
-	    ftbData = __webpack_require__(6);
+	var $ = __webpack_require__(8),
+	    Backbone = __webpack_require__(11),
+	    ftbData = __webpack_require__(9);
 
 	module.exports = Backbone.Model.extend({
 		get_attachment_image_from: function (newSrc, size, attr) {

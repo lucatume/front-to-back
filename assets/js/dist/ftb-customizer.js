@@ -45,13 +45,51 @@ var ftb =
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(11);
+	__webpack_require__(1);
 
-	__webpack_require__(17);
+	__webpack_require__(5);
 
 /***/ },
-/* 1 */,
-/* 2 */,
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(2);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./customizer-mods.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./customizer-mods.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "@media (min-width: 1350px) {\n  #customize-controls, #customize-footer-actions {\n    width: 30%; }\n  .wp-full-overlay.expanded {\n    margin-left: 30%; }\n  .wp-full-overlay.collapsed .wp-full-overlay-sidebar {\n    margin-left: -30%; } }\n\n@media (min-width: 1600px) {\n  #customize-controls, #customize-footer-actions {\n    width: 40%; }\n  .wp-full-overlay.expanded {\n    margin-left: 40%; }\n  .wp-full-overlay.collapsed .wp-full-overlay-sidebar {\n    margin-left: -40%; } }\n", ""]);
+
+	// exports
+
+
+/***/ },
 /* 3 */
 /***/ function(module, exports) {
 
@@ -361,72 +399,33 @@ var ftb =
 
 /***/ },
 /* 5 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// provided by WordPress
-	module.exports = window.jQuery;
+	__webpack_require__(6);
+
+	var $ = __webpack_require__(8),
+	    ftbData = __webpack_require__(9);
+
+	$(function () {
+		if (ftbData.customizer.page_nav.html) {
+			$('#customize-info').append(ftbData.customizer.page_nav.html);
+		}
+
+		$('.ftbPageLinks__Link').on('click', function (evt) {
+			evt.preventDefault();
+
+			$('#customize-preview iframe').attr('src', $(this).find('a').data('link'));
+		});
+	});
 
 /***/ },
 /* 6 */
-/***/ function(module, exports) {
-
-	// localized by WordPress
-	module.exports = window.ftbData;
-
-/***/ },
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(12);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./customizer-mods.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./customizer-mods.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 12 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "@media (min-width: 1350px) {\n  #customize-controls, #customize-footer-actions {\n    width: 30%; }\n  .wp-full-overlay.expanded {\n    margin-left: 30%; }\n  .wp-full-overlay.collapsed .wp-full-overlay-sidebar {\n    margin-left: -30%; } }\n\n@media (min-width: 1600px) {\n  #customize-controls, #customize-footer-actions {\n    width: 40%; }\n  .wp-full-overlay.expanded {\n    margin-left: 40%; }\n  .wp-full-overlay.collapsed .wp-full-overlay-sidebar {\n    margin-left: -40%; } }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 13 */,
-/* 14 */,
-/* 15 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(16);
+	var content = __webpack_require__(7);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(4)(content, {});
@@ -446,7 +445,7 @@ var ftb =
 	}
 
 /***/ },
-/* 16 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(3)();
@@ -454,31 +453,24 @@ var ftb =
 
 
 	// module
-	exports.push([module.id, ".ftbPageLinks {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap; }\n\n.ftbPageLinks__Link {\n  min-width: 20%; }\n", ""]);
+	exports.push([module.id, ".ftbPageLinks {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap; }\n\n.ftbPageLinks__Link {\n  min-width: 20%;\n  text-align: center; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 17 */
-/***/ function(module, exports, __webpack_require__) {
+/* 8 */
+/***/ function(module, exports) {
 
-	__webpack_require__(15);
+	// provided by WordPress
+	module.exports = window.jQuery;
 
-	var $ = __webpack_require__(5),
-	    ftbData = __webpack_require__(6);
+/***/ },
+/* 9 */
+/***/ function(module, exports) {
 
-	$(function () {
-		if (ftbData.customizer.page_nav.html) {
-			$('#customize-info').append(ftbData.customizer.page_nav.html);
-		}
-
-		$('.ftbPageLinks__Link').on('click', function (evt) {
-			evt.preventDefault();
-
-			$('#customize-preview iframe').attr('src', $(this).find('a').data('link'));
-		});
-	});
+	// localized by WordPress
+	module.exports = window.ftbData;
 
 /***/ }
 /******/ ]);
