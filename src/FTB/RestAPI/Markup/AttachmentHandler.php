@@ -42,13 +42,20 @@ class FTB_RestAPI_Markup_AttachmentHandler implements FTB_RestAPI_Markup_Attachm
 			$size = '';
 
 			return $size;
-		} else {
+		} elseif ( is_string( $request_size ) ) {
 			$size = array();
 			parse_str( $request_size, $size );
-			$size = count( $size ) === 2 ? $size : reset( $size );
 
-			return $size;
+			if ( empty( array_filter( $size ) ) ) {
+				return $request_size;
+			}
+
+			$size = count( $size ) === 2 ? $size : reset( $size );
+		} else {
+			$size = $request_size;
 		}
+
+		return $size;
 	}
 
 	/**

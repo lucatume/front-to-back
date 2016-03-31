@@ -2,6 +2,7 @@
 namespace FTB\Output;
 
 use FTB_Output_TemplateTags;
+use tad\FunctionMocker\FunctionMocker as Test;
 
 class TemplateTagsTest extends \Codeception\TestCase\WPTestCase {
 
@@ -10,10 +11,12 @@ class TemplateTagsTest extends \Codeception\TestCase\WPTestCase {
 		parent::setUp();
 
 		// your set up methods here
+		Test::setUp();
 	}
 
 	public function tearDown() {
 		// your tear down methods here
+		Test::tearDown();
 
 		// then
 		parent::tearDown();
@@ -46,6 +49,50 @@ class TemplateTagsTest extends \Codeception\TestCase\WPTestCase {
 	public function it_should_return_proper_the_title_tag( $before, $after, $expected ) {
 		$sut = $this->make_instance();
 		$this->assertEquals( $expected, $sut->the_title( $before, $after ) );
+	}
+
+	/**
+	 * @test
+	 * it should return the excerpt
+	 */
+	public function it_should_return_the_excerpt() {
+		$sut = $this->make_instance();
+
+		$this->assertEquals( '<?php the_excerpt(); ?>', $sut->the_excerpt() );
+	}
+
+	/**
+	 * @test
+	 * it should call the_content with proper arguments
+	 */
+	public function it_should_call_the_content_with_proper_arguments() {
+		Test::replace( 'ftb_args_string', 'foo' );
+
+		$sut = $this->make_instance();
+
+		$this->assertEquals( '<?php the_content(foo); ?>', $sut->the_content() );
+	}
+
+	/**
+	 * @test
+	 * it should call the_post_thumbnail with proper arguments
+	 */
+	public function it_should_call_the_post_thumbnail_with_proper_arguments() {
+		Test::replace( 'ftb_args_string', 'foo' );
+
+		$sut = $this->make_instance();
+
+		$this->assertEquals( '<?php ftb_the_post_thumbnail(foo); ?>', $sut->the_post_thumbnail() );
+	}
+
+	/**
+	 * @test
+	 * it should return proper markup for the_var
+	 */
+	public function it_should_return_proper_markup_for_the_var() {
+		$sut = $this->make_instance();
+
+		$this->assertEquals( '<?php $foo = get_post_meta( get_the_ID(), \'foo\', true); ?>', $sut->the_var( 'foo' ) );
 	}
 
 	private function make_instance() {
