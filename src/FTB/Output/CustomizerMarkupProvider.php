@@ -23,7 +23,6 @@ class FTB_Output_CustomizerMarkupProvider implements FTB_Output_CustomizerMarkup
 	public function get_page_nav_markup() {
 		$pages = get_posts( array(
 			'post_type' => 'page',
-			'parent'    => 0,
 			'nopaging'  => true,
 			'orderby'   => 'title',
 			'order'     => 'ASC',
@@ -47,7 +46,7 @@ class FTB_Output_CustomizerMarkupProvider implements FTB_Output_CustomizerMarkup
 	 * @return WP_Post
 	 */
 	protected function modify_post( WP_Post $post ) {
-		$post->title = $post->post_title;
+		$post->title = "/{$post->post_name} - \"{$post->post_title}\"";
 
 		return $post;
 	}

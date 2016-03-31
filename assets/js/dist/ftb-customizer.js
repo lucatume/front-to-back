@@ -404,7 +404,8 @@ var ftb =
 	__webpack_require__(6);
 
 	var $ = __webpack_require__(8),
-	    ftbData = __webpack_require__(9);
+	    ftbData = __webpack_require__(9),
+	    wp = __webpack_require__(14);
 
 	$(function () {
 		if (ftbData.customizer.page_nav.html) {
@@ -414,7 +415,9 @@ var ftb =
 		$('.ftbPageLinks__Link').on('click', function (evt) {
 			evt.preventDefault();
 
-			$('#customize-preview iframe').attr('src', $(this).find('a').data('link'));
+			var url = $(this).find('a').data('link');
+			$('#customize-preview iframe').attr('src', url);
+			wp.customize.previewer.previewUrl(url);
 		});
 	});
 
@@ -453,7 +456,7 @@ var ftb =
 
 
 	// module
-	exports.push([module.id, ".ftbPageLinks {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap; }\n\n.ftbPageLinks__Link {\n  min-width: 20%;\n  text-align: center; }\n", ""]);
+	exports.push([module.id, ".ftbPageLinks {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap;\n  flex-direction: column; }\n\n.ftbPageLinks__Link {\n  text-align: left; }\n", ""]);
 
 	// exports
 
@@ -471,6 +474,17 @@ var ftb =
 
 	// localized by WordPress
 	module.exports = window.ftbData;
+
+/***/ },
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */
+/***/ function(module, exports) {
+
+	// provided by WordPress
+	module.exports = window.wp;
 
 /***/ }
 /******/ ]);

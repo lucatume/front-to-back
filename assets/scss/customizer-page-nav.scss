@@ -2,9 +2,9 @@
   display         : flex;
   justify-content : space-around;
   flex-wrap       : wrap;
+  flex-direction  : column;
 }
 
 .ftbPageLinks__Link {
-  min-width       : 20%;
-  text-align : center;
+  text-align : left;
 }

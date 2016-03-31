@@ -1,7 +1,8 @@
 require( "customizer-page-nav.scss" );
 
 var $ = require( 'jQuery' ),
-	ftbData = require( 'ftbData' );
+	ftbData = require( 'ftbData' ),
+	wp = require( 'wp' );
 
 $( function () {
 	if ( ftbData.customizer.page_nav.html ) {
@@ -11,6 +12,8 @@ $( function () {
 	$( '.ftbPageLinks__Link' ).on( 'click', function ( evt ) {
 		evt.preventDefault();
 
-		$( '#customize-preview iframe' ).attr( 'src', $( this ).find( 'a' ).data( 'link' ) );
+		var url = $( this ).find( 'a' ).data( 'link' );
+		$( '#customize-preview iframe' ).attr( 'src', url );
+		wp.customize.previewer.previewUrl( url );
 	} );
 } );
