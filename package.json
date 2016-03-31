@@ -27,12 +27,15 @@
   "devDependencies": {
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.2",
+    "css-loader": "^0.23.1",
     "expose-loader": "^0.7.1",
     "node-sass": "^3.4.2",
-    "sass-loader": "^3.1.2",
-    "webpack": "^1.12.13"
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.14"
   },
   "dependencies": {
+    "breakpoint-sass": "^2.7.0",
     "exports-loader": "^0.6.3",
     "script-loader": "^0.6.1"
   }

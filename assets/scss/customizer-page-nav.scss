@@ -1,0 +1,9 @@
+.ftbPageLinks {
+  display         : flex;
+  justify-content : space-around;
+  flex-wrap       : wrap;
+}
+
+.ftbPageLinks__Link {
+  min-width       : 20%;
+}

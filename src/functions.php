@@ -1,4 +1,5 @@
 <?php
+use Patchwork\Exceptions\Exception;
 
 /**
  * Returns the absolute path to an FTB template file.
@@ -157,4 +158,12 @@ function ftb_merge_query_string_to_array( $original, $add, $merge = true ) {
 	parse_str( ftb_merge_query_strings( $original, $add, $merge ), $vars );
 
 	return $vars;
+}
+
+function ftb_to_array( $value ) {
+	try {
+		return (array) $value;
+	} catch ( Exception $e ) {
+		return array();
+	}
 }

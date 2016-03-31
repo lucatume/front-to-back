@@ -1,0 +1,16 @@
+{{#if pages}}
+    <div class="accordion-section-title">
+    <span class="preview-notice">{{title}}
+        <div class="ftbPageLinks">
+            {{#each pages}}
+                <strong class="ftbPageLinks__Link">
+                    <a href="{{{../link_base}}}{{guid}}" data-link="{{guid}}">{{post_title}}</a>
+                </strong>
+            {{/each}}
+        </div>
+    </span>
+    </div>
+    <div class="customize-panel-description">
+        {{description}}
+    </div>
+{{/if}}

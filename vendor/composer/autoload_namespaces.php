@@ -14,7 +14,7 @@ return array(
     'org\\bovigo\\vfs\\' => array($vendorDir . '/mikey179/vfsStream/src/main/php'),
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'Hautelook' => array($vendorDir . '/hautelook/phpass/src'),
-    'Handlebars' => array($vendorDir . '/xamin/handlebars.php/src'),
+    'Handlebars' => array($vendorDir . '/xamin/handlebars.php-52/src', $vendorDir . '/xamin/handlebars.php/src'),
     'FTB_' => array($baseDir . '/src'),
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src'),

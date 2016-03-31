@@ -26,7 +26,8 @@
     },
     "autoload": {
         "psr-0": {
-            "FTB_": "src/"
+            "FTB_": "src/",
+            "Handlebars": "vendor/xamin/handlebars.php-52/src"
         },
         "files": ["vendor/aristath/kirki/autoloader.php"]
     },

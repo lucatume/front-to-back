@@ -1,7 +1,7 @@
-var $ = require( './../globals/jQuery.js' ),
-	Backbone = require( './../globals/Backbone.js' ),
-	Events = require( './Events.js' ),
-	Backend = require( './Backend.js' );
+var $ = require( 'jQuery' ),
+	Backbone = require( 'Backbone' ),
+	Events = require( 'Events' ),
+	Backend = require( 'Backend' );
 
 module.exports = Backbone.Model.extend( {
 

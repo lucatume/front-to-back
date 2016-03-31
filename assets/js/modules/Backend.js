@@ -1,6 +1,6 @@
-var $ = require( './../globals/jQuery.js' ),
-	Backbone = require( './../globals/Backbone.js' ),
-	ftbData = require( './../globals/ftbData.js' );
+var $ = require( 'jQuery' ),
+	Backbone = require( 'Backbone' ),
+	ftbData = require( 'ftbData' );
 
 module.exports = Backbone.Model.extend( {
 	get_attachment_image_from: function ( newSrc, size, attr ) {

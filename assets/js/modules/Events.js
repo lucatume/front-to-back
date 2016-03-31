@@ -1,3 +1,3 @@
-var Backbone = require( './../globals/Backbone.js' );
+var Backbone = require( 'Backbone' );
 
 module.exports = _.extend( {}, Backbone.Events );

@@ -1,2 +1,2 @@
-// provided by WordPress
+// localized by WordPress
 module.exports = window.ftbData;

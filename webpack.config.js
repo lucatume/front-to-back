@@ -2,9 +2,8 @@ var path = require( 'path' );
 
 module.exports = {
 	entry: {
-		'ftb': './assets/js/front-to-back.js',
-		'ftb-admin': './assets/js/front-to-back-admin.js',
-		'ftb-customizer': './assets/js/front-to-back-customizer.js'
+		'ftb-customizer': './assets/js/customizer.js',
+		'ftb-customizer-iframe': './assets/js/customizer-iframe.js'
 	},
 	output: {
 		filename: './assets/js/dist/[name].js',
@@ -21,7 +20,9 @@ module.exports = {
 	resolve: {
 		root: [
 			path.resolve( './assets/js/modules' ),
+			path.resolve( './assets/js/globals' ),
+			path.resolve( './assets/scss' ),
 		],
-		extensions: ['', '.js'],
+		extensions: ['', '.js', '.scss','.css'],
 	}
 };

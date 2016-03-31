@@ -1,0 +1,32 @@
+@import '~breakpoint-sass';
+
+$large : 1350px;
+$xlarge : 1600px;
+
+$large-width : 30%;
+$xlarge-width : 40%;
+
+@include breakpoint($large, $xlarge) {
+  #customize-controls, #customize-footer-actions {
+    width : $large-width;
+  }
+  .wp-full-overlay.expanded {
+    margin-left : $large-width;
+  }
+  .wp-full-overlay.collapsed .wp-full-overlay-sidebar {
+    margin-left : -$large-width;
+  }
+}
+
+@include breakpoint($xlarge) {
+  #customize-controls, #customize-footer-actions {
+    width : $xlarge-width;
+  }
+  .wp-full-overlay.expanded {
+    margin-left : $xlarge-width;
+  }
+  .wp-full-overlay.collapsed .wp-full-overlay-sidebar {
+    margin-left : -$xlarge-width;
+  }
+}
+

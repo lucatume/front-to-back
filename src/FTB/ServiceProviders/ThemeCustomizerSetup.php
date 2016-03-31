@@ -12,6 +12,7 @@ class FTB_ServiceProviders_ThemeCustomizerSetup extends tad_DI52_ServiceProvider
 		$this->container->bind( 'FTB_Pages_FiltersInterface', 'FTB_Pages_Filters' );
 		$this->container->bind( 'tad_DI52_Container', $this->container );
 		$this->container->singleton( 'FTB_Pages_PreviewFiltersInterface', 'FTB_Pages_PreviewFilters' );
+		$this->container->singleton('FTB_Output_CustomizerMarkupProviderInterface','FTB_Output_CustomizerMarkupProvider');
 		$this->container->singleton( 'FTB_Scripts_CustomizerInterface', 'FTB_Scripts_Customizer' );
 
 		add_action( 'customize_register', array( $this->container->make( 'FTB_Customizer_Controls' ), 'register_controls' ) );
@@ -22,7 +23,8 @@ class FTB_ServiceProviders_ThemeCustomizerSetup extends tad_DI52_ServiceProvider
 		add_action( 'wp_ajax_customize_save', array( $preview_filters, 'add_save_filters' ) );
 
 		$customizer_scripts = $this->container->make( 'FTB_Scripts_CustomizerInterface' );
-		add_action( 'wp_enqueue_scripts', array( $customizer_scripts, 'enqueue' ), 11 );
+		add_action( 'wp_enqueue_scripts', array( $customizer_scripts, 'enqueue_iframe_scripts' ), 11 );
+		add_action( 'customize_controls_enqueue_scripts', array( $customizer_scripts, 'enqueue_scripts' ), 11 );
 	}
 
 	/**
