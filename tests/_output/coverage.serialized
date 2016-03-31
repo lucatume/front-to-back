@@ -1695,6 +1695,55 @@ $coverage->setData(array (
     ),
     73 => NULL,
   ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Output/CustomizerMarkupProvider.php' => 
+  array (
+    12 => 
+    array (
+    ),
+    13 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    25 => 
+    array (
+    ),
+    28 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    34 => 
+    array (
+    ),
+    35 => NULL,
+  ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Repositories/Attachment.php' => 
   array (
     17 => 
@@ -1811,16 +1860,7 @@ $coverage->setData(array (
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/functions.php' => 
   array (
-    12 => 
-    array (
-      0 => 'functionsTest::test_ftb_template_path with data set #0',
-      1 => 'functionsTest::test_ftb_template_path with data set #1',
-      2 => 'functionsTest::test_ftb_template_path with data set #2',
-      3 => 'functionsTest::test_ftb_template_path with data set #3',
-      4 => 'functionsTest::test_ftb_template_path with data set #4',
-      5 => 'functionsTest::test_ftb_template_path with data set #5',
-    ),
-    14 => 
+    13 => 
     array (
       0 => 'functionsTest::test_ftb_template_path with data set #0',
       1 => 'functionsTest::test_ftb_template_path with data set #1',
@@ -1847,7 +1887,7 @@ $coverage->setData(array (
       4 => 'functionsTest::test_ftb_template_path with data set #4',
       5 => 'functionsTest::test_ftb_template_path with data set #5',
     ),
-    18 => 
+    17 => 
     array (
       0 => 'functionsTest::test_ftb_template_path with data set #0',
       1 => 'functionsTest::test_ftb_template_path with data set #1',
@@ -1859,16 +1899,17 @@ $coverage->setData(array (
     19 => 
     array (
       0 => 'functionsTest::test_ftb_template_path with data set #0',
+      1 => 'functionsTest::test_ftb_template_path with data set #1',
+      2 => 'functionsTest::test_ftb_template_path with data set #2',
+      3 => 'functionsTest::test_ftb_template_path with data set #3',
+      4 => 'functionsTest::test_ftb_template_path with data set #4',
+      5 => 'functionsTest::test_ftb_template_path with data set #5',
     ),
-    20 => NULL,
-    22 => 
+    20 => 
     array (
-      0 => 'functionsTest::test_ftb_template_path with data set #1',
-      1 => 'functionsTest::test_ftb_template_path with data set #2',
-      2 => 'functionsTest::test_ftb_template_path with data set #3',
-      3 => 'functionsTest::test_ftb_template_path with data set #4',
-      4 => 'functionsTest::test_ftb_template_path with data set #5',
+      0 => 'functionsTest::test_ftb_template_path with data set #0',
     ),
+    21 => NULL,
     23 => 
     array (
       0 => 'functionsTest::test_ftb_template_path with data set #1',
@@ -1885,7 +1926,7 @@ $coverage->setData(array (
       3 => 'functionsTest::test_ftb_template_path with data set #4',
       4 => 'functionsTest::test_ftb_template_path with data set #5',
     ),
-    26 => 
+    25 => 
     array (
       0 => 'functionsTest::test_ftb_template_path with data set #1',
       1 => 'functionsTest::test_ftb_template_path with data set #2',
@@ -1909,7 +1950,7 @@ $coverage->setData(array (
       3 => 'functionsTest::test_ftb_template_path with data set #4',
       4 => 'functionsTest::test_ftb_template_path with data set #5',
     ),
-    30 => 
+    29 => 
     array (
       0 => 'functionsTest::test_ftb_template_path with data set #1',
       1 => 'functionsTest::test_ftb_template_path with data set #2',
@@ -1917,19 +1958,16 @@ $coverage->setData(array (
       3 => 'functionsTest::test_ftb_template_path with data set #4',
       4 => 'functionsTest::test_ftb_template_path with data set #5',
     ),
-    31 => NULL,
-    34 => 
+    31 => 
     array (
-      0 => 'functionsTest::test_ftb_template with data set #0',
-      1 => 'functionsTest::test_ftb_template with data set #1',
-      2 => 'functionsTest::test_ftb_template with data set #2',
-      3 => 'functionsTest::test_ftb_template with data set #3',
-      4 => 'functionsTest::test_ftb_template with data set #4',
-      5 => 'functionsTest::test_ftb_template with data set #5',
-      6 => 'functionsTest::test_ftb_template with data set #6',
-      7 => 'functionsTest::test_ftb_template with data set #7',
+      0 => 'functionsTest::test_ftb_template_path with data set #1',
+      1 => 'functionsTest::test_ftb_template_path with data set #2',
+      2 => 'functionsTest::test_ftb_template_path with data set #3',
+      3 => 'functionsTest::test_ftb_template_path with data set #4',
+      4 => 'functionsTest::test_ftb_template_path with data set #5',
     ),
-    36 => 
+    32 => NULL,
+    35 => 
     array (
       0 => 'functionsTest::test_ftb_template with data set #0',
       1 => 'functionsTest::test_ftb_template with data set #1',
@@ -1973,7 +2011,7 @@ $coverage->setData(array (
       6 => 'functionsTest::test_ftb_template with data set #6',
       7 => 'functionsTest::test_ftb_template with data set #7',
     ),
-    41 => 
+    40 => 
     array (
       0 => 'functionsTest::test_ftb_template with data set #0',
       1 => 'functionsTest::test_ftb_template with data set #1',
@@ -1986,30 +2024,6 @@ $coverage->setData(array (
     ),
     42 => 
     array (
-      0 => 'functionsTest::test_ftb_template with data set #1',
-      1 => 'functionsTest::test_ftb_template with data set #2',
-      2 => 'functionsTest::test_ftb_template with data set #3',
-      3 => 'functionsTest::test_ftb_template with data set #4',
-      4 => 'functionsTest::test_ftb_template with data set #5',
-      5 => 'functionsTest::test_ftb_template with data set #6',
-      6 => 'functionsTest::test_ftb_template with data set #7',
-    ),
-    43 => 
-    array (
-      0 => 'functionsTest::test_ftb_template with data set #7',
-    ),
-    44 => NULL,
-    46 => 
-    array (
-      0 => 'functionsTest::test_ftb_template with data set #1',
-      1 => 'functionsTest::test_ftb_template with data set #2',
-      2 => 'functionsTest::test_ftb_template with data set #3',
-      3 => 'functionsTest::test_ftb_template with data set #4',
-      4 => 'functionsTest::test_ftb_template with data set #5',
-      5 => 'functionsTest::test_ftb_template with data set #6',
-    ),
-    47 => 
-    array (
       0 => 'functionsTest::test_ftb_template with data set #0',
       1 => 'functionsTest::test_ftb_template with data set #1',
       2 => 'functionsTest::test_ftb_template with data set #2',
@@ -2018,6 +2032,30 @@ $coverage->setData(array (
       5 => 'functionsTest::test_ftb_template with data set #5',
       6 => 'functionsTest::test_ftb_template with data set #6',
       7 => 'functionsTest::test_ftb_template with data set #7',
+    ),
+    43 => 
+    array (
+      0 => 'functionsTest::test_ftb_template with data set #1',
+      1 => 'functionsTest::test_ftb_template with data set #2',
+      2 => 'functionsTest::test_ftb_template with data set #3',
+      3 => 'functionsTest::test_ftb_template with data set #4',
+      4 => 'functionsTest::test_ftb_template with data set #5',
+      5 => 'functionsTest::test_ftb_template with data set #6',
+      6 => 'functionsTest::test_ftb_template with data set #7',
+    ),
+    44 => 
+    array (
+      0 => 'functionsTest::test_ftb_template with data set #7',
+    ),
+    45 => NULL,
+    47 => 
+    array (
+      0 => 'functionsTest::test_ftb_template with data set #1',
+      1 => 'functionsTest::test_ftb_template with data set #2',
+      2 => 'functionsTest::test_ftb_template with data set #3',
+      3 => 'functionsTest::test_ftb_template with data set #4',
+      4 => 'functionsTest::test_ftb_template with data set #5',
+      5 => 'functionsTest::test_ftb_template with data set #6',
     ),
     48 => 
     array (
@@ -2052,7 +2090,7 @@ $coverage->setData(array (
       6 => 'functionsTest::test_ftb_template with data set #6',
       7 => 'functionsTest::test_ftb_template with data set #7',
     ),
-    52 => 
+    51 => 
     array (
       0 => 'functionsTest::test_ftb_template with data set #0',
       1 => 'functionsTest::test_ftb_template with data set #1',
@@ -2063,8 +2101,19 @@ $coverage->setData(array (
       6 => 'functionsTest::test_ftb_template with data set #6',
       7 => 'functionsTest::test_ftb_template with data set #7',
     ),
-    53 => NULL,
-    56 => 
+    53 => 
+    array (
+      0 => 'functionsTest::test_ftb_template with data set #0',
+      1 => 'functionsTest::test_ftb_template with data set #1',
+      2 => 'functionsTest::test_ftb_template with data set #2',
+      3 => 'functionsTest::test_ftb_template with data set #3',
+      4 => 'functionsTest::test_ftb_template with data set #4',
+      5 => 'functionsTest::test_ftb_template with data set #5',
+      6 => 'functionsTest::test_ftb_template with data set #6',
+      7 => 'functionsTest::test_ftb_template with data set #7',
+    ),
+    54 => NULL,
+    57 => 
     array (
       0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #0',
       1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
@@ -2087,15 +2136,15 @@ $coverage->setData(array (
       18 => 'functionsTest::test_ftb_args_string with data set #14',
       19 => 'functionsTest::test_ftb_args_string with data set #15',
     ),
-    57 => 
+    58 => 
     array (
       0 => 'functionsTest::test_ftb_args_string with data set #0',
       1 => 'functionsTest::test_ftb_args_string with data set #1',
       2 => 'functionsTest::test_ftb_args_string with data set #2',
       3 => 'functionsTest::test_ftb_args_string with data set #3',
     ),
-    58 => NULL,
-    60 => 
+    59 => NULL,
+    61 => 
     array (
       0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #0',
       1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
@@ -2114,26 +2163,7 @@ $coverage->setData(array (
       14 => 'functionsTest::test_ftb_args_string with data set #14',
       15 => 'functionsTest::test_ftb_args_string with data set #15',
     ),
-    62 => 
-    array (
-      0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #0',
-      1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
-      2 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #2',
-      3 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #3',
-      4 => 'functionsTest::test_ftb_args_string with data set #4',
-      5 => 'functionsTest::test_ftb_args_string with data set #5',
-      6 => 'functionsTest::test_ftb_args_string with data set #6',
-      7 => 'functionsTest::test_ftb_args_string with data set #7',
-      8 => 'functionsTest::test_ftb_args_string with data set #8',
-      9 => 'functionsTest::test_ftb_args_string with data set #9',
-      10 => 'functionsTest::test_ftb_args_string with data set #10',
-      11 => 'functionsTest::test_ftb_args_string with data set #11',
-      12 => 'functionsTest::test_ftb_args_string with data set #12',
-      13 => 'functionsTest::test_ftb_args_string with data set #13',
-      14 => 'functionsTest::test_ftb_args_string with data set #14',
-      15 => 'functionsTest::test_ftb_args_string with data set #15',
-    ),
-    64 => 
+    63 => 
     array (
       0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #0',
       1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
@@ -2173,20 +2203,22 @@ $coverage->setData(array (
     ),
     66 => 
     array (
-      0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
-      1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #2',
-      2 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #3',
-      3 => 'functionsTest::test_ftb_args_string with data set #4',
-      4 => 'functionsTest::test_ftb_args_string with data set #5',
-      5 => 'functionsTest::test_ftb_args_string with data set #6',
-      6 => 'functionsTest::test_ftb_args_string with data set #7',
-      7 => 'functionsTest::test_ftb_args_string with data set #8',
-      8 => 'functionsTest::test_ftb_args_string with data set #9',
-      9 => 'functionsTest::test_ftb_args_string with data set #11',
-      10 => 'functionsTest::test_ftb_args_string with data set #12',
-      11 => 'functionsTest::test_ftb_args_string with data set #13',
-      12 => 'functionsTest::test_ftb_args_string with data set #14',
-      13 => 'functionsTest::test_ftb_args_string with data set #15',
+      0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #0',
+      1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
+      2 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #2',
+      3 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #3',
+      4 => 'functionsTest::test_ftb_args_string with data set #4',
+      5 => 'functionsTest::test_ftb_args_string with data set #5',
+      6 => 'functionsTest::test_ftb_args_string with data set #6',
+      7 => 'functionsTest::test_ftb_args_string with data set #7',
+      8 => 'functionsTest::test_ftb_args_string with data set #8',
+      9 => 'functionsTest::test_ftb_args_string with data set #9',
+      10 => 'functionsTest::test_ftb_args_string with data set #10',
+      11 => 'functionsTest::test_ftb_args_string with data set #11',
+      12 => 'functionsTest::test_ftb_args_string with data set #12',
+      13 => 'functionsTest::test_ftb_args_string with data set #13',
+      14 => 'functionsTest::test_ftb_args_string with data set #14',
+      15 => 'functionsTest::test_ftb_args_string with data set #15',
     ),
     67 => 
     array (
@@ -2207,24 +2239,22 @@ $coverage->setData(array (
     ),
     68 => 
     array (
-      0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #0',
-      1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
-      2 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #2',
-      3 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #3',
-      4 => 'functionsTest::test_ftb_args_string with data set #4',
-      5 => 'functionsTest::test_ftb_args_string with data set #5',
-      6 => 'functionsTest::test_ftb_args_string with data set #6',
-      7 => 'functionsTest::test_ftb_args_string with data set #7',
-      8 => 'functionsTest::test_ftb_args_string with data set #8',
-      9 => 'functionsTest::test_ftb_args_string with data set #9',
-      10 => 'functionsTest::test_ftb_args_string with data set #10',
-      11 => 'functionsTest::test_ftb_args_string with data set #11',
-      12 => 'functionsTest::test_ftb_args_string with data set #12',
-      13 => 'functionsTest::test_ftb_args_string with data set #13',
-      14 => 'functionsTest::test_ftb_args_string with data set #14',
-      15 => 'functionsTest::test_ftb_args_string with data set #15',
+      0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
+      1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #2',
+      2 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #3',
+      3 => 'functionsTest::test_ftb_args_string with data set #4',
+      4 => 'functionsTest::test_ftb_args_string with data set #5',
+      5 => 'functionsTest::test_ftb_args_string with data set #6',
+      6 => 'functionsTest::test_ftb_args_string with data set #7',
+      7 => 'functionsTest::test_ftb_args_string with data set #8',
+      8 => 'functionsTest::test_ftb_args_string with data set #9',
+      9 => 'functionsTest::test_ftb_args_string with data set #11',
+      10 => 'functionsTest::test_ftb_args_string with data set #12',
+      11 => 'functionsTest::test_ftb_args_string with data set #13',
+      12 => 'functionsTest::test_ftb_args_string with data set #14',
+      13 => 'functionsTest::test_ftb_args_string with data set #15',
     ),
-    70 => 
+    69 => 
     array (
       0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #0',
       1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
@@ -2243,8 +2273,27 @@ $coverage->setData(array (
       14 => 'functionsTest::test_ftb_args_string with data set #14',
       15 => 'functionsTest::test_ftb_args_string with data set #15',
     ),
-    71 => NULL,
-    74 => 
+    71 => 
+    array (
+      0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #0',
+      1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
+      2 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #2',
+      3 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #3',
+      4 => 'functionsTest::test_ftb_args_string with data set #4',
+      5 => 'functionsTest::test_ftb_args_string with data set #5',
+      6 => 'functionsTest::test_ftb_args_string with data set #6',
+      7 => 'functionsTest::test_ftb_args_string with data set #7',
+      8 => 'functionsTest::test_ftb_args_string with data set #8',
+      9 => 'functionsTest::test_ftb_args_string with data set #9',
+      10 => 'functionsTest::test_ftb_args_string with data set #10',
+      11 => 'functionsTest::test_ftb_args_string with data set #11',
+      12 => 'functionsTest::test_ftb_args_string with data set #12',
+      13 => 'functionsTest::test_ftb_args_string with data set #13',
+      14 => 'functionsTest::test_ftb_args_string with data set #14',
+      15 => 'functionsTest::test_ftb_args_string with data set #15',
+    ),
+    72 => NULL,
+    75 => 
     array (
       0 => 'FTB\\Output\\TemplateTagsTest::it_should_call_the_post_thumbnail_with_proper_arguments',
       1 => 'functionsTest::test_ftb_textualize_var with data set #0',
@@ -2255,22 +2304,13 @@ $coverage->setData(array (
       6 => 'functionsTest::test_ftb_textualize_var with data set #5',
       7 => 'functionsTest::test_ftb_textualize_var with data set #6',
     ),
-    75 => 
+    76 => 
     array (
       0 => 'FTB\\Output\\TemplateTagsTest::it_should_call_the_post_thumbnail_with_proper_arguments',
       1 => 'functionsTest::test_ftb_textualize_var with data set #0',
     ),
-    76 => NULL,
-    78 => 
-    array (
-      0 => 'functionsTest::test_ftb_textualize_var with data set #1',
-      1 => 'functionsTest::test_ftb_textualize_var with data set #2',
-      2 => 'functionsTest::test_ftb_textualize_var with data set #3',
-      3 => 'functionsTest::test_ftb_textualize_var with data set #4',
-      4 => 'functionsTest::test_ftb_textualize_var with data set #5',
-      5 => 'functionsTest::test_ftb_textualize_var with data set #6',
-    ),
-    81 => 
+    77 => NULL,
+    79 => 
     array (
       0 => 'functionsTest::test_ftb_textualize_var with data set #1',
       1 => 'functionsTest::test_ftb_textualize_var with data set #2',
@@ -2281,38 +2321,47 @@ $coverage->setData(array (
     ),
     82 => 
     array (
+      0 => 'functionsTest::test_ftb_textualize_var with data set #1',
+      1 => 'functionsTest::test_ftb_textualize_var with data set #2',
+      2 => 'functionsTest::test_ftb_textualize_var with data set #3',
+      3 => 'functionsTest::test_ftb_textualize_var with data set #4',
+      4 => 'functionsTest::test_ftb_textualize_var with data set #5',
+      5 => 'functionsTest::test_ftb_textualize_var with data set #6',
+    ),
+    83 => 
+    array (
       0 => 'functionsTest::test_ftb_textualize_var with data set #3',
       1 => 'functionsTest::test_ftb_textualize_var with data set #4',
       2 => 'functionsTest::test_ftb_textualize_var with data set #5',
     ),
-    83 => 
+    84 => 
     array (
       0 => 'functionsTest::test_ftb_textualize_var with data set #5',
     ),
-    85 => 
+    86 => 
     array (
       0 => 'functionsTest::test_ftb_textualize_var with data set #5',
     ),
-    86 => NULL,
-    87 => 
+    87 => NULL,
+    88 => 
     array (
       0 => 'functionsTest::test_ftb_textualize_var with data set #3',
       1 => 'functionsTest::test_ftb_textualize_var with data set #4',
     ),
-    89 => 
+    90 => 
     array (
       0 => 'functionsTest::test_ftb_textualize_var with data set #3',
       1 => 'functionsTest::test_ftb_textualize_var with data set #4',
     ),
-    91 => NULL,
-    93 => 
+    92 => NULL,
+    94 => 
     array (
       0 => 'functionsTest::test_ftb_textualize_var with data set #1',
       1 => 'functionsTest::test_ftb_textualize_var with data set #2',
       2 => 'functionsTest::test_ftb_textualize_var with data set #6',
     ),
-    94 => NULL,
-    97 => 
+    95 => NULL,
+    98 => 
     array (
       0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
       1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #2',
@@ -2333,7 +2382,7 @@ $coverage->setData(array (
       16 => 'functionsTest::test_ftb_textualize_var with data set #4',
       17 => 'functionsTest::test_ftb_textualize_var with data set #6',
     ),
-    100 => 
+    101 => 
     array (
       0 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #1',
       1 => 'FTB\\Output\\TemplateTagsTest::it_should_return_proper_the_title_tag with data set #2',
@@ -2354,12 +2403,8 @@ $coverage->setData(array (
       16 => 'functionsTest::test_ftb_textualize_var with data set #4',
       17 => 'functionsTest::test_ftb_textualize_var with data set #6',
     ),
-    101 => NULL,
-    104 => 
-    array (
-      0 => 'functionsTest::test_ftb_textualize_var with data set #5',
-    ),
-    106 => 
+    102 => NULL,
+    105 => 
     array (
       0 => 'functionsTest::test_ftb_textualize_var with data set #5',
     ),
@@ -2367,23 +2412,11 @@ $coverage->setData(array (
     array (
       0 => 'functionsTest::test_ftb_textualize_var with data set #5',
     ),
-    110 => 
+    108 => 
     array (
-      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #2',
-      1 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #3',
-      2 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #4',
-      3 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #5',
-      4 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #6',
-      5 => 'FTB\\Output\\TemplateTagsTest::it_should_call_the_post_thumbnail_with_proper_arguments',
-      6 => 'functionsTest::test_ftb_parse_text_array with data set #0',
-      7 => 'functionsTest::test_ftb_parse_text_array with data set #1',
-      8 => 'functionsTest::test_ftb_parse_text_array with data set #2',
-      9 => 'functionsTest::test_ftb_parse_text_array with data set #3',
-      10 => 'functionsTest::test_ftb_parse_text_array with data set #4',
-      11 => 'functionsTest::test_ftb_parse_text_array with data set #5',
-      12 => 'functionsTest::test_ftb_parse_text_array with data set #6',
+      0 => 'functionsTest::test_ftb_textualize_var with data set #5',
     ),
-    112 => 
+    111 => 
     array (
       0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #2',
       1 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #3',
@@ -2431,7 +2464,7 @@ $coverage->setData(array (
       11 => 'functionsTest::test_ftb_parse_text_array with data set #5',
       12 => 'functionsTest::test_ftb_parse_text_array with data set #6',
     ),
-    116 => 
+    115 => 
     array (
       0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #2',
       1 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #3',
@@ -2447,7 +2480,7 @@ $coverage->setData(array (
       11 => 'functionsTest::test_ftb_parse_text_array with data set #5',
       12 => 'functionsTest::test_ftb_parse_text_array with data set #6',
     ),
-    118 => 
+    117 => 
     array (
       0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #2',
       1 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #3',
@@ -2463,8 +2496,24 @@ $coverage->setData(array (
       11 => 'functionsTest::test_ftb_parse_text_array with data set #5',
       12 => 'functionsTest::test_ftb_parse_text_array with data set #6',
     ),
-    119 => NULL,
-    122 => 
+    119 => 
+    array (
+      0 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #2',
+      1 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #3',
+      2 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #4',
+      3 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #5',
+      4 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #6',
+      5 => 'FTB\\Output\\TemplateTagsTest::it_should_call_the_post_thumbnail_with_proper_arguments',
+      6 => 'functionsTest::test_ftb_parse_text_array with data set #0',
+      7 => 'functionsTest::test_ftb_parse_text_array with data set #1',
+      8 => 'functionsTest::test_ftb_parse_text_array with data set #2',
+      9 => 'functionsTest::test_ftb_parse_text_array with data set #3',
+      10 => 'functionsTest::test_ftb_parse_text_array with data set #4',
+      11 => 'functionsTest::test_ftb_parse_text_array with data set #5',
+      12 => 'functionsTest::test_ftb_parse_text_array with data set #6',
+    ),
+    120 => NULL,
+    123 => 
     array (
       0 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnail_if_user_can_edit_theme_options',
       1 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnaail_is_image_source_was_not_found',
@@ -2506,7 +2555,7 @@ $coverage->setData(array (
       37 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
       38 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
     ),
-    123 => 
+    124 => 
     array (
       0 => 'functionsTest::test_ftb_merge_query_strings with data set #0',
       1 => 'functionsTest::test_ftb_merge_query_strings with data set #1',
@@ -2515,43 +2564,7 @@ $coverage->setData(array (
       4 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #1',
       5 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #2',
     ),
-    124 => NULL,
-    126 => 
-    array (
-      0 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnail_if_user_can_edit_theme_options',
-      1 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnaail_is_image_source_was_not_found',
-      2 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_one_value_size_and_attr',
-      3 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_two_value_size_and_attr',
-      4 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_retun_image_placeholder_if_new_src_is_empty',
-      5 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_image_placeholder_if_attachment_id_was_not_found',
-      6 => 'functionsTest::test_ftb_merge_query_strings with data set #3',
-      7 => 'functionsTest::test_ftb_merge_query_strings with data set #4',
-      8 => 'functionsTest::test_ftb_merge_query_strings with data set #5',
-      9 => 'functionsTest::test_ftb_merge_query_strings with data set #6',
-      10 => 'functionsTest::test_ftb_merge_query_strings with data set #7',
-      11 => 'functionsTest::test_ftb_merge_query_strings with data set #8',
-      12 => 'functionsTest::test_ftb_merge_query_strings with data set #9',
-      13 => 'functionsTest::test_ftb_merge_query_strings with data set #10',
-      14 => 'functionsTest::test_ftb_merge_query_strings with data set #11',
-      15 => 'functionsTest::test_ftb_merge_query_strings with data set #12',
-      16 => 'functionsTest::test_ftb_merge_query_strings with data set #13',
-      17 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #3',
-      18 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #4',
-      19 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #5',
-      20 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #6',
-      21 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #7',
-      22 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #8',
-      23 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #9',
-      24 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #10',
-      25 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #11',
-      26 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
-      27 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
-      28 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #0',
-      29 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #1',
-      30 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
-      31 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
-      32 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
-    ),
+    125 => NULL,
     127 => 
     array (
       0 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnail_if_user_can_edit_theme_options',
@@ -2603,24 +2616,26 @@ $coverage->setData(array (
       10 => 'functionsTest::test_ftb_merge_query_strings with data set #7',
       11 => 'functionsTest::test_ftb_merge_query_strings with data set #8',
       12 => 'functionsTest::test_ftb_merge_query_strings with data set #9',
-      13 => 'functionsTest::test_ftb_merge_query_strings with data set #11',
-      14 => 'functionsTest::test_ftb_merge_query_strings with data set #12',
-      15 => 'functionsTest::test_ftb_merge_query_strings with data set #13',
-      16 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #3',
-      17 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #4',
-      18 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #5',
-      19 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #6',
-      20 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #7',
-      21 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #8',
-      22 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #9',
-      23 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #11',
-      24 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
-      25 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
-      26 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #0',
-      27 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #1',
-      28 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
-      29 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
-      30 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
+      13 => 'functionsTest::test_ftb_merge_query_strings with data set #10',
+      14 => 'functionsTest::test_ftb_merge_query_strings with data set #11',
+      15 => 'functionsTest::test_ftb_merge_query_strings with data set #12',
+      16 => 'functionsTest::test_ftb_merge_query_strings with data set #13',
+      17 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #3',
+      18 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #4',
+      19 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #5',
+      20 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #6',
+      21 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #7',
+      22 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #8',
+      23 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #9',
+      24 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #10',
+      25 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #11',
+      26 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
+      27 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
+      28 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #0',
+      29 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #1',
+      30 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
+      31 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
+      32 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
     ),
     129 => 
     array (
@@ -2658,22 +2673,6 @@ $coverage->setData(array (
     ),
     130 => 
     array (
-      0 => 'functionsTest::test_ftb_merge_query_strings with data set #10',
-      1 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #10',
-      2 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
-      3 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
-      4 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
-    ),
-    131 => 
-    array (
-      0 => 'functionsTest::test_ftb_merge_query_strings with data set #10',
-      1 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #10',
-      2 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
-      3 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
-      4 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
-    ),
-    134 => 
-    array (
       0 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnail_if_user_can_edit_theme_options',
       1 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnaail_is_image_source_was_not_found',
       2 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_one_value_size_and_attr',
@@ -2687,26 +2686,40 @@ $coverage->setData(array (
       10 => 'functionsTest::test_ftb_merge_query_strings with data set #7',
       11 => 'functionsTest::test_ftb_merge_query_strings with data set #8',
       12 => 'functionsTest::test_ftb_merge_query_strings with data set #9',
-      13 => 'functionsTest::test_ftb_merge_query_strings with data set #10',
-      14 => 'functionsTest::test_ftb_merge_query_strings with data set #11',
-      15 => 'functionsTest::test_ftb_merge_query_strings with data set #12',
-      16 => 'functionsTest::test_ftb_merge_query_strings with data set #13',
-      17 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #3',
-      18 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #4',
-      19 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #5',
-      20 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #6',
-      21 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #7',
-      22 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #8',
-      23 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #9',
-      24 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #10',
-      25 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #11',
-      26 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
-      27 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
-      28 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #0',
-      29 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #1',
-      30 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
-      31 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
-      32 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
+      13 => 'functionsTest::test_ftb_merge_query_strings with data set #11',
+      14 => 'functionsTest::test_ftb_merge_query_strings with data set #12',
+      15 => 'functionsTest::test_ftb_merge_query_strings with data set #13',
+      16 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #3',
+      17 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #4',
+      18 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #5',
+      19 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #6',
+      20 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #7',
+      21 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #8',
+      22 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #9',
+      23 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #11',
+      24 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
+      25 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
+      26 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #0',
+      27 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #1',
+      28 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
+      29 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
+      30 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
+    ),
+    131 => 
+    array (
+      0 => 'functionsTest::test_ftb_merge_query_strings with data set #10',
+      1 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #10',
+      2 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
+      3 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
+      4 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
+    ),
+    132 => 
+    array (
+      0 => 'functionsTest::test_ftb_merge_query_strings with data set #10',
+      1 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #10',
+      2 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
+      3 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
+      4 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
     ),
     135 => 
     array (
@@ -2752,84 +2765,6 @@ $coverage->setData(array (
       3 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_two_value_size_and_attr',
       4 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_retun_image_placeholder_if_new_src_is_empty',
       5 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_image_placeholder_if_attachment_id_was_not_found',
-      6 => 'functionsTest::test_ftb_merge_query_strings with data set #11',
-      7 => 'functionsTest::test_ftb_merge_query_strings with data set #12',
-      8 => 'functionsTest::test_ftb_merge_query_strings with data set #13',
-      9 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #11',
-      10 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
-      11 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
-      12 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #0',
-      13 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #1',
-      14 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
-      15 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
-      16 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
-    ),
-    137 => 
-    array (
-      0 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnail_if_user_can_edit_theme_options',
-      1 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnaail_is_image_source_was_not_found',
-      2 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_one_value_size_and_attr',
-      3 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_two_value_size_and_attr',
-      4 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_retun_image_placeholder_if_new_src_is_empty',
-      5 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_image_placeholder_if_attachment_id_was_not_found',
-      6 => 'functionsTest::test_ftb_merge_query_strings with data set #11',
-      7 => 'functionsTest::test_ftb_merge_query_strings with data set #12',
-      8 => 'functionsTest::test_ftb_merge_query_strings with data set #13',
-      9 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #11',
-      10 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
-      11 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
-      12 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #0',
-      13 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #1',
-      14 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
-      15 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
-      16 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
-    ),
-    138 => 
-    array (
-      0 => 'functionsTest::test_ftb_merge_query_strings with data set #3',
-      1 => 'functionsTest::test_ftb_merge_query_strings with data set #4',
-      2 => 'functionsTest::test_ftb_merge_query_strings with data set #5',
-      3 => 'functionsTest::test_ftb_merge_query_strings with data set #6',
-      4 => 'functionsTest::test_ftb_merge_query_strings with data set #7',
-      5 => 'functionsTest::test_ftb_merge_query_strings with data set #8',
-      6 => 'functionsTest::test_ftb_merge_query_strings with data set #9',
-      7 => 'functionsTest::test_ftb_merge_query_strings with data set #10',
-      8 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #3',
-      9 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #4',
-      10 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #5',
-      11 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #6',
-      12 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #7',
-      13 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #8',
-      14 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #9',
-      15 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #10',
-    ),
-    139 => 
-    array (
-      0 => 'functionsTest::test_ftb_merge_query_strings with data set #3',
-      1 => 'functionsTest::test_ftb_merge_query_strings with data set #4',
-      2 => 'functionsTest::test_ftb_merge_query_strings with data set #5',
-      3 => 'functionsTest::test_ftb_merge_query_strings with data set #6',
-      4 => 'functionsTest::test_ftb_merge_query_strings with data set #7',
-      5 => 'functionsTest::test_ftb_merge_query_strings with data set #8',
-      6 => 'functionsTest::test_ftb_merge_query_strings with data set #9',
-      7 => 'functionsTest::test_ftb_merge_query_strings with data set #10',
-      8 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #3',
-      9 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #4',
-      10 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #5',
-      11 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #6',
-      12 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #7',
-      13 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #8',
-      14 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #9',
-      15 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #10',
-    ),
-    142 => 
-    array (
-      0 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnail_if_user_can_edit_theme_options',
-      1 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnaail_is_image_source_was_not_found',
-      2 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_one_value_size_and_attr',
-      3 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_two_value_size_and_attr',
-      4 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_retun_image_placeholder_if_new_src_is_empty',
-      5 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_image_placeholder_if_attachment_id_was_not_found',
       6 => 'functionsTest::test_ftb_merge_query_strings with data set #3',
       7 => 'functionsTest::test_ftb_merge_query_strings with data set #4',
       8 => 'functionsTest::test_ftb_merge_query_strings with data set #5',
@@ -2857,6 +2792,84 @@ $coverage->setData(array (
       30 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
       31 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
       32 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
+    ),
+    137 => 
+    array (
+      0 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnail_if_user_can_edit_theme_options',
+      1 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnaail_is_image_source_was_not_found',
+      2 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_one_value_size_and_attr',
+      3 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_two_value_size_and_attr',
+      4 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_retun_image_placeholder_if_new_src_is_empty',
+      5 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_image_placeholder_if_attachment_id_was_not_found',
+      6 => 'functionsTest::test_ftb_merge_query_strings with data set #11',
+      7 => 'functionsTest::test_ftb_merge_query_strings with data set #12',
+      8 => 'functionsTest::test_ftb_merge_query_strings with data set #13',
+      9 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #11',
+      10 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
+      11 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
+      12 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #0',
+      13 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #1',
+      14 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
+      15 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
+      16 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
+    ),
+    138 => 
+    array (
+      0 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnail_if_user_can_edit_theme_options',
+      1 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnaail_is_image_source_was_not_found',
+      2 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_one_value_size_and_attr',
+      3 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_two_value_size_and_attr',
+      4 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_retun_image_placeholder_if_new_src_is_empty',
+      5 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_image_placeholder_if_attachment_id_was_not_found',
+      6 => 'functionsTest::test_ftb_merge_query_strings with data set #11',
+      7 => 'functionsTest::test_ftb_merge_query_strings with data set #12',
+      8 => 'functionsTest::test_ftb_merge_query_strings with data set #13',
+      9 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #11',
+      10 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
+      11 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
+      12 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #0',
+      13 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #1',
+      14 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
+      15 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
+      16 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
+    ),
+    139 => 
+    array (
+      0 => 'functionsTest::test_ftb_merge_query_strings with data set #3',
+      1 => 'functionsTest::test_ftb_merge_query_strings with data set #4',
+      2 => 'functionsTest::test_ftb_merge_query_strings with data set #5',
+      3 => 'functionsTest::test_ftb_merge_query_strings with data set #6',
+      4 => 'functionsTest::test_ftb_merge_query_strings with data set #7',
+      5 => 'functionsTest::test_ftb_merge_query_strings with data set #8',
+      6 => 'functionsTest::test_ftb_merge_query_strings with data set #9',
+      7 => 'functionsTest::test_ftb_merge_query_strings with data set #10',
+      8 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #3',
+      9 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #4',
+      10 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #5',
+      11 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #6',
+      12 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #7',
+      13 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #8',
+      14 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #9',
+      15 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #10',
+    ),
+    140 => 
+    array (
+      0 => 'functionsTest::test_ftb_merge_query_strings with data set #3',
+      1 => 'functionsTest::test_ftb_merge_query_strings with data set #4',
+      2 => 'functionsTest::test_ftb_merge_query_strings with data set #5',
+      3 => 'functionsTest::test_ftb_merge_query_strings with data set #6',
+      4 => 'functionsTest::test_ftb_merge_query_strings with data set #7',
+      5 => 'functionsTest::test_ftb_merge_query_strings with data set #8',
+      6 => 'functionsTest::test_ftb_merge_query_strings with data set #9',
+      7 => 'functionsTest::test_ftb_merge_query_strings with data set #10',
+      8 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #3',
+      9 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #4',
+      10 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #5',
+      11 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #6',
+      12 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #7',
+      13 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #8',
+      14 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #9',
+      15 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #10',
     ),
     143 => 
     array (
@@ -2896,12 +2909,39 @@ $coverage->setData(array (
     ),
     144 => 
     array (
-      0 => 'functionsTest::test_ftb_merge_query_strings with data set #8',
-      1 => 'functionsTest::test_ftb_merge_query_strings with data set #12',
-      2 => 'functionsTest::test_ftb_merge_query_strings with data set #13',
-      3 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #8',
-      4 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
-      5 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
+      0 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnail_if_user_can_edit_theme_options',
+      1 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnaail_is_image_source_was_not_found',
+      2 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_one_value_size_and_attr',
+      3 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_two_value_size_and_attr',
+      4 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_retun_image_placeholder_if_new_src_is_empty',
+      5 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_image_placeholder_if_attachment_id_was_not_found',
+      6 => 'functionsTest::test_ftb_merge_query_strings with data set #3',
+      7 => 'functionsTest::test_ftb_merge_query_strings with data set #4',
+      8 => 'functionsTest::test_ftb_merge_query_strings with data set #5',
+      9 => 'functionsTest::test_ftb_merge_query_strings with data set #6',
+      10 => 'functionsTest::test_ftb_merge_query_strings with data set #7',
+      11 => 'functionsTest::test_ftb_merge_query_strings with data set #8',
+      12 => 'functionsTest::test_ftb_merge_query_strings with data set #9',
+      13 => 'functionsTest::test_ftb_merge_query_strings with data set #10',
+      14 => 'functionsTest::test_ftb_merge_query_strings with data set #11',
+      15 => 'functionsTest::test_ftb_merge_query_strings with data set #12',
+      16 => 'functionsTest::test_ftb_merge_query_strings with data set #13',
+      17 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #3',
+      18 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #4',
+      19 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #5',
+      20 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #6',
+      21 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #7',
+      22 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #8',
+      23 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #9',
+      24 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #10',
+      25 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #11',
+      26 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
+      27 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
+      28 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #0',
+      29 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #1',
+      30 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
+      31 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
+      32 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
     ),
     145 => 
     array (
@@ -2948,7 +2988,16 @@ $coverage->setData(array (
       4 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
       5 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
     ),
-    151 => 
+    150 => 
+    array (
+      0 => 'functionsTest::test_ftb_merge_query_strings with data set #8',
+      1 => 'functionsTest::test_ftb_merge_query_strings with data set #12',
+      2 => 'functionsTest::test_ftb_merge_query_strings with data set #13',
+      3 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #8',
+      4 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
+      5 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
+    ),
+    152 => 
     array (
       0 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnail_if_user_can_edit_theme_options',
       1 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnaail_is_image_source_was_not_found',
@@ -2984,35 +3033,7 @@ $coverage->setData(array (
       31 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
       32 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
     ),
-    153 => NULL,
-    156 => 
-    array (
-      0 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnail_if_user_can_edit_theme_options',
-      1 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnaail_is_image_source_was_not_found',
-      2 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_one_value_size_and_attr',
-      3 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_two_value_size_and_attr',
-      4 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_retun_image_placeholder_if_new_src_is_empty',
-      5 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_image_placeholder_if_attachment_id_was_not_found',
-      6 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #0',
-      7 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #1',
-      8 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #2',
-      9 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #3',
-      10 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #4',
-      11 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #5',
-      12 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #6',
-      13 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #7',
-      14 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #8',
-      15 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #9',
-      16 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #10',
-      17 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #11',
-      18 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
-      19 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
-      20 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #0',
-      21 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #1',
-      22 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
-      23 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
-      24 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
-    ),
+    154 => NULL,
     157 => 
     array (
       0 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnail_if_user_can_edit_theme_options',
@@ -3041,7 +3062,7 @@ $coverage->setData(array (
       23 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
       24 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
     ),
-    159 => 
+    158 => 
     array (
       0 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnail_if_user_can_edit_theme_options',
       1 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnaail_is_image_source_was_not_found',
@@ -3069,7 +3090,45 @@ $coverage->setData(array (
       23 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
       24 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
     ),
-    160 => NULL,
+    160 => 
+    array (
+      0 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnail_if_user_can_edit_theme_options',
+      1 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_ftb_get_the_post_thumbnaail_is_image_source_was_not_found',
+      2 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_one_value_size_and_attr',
+      3 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_get_thumbnail_with_two_value_size_and_attr',
+      4 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_retun_image_placeholder_if_new_src_is_empty',
+      5 => 'FTB\\RestAPI\\Markup\\AttachmentHandlerTest::it_should_return_image_placeholder_if_attachment_id_was_not_found',
+      6 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #0',
+      7 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #1',
+      8 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #2',
+      9 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #3',
+      10 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #4',
+      11 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #5',
+      12 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #6',
+      13 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #7',
+      14 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #8',
+      15 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #9',
+      16 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #10',
+      17 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #11',
+      18 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #12',
+      19 => 'functionsTest::test_ftb_merge_query_string_to_array with data set #13',
+      20 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #0',
+      21 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_no_thumbnail with data set #1',
+      22 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #0',
+      23 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #1',
+      24 => 'templateTagsTest::test_ftb_the_post_thumbnail_with_thumbnail with data set #2',
+    ),
+    161 => NULL,
+    165 => 
+    array (
+    ),
+    166 => 
+    array (
+    ),
+    167 => 
+    array (
+    ),
+    169 => NULL,
   ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Templates/Repository.php' => 
   array (
@@ -3806,6 +3865,11 @@ $coverage->setData(array (
       1 => 'FTB\\Fields\\PostMessageTransportTest::it_should_not_add_property_if_tag_requires_no_property',
       2 => 'FTB\\Fields\\PostMessageTransportTest::it_should_wrap_markup_with_before_and_after_is_supported',
       3 => 'FTB\\Fields\\PostMessageTransportTest::it_should_call_the_markup_modifying_callback_if_supported',
+      4 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #2',
+      5 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #3',
+      6 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #4',
+      7 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #5',
+      8 => 'FTB\\Fields\\PostMessageTransportTest::it_should_add_fields_to_featured_image with data set #6',
     ),
     112 => 
     array (
@@ -6315,6 +6379,9 @@ $coverage->setData(array (
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/ProcessorFactoryInterface.php' => 
   array (
   ),
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Output/CustomizerMarkupProviderInterface.php' => 
+  array (
+  ),
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Output/TemplateTagsInterface.php' => 
   array (
   ),
@@ -7676,6 +7743,8 @@ $filter->setWhitelistedFiles(array (
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/ProcessorFactoryInterface.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/ProcessorInterface.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Nodes/TitleProcessor.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Output/CustomizerMarkupProvider.php' => true,
+  '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Output/CustomizerMarkupProviderInterface.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Output/TemplateTags.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Output/TemplateTagsInterface.php' => true,
   '/Users/Luca/Sites/wp/wp-content/plugins/front-to-back/src/FTB/Pages/Filters.php' => true,
