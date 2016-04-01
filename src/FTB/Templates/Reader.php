@@ -54,9 +54,15 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 	 */
 	protected $current_section;
 
-	public function __construct( FTB_Nodes_ProcessorFactory $nodes_processor_factory, FTB_Fields_ConfigDumperInterface $config, $template_contents = '' ) {
+	/**
+	 * @var FTB_Templates_PreprocessorInterface
+	 */
+	protected $preprocessor;
+
+	public function __construct( FTB_Nodes_ProcessorFactory $nodes_processor_factory, FTB_Fields_ConfigDumperInterface $config, FTB_Templates_PreprocessorInterface $preprocessor, $template_contents = '' ) {
 		$this->nodes_processor_factory = $nodes_processor_factory;
 		$this->config                  = $config;
+		$this->preprocessor            = $preprocessor;
 		$this->template_contents       = $template_contents;
 	}
 
@@ -68,6 +74,9 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 		$this->template_name = $template_name;
 		$this->page_slug     = str_replace( '-', '_', $this->template_name );
 		$this->doc           = new DOMDocument();
+
+		$this->preprocessor->neuter_php_tags($this->template_contents);
+
 		$this->doc->loadXML( $this->template_contents );
 
 		$this->ftb_elements = array();
