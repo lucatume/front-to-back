@@ -58,11 +58,20 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 	 * @var FTB_Templates_PreprocessorInterface
 	 */
 	protected $preprocessor;
+	/**
+	 * @var FTB_Templates_PostprocessorInterface
+	 */
+	private $postprocessor;
 
-	public function __construct( FTB_Nodes_ProcessorFactory $nodes_processor_factory, FTB_Fields_ConfigDumperInterface $config, FTB_Templates_PreprocessorInterface $preprocessor, $template_contents = '' ) {
+	public function __construct( FTB_Nodes_ProcessorFactory $nodes_processor_factory,
+		FTB_Fields_ConfigDumperInterface $config,
+		FTB_Templates_PreprocessorInterface $preprocessor,
+		FTB_Templates_PostprocessorInterface $postprocessor,
+		$template_contents = '' ) {
 		$this->nodes_processor_factory = $nodes_processor_factory;
 		$this->config                  = $config;
 		$this->preprocessor            = $preprocessor;
+		$this->postprocessor = $postprocessor;
 		$this->template_contents       = $template_contents;
 	}
 
@@ -70,12 +79,17 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 		$this->template_contents = $template_contents;
 	}
 
+	/**
+	 * @param $template_name
+	 *
+	 * @return mixed|string
+	 */
 	public function read_and_process( $template_name ) {
 		$this->template_name = $template_name;
 		$this->page_slug     = str_replace( '-', '_', $this->template_name );
 		$this->doc           = new DOMDocument();
 
-		$this->preprocessor->neuter_php_tags($this->template_contents);
+		$this->preprocessor->preprocess($this->template_contents);
 
 		$this->doc->loadXML( $this->template_contents );
 
@@ -92,14 +106,9 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 			array_walk( $this->ftb_elements, array( $this, 'replace_supported_elements' ) );
 
 			$exit_markup = $this->doc->saveHTML();
-
-			$exit_markup = str_replace( '&lt;?php', '<?php', $exit_markup );
-			$exit_markup = str_replace( '?&gt;', '?>', $exit_markup );
-			$exit_markup = preg_replace( "/(\\<\\?php)([^\\>]*)((?<!\\?)\\>)/um", "<?php$2?>", $exit_markup );
-			$exit_markup = str_replace( '=&gt;', '=>', $exit_markup );
-			$exit_markup = str_replace( '&lt;ftb-open-tag', '<', $exit_markup );
-			$exit_markup = str_replace( 'ftb-close-tag&gt;', '>', $exit_markup );
 		}
+
+		$this->postprocessor->postprocess($exit_markup);
 
 		return $exit_markup;
 	}

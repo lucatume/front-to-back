@@ -9,8 +9,7 @@ class FTB_ServiceProviders_TemplateOperations extends tad_DI52_ServiceProvider {
 	public function register() {
 		$config_id = 'front-to-back';
 
-		Kirki::add_config( $config_id,
-			array(
+		Kirki::add_config( $config_id, array(
 				'capability'  => 'edit_theme_options',
 				'option_type' => 'theme_mod',
 			) );
@@ -20,7 +19,8 @@ class FTB_ServiceProviders_TemplateOperations extends tad_DI52_ServiceProvider {
 		$this->container->singleton( 'FTB_Fields_ConfigInterface', 'FTB_Fields_KirkiConfig' );
 		$this->container->singleton( 'FTB_Templates_RepositoryInterface', 'FTB_Templates_Repository' );
 		$this->container->singleton( 'FTB_Output_TemplateTagsInterface', 'FTB_Output_TemplateTags' );
-		$this->container->singleton('FTB_Templates_PreprocessorInterface','FTB_Templates_Preprocessor');
+		$this->container->singleton( 'FTB_Templates_PreprocessorInterface', 'FTB_Templates_Preprocessor' );
+		$this->container->singleton( 'FTB_Templates_PostprocessorInterface', 'FTB_Templates_Postprocessor' );
 		$this->container->singleton( 'FTB_Templates_ReaderInterface', 'FTB_Templates_Reader' );
 		// @todo make this an option?
 //		$this->container->singleton( 'FTB_Fields_TransportInterface', 'FTB_Fields_RefreshTransport' );

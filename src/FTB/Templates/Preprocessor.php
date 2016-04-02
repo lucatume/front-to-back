@@ -23,7 +23,7 @@ class FTB_Templates_Preprocessor implements FTB_Templates_PreprocessorInterface 
 	 *
 	 * @return string
 	 */
-	public function neuter_php_tags( $template_contents ) {
+	public function preprocess( $template_contents ) {
 		$tokens = token_get_all( $template_contents );
 
 		$output_frags = array_map( array( $this, 'replace_php_tag' ), $tokens );

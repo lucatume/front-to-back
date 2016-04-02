@@ -8,5 +8,5 @@ interface FTB_Templates_PreprocessorInterface {
 	 *
 	 * @return string
 	 */
-	public function neuter_php_tags($template_contents);
+	public function preprocess($template_contents);
 }

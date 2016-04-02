@@ -46,7 +46,7 @@ class PreprocessorTest extends \Codeception\TestCase\WPTestCase {
 HTML;
 		$sut = $this->make_instance();
 
-		$out = $sut->neuter_php_tags( $in );
+		$out = $sut->preprocess( $in );
 
 		$this->assertHtmlEquals( $in, $out );
 	}
@@ -83,7 +83,7 @@ HTML;
 HTML;
 		$sut      = $this->make_instance();
 
-		$out = $sut->neuter_php_tags( $in );
+		$out = $sut->preprocess( $in );
 
 		$this->assertHtmlEquals( $expected, $out );
 	}
@@ -120,7 +120,7 @@ HTML;
 HTML;
 		$sut      = $this->make_instance();
 
-		$out = $sut->neuter_php_tags( $in );
+		$out = $sut->preprocess( $in );
 
 		$this->assertHtmlEquals( $expected, $out );
 	}
@@ -157,7 +157,7 @@ HTML;
 HTML;
 		$sut      = $this->make_instance();
 
-		$out = $sut->neuter_php_tags( $in );
+		$out = $sut->preprocess( $in );
 
 		$this->assertHtmlEquals( $expected, $out );
 	}
