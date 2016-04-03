@@ -28,6 +28,8 @@ class FTB_Output_TemplateTags implements FTB_Output_TemplateTagsInterface {
 	}
 
 	public function the_var( $var ) {
-		return '<?php $' . $var . ' = get_post_meta( get_the_ID(), \'' . $var . '\', true); ?>';
+		$var_name = str_replace( '-', '_', $var );
+
+		return '<?php $' . $var_name . ' = get_post_meta( get_the_ID(), \'' . $var . '\', true ); ?>';
 	}
 }
