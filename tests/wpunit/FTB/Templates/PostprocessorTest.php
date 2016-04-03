@@ -82,8 +82,9 @@ HTML;
 HTML;
 
 		$sut = $this->make_instance();
+		$out = $sut->postprocess( $in );
 
-		$this->assertEquals( $expected, $sut->postprocess( $in ) );
+		$this->assertTrue( html_strcasecmp( $expected, $out ) );
 	}
 
 	private function make_instance() {

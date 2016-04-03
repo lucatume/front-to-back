@@ -63,15 +63,13 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 	 */
 	private $postprocessor;
 
-	public function __construct( FTB_Nodes_ProcessorFactory $nodes_processor_factory,
-		FTB_Fields_ConfigDumperInterface $config,
-		FTB_Templates_PreprocessorInterface $preprocessor,
-		FTB_Templates_PostprocessorInterface $postprocessor,
-		$template_contents = '' ) {
+	public function __construct(
+		FTB_Nodes_ProcessorFactory $nodes_processor_factory, FTB_Fields_ConfigDumperInterface $config, FTB_Templates_PreprocessorInterface $preprocessor, FTB_Templates_PostprocessorInterface $postprocessor, $template_contents = ''
+	) {
 		$this->nodes_processor_factory = $nodes_processor_factory;
 		$this->config                  = $config;
 		$this->preprocessor            = $preprocessor;
-		$this->postprocessor = $postprocessor;
+		$this->postprocessor           = $postprocessor;
 		$this->template_contents       = $template_contents;
 	}
 
@@ -89,7 +87,7 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 		$this->page_slug     = str_replace( '-', '_', $this->template_name );
 		$this->doc           = new DOMDocument();
 
-		$this->preprocessor->preprocess($this->template_contents);
+		$this->template_contents = $this->preprocessor->preprocess( $this->template_contents );
 
 		$this->doc->loadXML( $this->template_contents );
 
@@ -108,7 +106,7 @@ class FTB_Templates_Reader implements FTB_Templates_ReaderInterface {
 			$exit_markup = $this->doc->saveHTML();
 		}
 
-		$this->postprocessor->postprocess($exit_markup);
+		$exit_markup = $this->postprocessor->postprocess( $exit_markup );
 
 		return $exit_markup;
 	}

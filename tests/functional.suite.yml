@@ -5,3 +5,7 @@
 class_name: FunctionalTester
 modules:
     enabled: [Filesystem, WPLoader, \Helper\Functional]
+    config:
+        WPLoader:
+            plugins: []
+            activatePlugins: []

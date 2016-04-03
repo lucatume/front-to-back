@@ -48,7 +48,7 @@ HTML;
 
 		$out = $sut->preprocess( $in );
 
-		$this->assertHtmlEquals( $in, $out );
+		$this->assertTrue( html_strcasecmp( $in, $out ) );
 	}
 
 	/**
@@ -85,7 +85,7 @@ HTML;
 
 		$out = $sut->preprocess( $in );
 
-		$this->assertHtmlEquals( $expected, $out );
+		$this->assertTrue( html_strcasecmp( $expected, $out ) );
 	}
 
 	/**
@@ -122,7 +122,7 @@ HTML;
 
 		$out = $sut->preprocess( $in );
 
-		$this->assertHtmlEquals( $expected, $out );
+		$this->assertTrue( html_strcasecmp( $expected, $out ) );
 	}
 
 	/**
@@ -159,18 +159,11 @@ HTML;
 
 		$out = $sut->preprocess( $in );
 
-		$this->assertHtmlEquals( $expected, $out );
+		$this->assertTrue( html_strcasecmp( $expected, $out ) );
 	}
 
 	private function make_instance() {
 		return new \FTB_Templates_Preprocessor();
-	}
-
-	private function assertHtmlEquals( $expected, $actual, $message = '' ) {
-		$expectedString = preg_replace( '/\\s/', ' ', $expected );
-		$actualString   = preg_replace( '/\\s/', ' ', $actual );
-
-		$this->assertEquals( $expectedString, $actualString, $message );
 	}
 
 }

@@ -7,15 +7,15 @@ use Codeception\Util\Autoload;
 FunctionMocker::init();
 Autoload::addNamespace( 'FTB\Test', codecept_data_dir( 'classes' ) );
 
-// utility functions
-function xml_strcasecmp( $xmlStringOne, $xmlStringTwo ) {
-	$pattern      = '/(?<=\\>)[\\s\\t\\n\\r]+(?=\\<)/';
-	$xmlStringOne = trim( preg_replace( $pattern, '', $xmlStringOne ) );
-	$xmlStringTwo = trim( preg_replace( $pattern, '', $xmlStringTwo ) );
+// utility functions for tests
+function html_strcasecmp( $xmlStringOne, $xmlStringTwo ) {
+	$pattern      = '/(\\s+)/';
+	$xmlStringOne = preg_replace( $pattern, ' ', $xmlStringOne );
+	$xmlStringTwo = preg_replace( $pattern, ' ', $xmlStringTwo );
 
-	$pattern      = '/[\\s\\t\\n\\r]+/';
-	$xmlStringOne = trim( preg_replace( $pattern, ' ', $xmlStringOne ) );
-	$xmlStringTwo = trim( preg_replace( $pattern, ' ', $xmlStringTwo ) );
+	$pattern      = '/(>\\s*<)/';
+	$xmlStringOne = preg_replace( $pattern, '> <', $xmlStringOne );
+	$xmlStringTwo = preg_replace( $pattern, '> <', $xmlStringTwo );
 
-	return strcasecmp( $xmlStringOne, $xmlStringTwo ) === 0 ? true : false;
+	return strcasecmp( trim( $xmlStringOne ), trim( $xmlStringTwo ) ) === 0 ? true : false;
 }
